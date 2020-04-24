@@ -219,7 +219,7 @@
       <data xmi:type="process:BusinessObjectData" xmi:id="_ALQI4IRqEeq4udoilqnJqw" name="course" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Course">
         <defaultValue xmi:type="expression:Expression" xmi:id="_ALQI4YRqEeq4udoilqnJqw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
-      <formMapping xmi:type="process:FormMapping" xmi:id="_ozEEaWcHEeeXUPrCIbH-9A">
+      <formMapping xmi:type="process:FormMapping" xmi:id="_ozEEaWcHEeeXUPrCIbH-9A" type="NONE">
         <targetForm xmi:type="expression:Expression" xmi:id="_ozEEamcHEeeXUPrCIbH-9A" name="newForm" content="bf8601db-5f5f-42a4-8820-00f7e3585c5b" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_ozEEbGcHEeeXUPrCIbH-9A" type="NONE">
