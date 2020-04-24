@@ -113,7 +113,7 @@
           <expectedDuration xmi:type="expression:Expression" xmi:id="_ozEEN2cHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <elements xmi:type="process:Lane" xmi:id="_ozEEOGcHEeeXUPrCIbH-9A" name="DR" actor="_ozEEfGcHEeeXUPrCIbH-9A">
+      <elements xmi:type="process:Lane" xmi:id="_ozEEOGcHEeeXUPrCIbH-9A" name="DR" actor="_ozEEfWcHEeeXUPrCIbH-9A">
         <elements xmi:type="process:Task" xmi:id="_ozEEOWcHEeeXUPrCIbH-9A" name="Step2" outgoing="_ozEEdWcHEeeXUPrCIbH-9A" incoming="_ozEEcmcHEeeXUPrCIbH-9A" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_ozEEO2cHEeeXUPrCIbH-9A" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_ozEEPGcHEeeXUPrCIbH-9A" name="Task for helen.kelly" content="Task for helen.kelly" returnTypeFixed="true"/>
@@ -156,7 +156,7 @@
           <expectedDuration xmi:type="expression:Expression" xmi:id="_ozEESGcHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <elements xmi:type="process:Lane" xmi:id="_ozEESWcHEeeXUPrCIbH-9A" name="Head" actor="_ozEEfWcHEeeXUPrCIbH-9A">
+      <elements xmi:type="process:Lane" xmi:id="_ozEESWcHEeeXUPrCIbH-9A" name="Head" actor="_ozEEfGcHEeeXUPrCIbH-9A">
         <elements xmi:type="process:EndEvent" xmi:id="_ozEESmcHEeeXUPrCIbH-9A" name="End1" incoming="_ozEEeGcHEeeXUPrCIbH-9A">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_ozEETGcHEeeXUPrCIbH-9A" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_ozEETWcHEeeXUPrCIbH-9A" name="" content="" returnTypeFixed="true"/>
@@ -241,9 +241,9 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_ozEEeWcHEeeXUPrCIbH-9A"/>
         <condition xmi:type="expression:Expression" xmi:id="_ozEEemcHEeeXUPrCIbH-9A" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_ozEEe2cHEeeXUPrCIbH-9A" name="ActorA"/>
-      <actors xmi:type="process:Actor" xmi:id="_ozEEfGcHEeeXUPrCIbH-9A" name="ActorB" initiator="true"/>
-      <actors xmi:type="process:Actor" xmi:id="_ozEEfWcHEeeXUPrCIbH-9A" name="ActorC"/>
+      <actors xmi:type="process:Actor" xmi:id="_ozEEe2cHEeeXUPrCIbH-9A" name="Student"/>
+      <actors xmi:type="process:Actor" xmi:id="_ozEEfGcHEeeXUPrCIbH-9A" name="Head"/>
+      <actors xmi:type="process:Actor" xmi:id="_ozEEfWcHEeeXUPrCIbH-9A" name="DR" initiator="true"/>
       <contract xmi:type="process:Contract" xmi:id="_ozEEfmcHEeeXUPrCIbH-9A"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_ozEEf2cHEeeXUPrCIbH-9A">
         <name xmi:type="expression:Expression" xmi:id="_ozEEgGcHEeeXUPrCIbH-9A" content="" returnTypeFixed="true"/>
