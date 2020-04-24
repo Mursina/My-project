@@ -1,4 +1,5 @@
-bonitaUserName=walter.bates
+bonitaUserName=favio.riviera
 bonitaUserPassword=bpm
 defaultOrganization=ACME
 eclipse.preferences.version=1
+publishOrganization=false
