@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="ACME" description="The ACME organization is an example of a typical hierarchy. It can be used for development.">
+  <customUserInfoDefinitions/>
   <users>
     <user userName="william.jobs">
       <firstName>William</firstName>
@@ -31,6 +32,7 @@
       <title>Mrs</title>
       <jobTitle>Compensation specialist</jobTitle>
       <manager>helen.kelly</manager>
+      <personalData/>
       <professionalData>
         <email>april.sanchez@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -56,6 +58,7 @@
       <title>Mrs</title>
       <jobTitle>Human resource manager</jobTitle>
       <manager>william.jobs</manager>
+      <personalData/>
       <professionalData>
         <email>helen.kelly@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -231,6 +234,7 @@
       <title>Mrs</title>
       <jobTitle>Product marketing manager</jobTitle>
       <manager>favio.riviera</manager>
+      <personalData/>
       <professionalData>
         <email>isabel.bleasdale@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -256,6 +260,7 @@
       <title>Mr</title>
       <jobTitle>Vice President of Marketing</jobTitle>
       <manager>william.jobs</manager>
+      <personalData/>
       <professionalData>
         <email>favio.riviera@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -406,6 +411,7 @@
       <title>Mrs</title>
       <jobTitle>Vice President of Sales</jobTitle>
       <manager>william.jobs</manager>
+      <personalData/>
       <professionalData>
         <email>daniela.angelo@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -431,6 +437,7 @@
       <title>Mr</title>
       <jobTitle>Account manager</jobTitle>
       <manager>daniela.angelo</manager>
+      <personalData/>
       <professionalData>
         <email>anthony.nichols@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -506,6 +513,7 @@
       <title>Mrs</title>
       <jobTitle>Account manager</jobTitle>
       <manager>daniela.angelo</manager>
+      <personalData/>
       <professionalData>
         <email>giovanna.almeida@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -585,6 +593,15 @@
       <displayName>Services</displayName>
       <description>This group represents the services department of the ACME organization</description>
     </group>
+    <group name="std" parentPath="/acme">
+      <displayName>Student</displayName>
+    </group>
+    <group name="dr" parentPath="/acme">
+      <displayName>Deputy Registrar</displayName>
+    </group>
+    <group name="hod" parentPath="/acme">
+      <displayName>Head</displayName>
+    </group>
   </groups>
   <memberships>
     <membership>
@@ -595,13 +612,13 @@
     <membership>
       <userName>april.sanchez</userName>
       <roleName>member</roleName>
-      <groupName>hr</groupName>
+      <groupName>std</groupName>
       <groupParentPath>/acme</groupParentPath>
     </membership>
     <membership>
       <userName>helen.kelly</userName>
       <roleName>member</roleName>
-      <groupName>hr</groupName>
+      <groupName>hod</groupName>
       <groupParentPath>/acme</groupParentPath>
     </membership>
     <membership>
@@ -643,13 +660,13 @@
     <membership>
       <userName>isabel.bleasdale</userName>
       <roleName>member</roleName>
-      <groupName>marketing</groupName>
+      <groupName>hod</groupName>
       <groupParentPath>/acme</groupParentPath>
     </membership>
     <membership>
       <userName>favio.riviera</userName>
       <roleName>member</roleName>
-      <groupName>marketing</groupName>
+      <groupName>dr</groupName>
       <groupParentPath>/acme</groupParentPath>
     </membership>
     <membership>
@@ -685,8 +702,8 @@
     <membership>
       <userName>daniela.angelo</userName>
       <roleName>member</roleName>
-      <groupName>europe</groupName>
-      <groupParentPath>/acme/sales</groupParentPath>
+      <groupName>std</groupName>
+      <groupParentPath>/acme</groupParentPath>
     </membership>
     <membership>
       <userName>misa.kumagai</userName>
@@ -703,14 +720,14 @@
     <membership>
       <userName>giovanna.almeida</userName>
       <roleName>member</roleName>
-      <groupName>latin_america</groupName>
-      <groupParentPath>/acme/sales</groupParentPath>
+      <groupName>hod</groupName>
+      <groupParentPath>/acme</groupParentPath>
     </membership>
     <membership>
       <userName>anthony.nichols</userName>
       <roleName>member</roleName>
-      <groupName>north_america</groupName>
-      <groupParentPath>/acme/sales</groupParentPath>
+      <groupName>std</groupName>
+      <groupParentPath>/acme</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>
