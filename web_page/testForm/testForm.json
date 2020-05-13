@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "testForm",
   "name" : "testForm",
-  "lastUpdate" : 1589361788928,
+  "lastUpdate" : 1589365412415,
   "rows" : [
     [
       {
@@ -136,7 +136,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "0ec44266-d98e-42d8-8c19-dd5772d9cd99",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -320,6 +329,24 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "student.name"
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "2e1a2a3c-71f7-4406-8026-b5ed6b31b88d",
@@ -391,7 +418,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "student_api.regNumber"
+                          "value" : "student.regNumber"
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -663,7 +690,7 @@
     "student" : {
       "type" : "url",
       "value" : [
-        "../{{context.student_ref.link}}"
+        "http://localhost:8080/bonita/API/bdm/businessData/com.company.model.Student/1"
       ],
       "exposed" : false
     },
@@ -691,7 +718,8 @@
         "\t\tstudentInput: {",
         "\t\t\tname: $data.student.name !== undefined ? $data.student.name : null,",
         "\t\t\tregNumber: $data.student.regNumber !== undefined ? $data.student.regNumber : null,",
-        "\t\t\tmobile: $data.student.mobile !== undefined ? $data.student.mobile : null",
+        "\t\t\tmobile: $data.student.mobile !== undefined ? $data.student.mobile : null,",
+        "\t\t\tpersistenceId:1",
         "\t\t}",
         "\t}",
         "}"
