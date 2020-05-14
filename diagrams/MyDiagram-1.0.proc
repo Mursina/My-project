@@ -12,15 +12,54 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_NPOjyJRIEeqd75QgJvOPrw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_NPOjyZRIEeqd75QgJvOPrw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_NPOjypRIEeqd75QgJvOPrw" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_B-1v9JWNEeqj_rK_8jaZ_g">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_B-1v9ZWNEeqj_rK_8jaZ_g" name="student" content="student" type="TYPE_VARIABLE" returnType="com.company.model.Student">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_B-1v9pWNEeqj_rK_8jaZ_g" name="student" dataType="_NPOj9JRIEeqd75QgJvOPrw" className="com.company.model.Student"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_B-1v95WNEeqj_rK_8jaZ_g" name="studentInput.name" content="studentInput?.name" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_B-1v-JWNEeqj_rK_8jaZ_g" name="studentInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_B-1v-ZWNEeqj_rK_8jaZ_g" type="JAVA_METHOD" expression="setName">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_B-1v-pWNEeqj_rK_8jaZ_g">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_B-1v-5WNEeqj_rK_8jaZ_g" name="student" content="student" type="TYPE_VARIABLE" returnType="com.company.model.Student">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_B-1v_JWNEeqj_rK_8jaZ_g" name="student" dataType="_NPOj9JRIEeqd75QgJvOPrw" className="com.company.model.Student"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_B-1v_ZWNEeqj_rK_8jaZ_g" name="studentInput.regNumber" content="studentInput?.regNumber" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_B-1v_pWNEeqj_rK_8jaZ_g" name="studentInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_B-1v_5WNEeqj_rK_8jaZ_g" type="JAVA_METHOD" expression="setRegNumber">
+              <inputTypes>java.lang.Integer</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_B-1wAJWNEeqj_rK_8jaZ_g">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_B-1wAZWNEeqj_rK_8jaZ_g" name="student" content="student" type="TYPE_VARIABLE" returnType="com.company.model.Student">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_B-1wApWNEeqj_rK_8jaZ_g" name="student" dataType="_NPOj9JRIEeqd75QgJvOPrw" className="com.company.model.Student"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_B-1wA5WNEeqj_rK_8jaZ_g" name="studentInput.mobile" content="studentInput?.mobile" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_B-1wBJWNEeqj_rK_8jaZ_g" name="studentInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_B-1wBZWNEeqj_rK_8jaZ_g" type="JAVA_METHOD" expression="setMobile">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_NPOjy5RIEeqd75QgJvOPrw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_NPOjzJRIEeqd75QgJvOPrw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_NPOjzZRIEeqd75QgJvOPrw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_NPOjzpRIEeqd75QgJvOPrw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_NPOjz5RIEeqd75QgJvOPrw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_NPOj0JRIEeqd75QgJvOPrw">
-            <targetForm xmi:type="expression:Expression" xmi:id="_NPOj0ZRIEeqd75QgJvOPrw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_VbptMJT5Eeqxqqx8h2WUwg" name="testForm" content="73b61444-4509-43f5-80e8-c38c223c5ce7" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_NPOj0pRIEeqd75QgJvOPrw"/>
+          <contract xmi:type="process:Contract" xmi:id="_NPOj0pRIEeqd75QgJvOPrw">
+            <inputs xmi:type="process:ContractInput" xmi:id="_B-1v8JWNEeqj_rK_8jaZ_g" name="studentInput" type="COMPLEX" dataReference="student" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_B-1v8ZWNEeqj_rK_8jaZ_g" name="name" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_B-1v8pWNEeqj_rK_8jaZ_g" name="regNumber" type="INTEGER" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_B-1v85WNEeqj_rK_8jaZ_g" name="mobile" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_NPOj05RIEeqd75QgJvOPrw" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndTerminatedEvent" xmi:id="_P92tMJRIEeqd75QgJvOPrw" name="End1" incoming="_P_fE4JRIEeqd75QgJvOPrw">
@@ -29,8 +68,11 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_P93UQpRIEeqd75QgJvOPrw" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_ivofAJTpEeq1DZCYKs4OSA" name="student" dataType="_NPOj9JRIEeqd75QgJvOPrw" className="com.company.model.Student">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_ivofAZTpEeq1DZCYKs4OSA" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_NPOj1JRIEeqd75QgJvOPrw">
-        <targetForm xmi:type="expression:Expression" xmi:id="_NPOj1ZRIEeqd75QgJvOPrw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_wVE2MJWHEeqj_rK_8jaZ_g" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_NPOj1pRIEeqd75QgJvOPrw">
         <targetForm xmi:type="expression:Expression" xmi:id="_NPOj15RIEeqd75QgJvOPrw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
