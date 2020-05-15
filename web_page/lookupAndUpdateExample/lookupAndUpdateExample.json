@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "lookupAndUpdateExample",
   "name" : "lookupAndUpdateExample",
-  "lastUpdate" : 1589565485902,
+  "lastUpdate" : 1589567121008,
   "rows" : [
     [
       {
@@ -223,7 +223,8 @@
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
-                    "type" : "variable"
+                    "type" : "variable",
+                    "value" : ""
                   },
                   "labelHidden" : {
                     "type" : "constant",
@@ -268,7 +269,79 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "xs" : 12
+                        "xs" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "persistenceId"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "student.persistenceId"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "a0f7de3f-0e71-4123-a7dc-a03b0730be6b",
+                      "hasValidationError" : false,
+                      "id" : "pbInput"
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 6
                       },
                       "propertyValues" : {
                         "hidden" : {
@@ -805,7 +878,8 @@
                     "value" : ""
                   },
                   "dataToSend" : {
-                    "type" : "constant"
+                    "type" : "expression",
+                    "value" : "formOutput"
                   },
                   "dataFromSuccess" : {
                     "type" : "variable",
@@ -840,7 +914,7 @@
                     "type" : "variable"
                   }
                 },
-                "reference" : "2994ca7e-8d12-4a7e-a59f-dce3b81e26f5",
+                "reference" : "7bff58e4-b087-4f73-84df-110eac1857ec",
                 "hasValidationError" : false,
                 "id" : "pbButton"
               }
