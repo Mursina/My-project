@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_NPOjwJRIEeqd75QgJvOPrw" name="MyDiagram" author="bonita1" bonitaVersion="7.10.4" bonitaModelVersion="7.10.0-001" configId="ACED0005740010372E31302E302D303031372E31302E34">
+  <process:MainProcess xmi:id="_NPOjwJRIEeqd75QgJvOPrw" name="lookupAndUpdateExample" author="bonita1" bonitaVersion="7.10.4" bonitaModelVersion="7.10.0-001" configId="ACED0005740010372E31302E302D303031372E31302E34">
     <elements xmi:type="process:Pool" xmi:id="_NPOjwZRIEeqd75QgJvOPrw" name="Pool">
       <elements xmi:type="process:Lane" xmi:id="_NPOjwpRIEeqd75QgJvOPrw" name="Employee lane" actor="_NPOj25RIEeqd75QgJvOPrw">
         <elements xmi:type="process:StartEvent" xmi:id="_NPOjw5RIEeqd75QgJvOPrw" name="Start1" outgoing="_NPOj2JRIEeqd75QgJvOPrw">
@@ -110,7 +110,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_ivofAZTpEeq1DZCYKs4OSA" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_NPOj1JRIEeqd75QgJvOPrw">
-        <targetForm xmi:type="expression:Expression" xmi:id="_1b3qcJZDEeqOGP85XhO7jQ" name="testForm" content="73b61444-4509-43f5-80e8-c38c223c5ce7" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_1b3qcJZDEeqOGP85XhO7jQ" name="lookupAndUpdateExample" content="73b61444-4509-43f5-80e8-c38c223c5ce7" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_NPOj1pRIEeqd75QgJvOPrw">
         <targetForm xmi:type="expression:Expression" xmi:id="_NPOj15RIEeqd75QgJvOPrw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>

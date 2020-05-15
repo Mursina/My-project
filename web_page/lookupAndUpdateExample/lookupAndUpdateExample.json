@@ -1,8 +1,8 @@
 {
   "designerVersion" : "1.10.54",
-  "id" : "testForm",
-  "name" : "testForm",
-  "lastUpdate" : 1589504067130,
+  "id" : "lookupAndUpdateExample",
+  "name" : "lookupAndUpdateExample",
+  "lastUpdate" : 1589565485902,
   "rows" : [
     [
       {
@@ -655,7 +655,7 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "xs" : 12
+                  "xs" : 6
                 },
                 "propertyValues" : {
                   "removeItem" : {
@@ -683,7 +683,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Lookup"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -706,7 +706,7 @@
                   },
                   "action" : {
                     "type" : "constant",
-                    "value" : "Submit task"
+                    "value" : "GET"
                   },
                   "collectionToModify" : {
                     "type" : "variable"
@@ -720,7 +720,7 @@
                   },
                   "alignment" : {
                     "type" : "constant",
-                    "value" : "center"
+                    "value" : "right"
                   },
                   "class" : {
                     "type" : "constant",
@@ -729,9 +729,118 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation",
+                    "value" : "../API/bdm/businessData/com.company.model.Student/1"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : "student"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "0fc87371-8d1b-4f87-8d48-3466a9d744ef",
+                "hasValidationError" : false,
+                "id" : "pbButton"
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Submit"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "default"
+                  },
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "Submit task"
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataToSend" : {
+                    "type" : "constant"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "dataFromError" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "targetUrlOnSuccess" : {
+                    "type" : "interpolation"
+                  },
+                  "collectionToModify" : {
+                    "type" : "variable"
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "collectionPosition" : {
+                    "type" : "constant",
+                    "value" : "Last"
+                  },
+                  "valueToAdd" : {
+                    "type" : "constant"
+                  },
+                  "removeItem" : {
+                    "type" : "variable"
+                  }
+                },
+                "reference" : "2994ca7e-8d12-4a7e-a59f-dce3b81e26f5",
                 "hasValidationError" : false,
                 "id" : "pbButton"
               }
@@ -820,9 +929,9 @@
       "exposed" : false
     },
     "student" : {
-      "type" : "url",
+      "type" : "json",
       "value" : [
-        "http://localhost:8080/bonita/API/bdm/businessData/com.company.model.Student/1"
+        "{}"
       ],
       "exposed" : false
     },
@@ -869,13 +978,6 @@
       "type" : "urlparameter",
       "value" : [
         "id"
-      ],
-      "exposed" : false
-    },
-    "student_api" : {
-      "type" : "url",
-      "value" : [
-        "../API/bdm/businessData/com.company.model.Student/1"
       ],
       "exposed" : false
     },
