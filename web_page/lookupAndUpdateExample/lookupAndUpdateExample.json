@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "lookupAndUpdateExample",
   "name" : "lookupAndUpdateExample",
-  "lastUpdate" : 1589567121008,
+  "lastUpdate" : 1589786542197,
   "rows" : [
     [
       {
@@ -588,7 +588,34 @@
                       "hasValidationError" : false,
                       "id" : "pbInput"
                     }
-                  ],
+                  ]
+                ]
+              }
+            ],
+            [
+              {
+                "type" : "container",
+                "dimension" : {
+                  "xs" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "repeatedCollection" : {
+                    "type" : "variable",
+                    "value" : ""
+                  }
+                },
+                "reference" : "2dd6a2e2-88bf-4ab7-bd5d-f86e8f6d6ee1",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
                   [
                     {
                       "type" : "component",
@@ -633,10 +660,8 @@
                           "value" : "Select an option"
                         },
                         "availableValues" : {
-                          "type" : "constant",
-                          "value" : [
-                            "groups"
-                          ]
+                          "type" : "expression",
+                          "value" : "groups"
                         },
                         "displayedKey" : {
                           "type" : "constant",
@@ -698,10 +723,8 @@
                           "value" : "Select an option"
                         },
                         "availableValues" : {
-                          "type" : "constant",
-                          "value" : [
-                            "groupMembers"
-                          ]
+                          "type" : "expression",
+                          "value" : "groupMembers"
                         },
                         "displayedKey" : {
                           "type" : "constant",
@@ -1073,6 +1096,13 @@
       "type" : "json",
       "value" : [
         "{\"groupId\":null,\"userId\":null}"
+      ],
+      "exposed" : false
+    },
+    "myCollection" : {
+      "type" : "json",
+      "value" : [
+        "[{}]"
       ],
       "exposed" : false
     }
