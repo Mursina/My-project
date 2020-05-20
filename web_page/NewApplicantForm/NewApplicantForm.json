@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "NewApplicantForm",
   "name" : "NewApplicantForm",
-  "lastUpdate" : 1589934899049,
+  "lastUpdate" : 1589959698707,
   "rows" : [
     [
       {
@@ -260,7 +260,7 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "xs" : 2
+                        "xs" : 6
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -309,7 +309,7 @@
                         },
                         "returnedKey" : {
                           "type" : "constant",
-                          "value" : "id"
+                          "value" : "Batch"
                         },
                         "value" : {
                           "type" : "variable",
@@ -323,7 +323,7 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "xs" : 4
+                        "xs" : 6
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -363,17 +363,20 @@
                           "value" : "Select an option"
                         },
                         "availableValues" : {
-                          "type" : "constant"
+                          "type" : "expression",
+                          "value" : "regNumber"
                         },
                         "displayedKey" : {
-                          "type" : "constant"
+                          "type" : "constant",
+                          "value" : "regNumber"
                         },
                         "returnedKey" : {
-                          "type" : "constant"
+                          "type" : "constant",
+                          "value" : "persistenceId"
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : ""
+                          "value" : "pageData.regNumId"
                         }
                       },
                       "reference" : "378c9ae0-efa9-45ec-9721-a0f7c24ca809",
@@ -1150,6 +1153,13 @@
       "type" : "json",
       "value" : [
         "{\"batchId\":null,\"regNumId\":null}"
+      ],
+      "exposed" : false
+    },
+    "regNumber" : {
+      "type" : "url",
+      "value" : [
+        "../API/bdm/businessData/com.company.model.Student?q=findByBatch&p=0&c=10&f=Batch={{pageData.batchId}}"
       ],
       "exposed" : false
     }
