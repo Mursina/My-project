@@ -729,5 +729,11 @@
       <groupName>std</groupName>
       <groupParentPath>/acme</groupParentPath>
     </membership>
+    <membership>
+      <userName>favio.riviera</userName>
+      <roleName>member</roleName>
+      <groupName>std</groupName>
+      <groupParentPath>/acme</groupParentPath>
+    </membership>
   </memberships>
 </organization:Organization>

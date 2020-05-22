@@ -14,9 +14,7 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_NPOjypRIEeqd75QgJvOPrw" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_QahfcJbXEeqxNbP-eK3FIg">
             <leftOperand xmi:type="expression:Expression" xmi:id="_QahfcZbXEeqxNbP-eK3FIg" name="student" content="student" type="TYPE_VARIABLE" returnType="com.company.model.Student">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_WnQ5EJbYEeqxNbP-eK3FIg" name="student" dataType="_NPOj9JRIEeqd75QgJvOPrw" className="com.company.model.Student">
-                <defaultValue xmi:type="expression:Expression" xmi:id="_BhEQgJbaEeqxNbP-eK3FIg" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
-              </referencedElements>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dsRQkJqAEeqa9P7LEQxQVw" name="student" dataType="_NPOj9JRIEeqd75QgJvOPrw" className="com.company.model.Student"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_QahfcpbXEeqxNbP-eK3FIg" name="Student.findByPersistenceId" content="SELECT s&#xA;FROM Student s&#xA;WHERE s.persistenceId= :persistenceId&#xA;" interpreter="GROOVY" type="TYPE_QUERY_BUSINESS_DATA" returnType="com.company.model.Student">
               <referencedElements xmi:type="expression:Expression" xmi:id="_mhRc4JcTEeqmH-FBsnxr3w" name="persistenceId" content="persistenceId" type="QUERY_PARAM_TYPE" returnType="java.lang.Long" returnTypeFixed="true">
@@ -29,7 +27,7 @@
           </operations>
           <operations xmi:type="expression:Operation" xmi:id="_B-1wAJWNEeqj_rK_8jaZ_g">
             <leftOperand xmi:type="expression:Expression" xmi:id="_B-1wAZWNEeqj_rK_8jaZ_g" name="student" content="student" type="TYPE_VARIABLE" returnType="com.company.model.Student">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_B-1wApWNEeqj_rK_8jaZ_g" name="student" dataType="_NPOj9JRIEeqd75QgJvOPrw" className="com.company.model.Student"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_euHIEJqAEeqa9P7LEQxQVw" name="student" dataType="_NPOj9JRIEeqd75QgJvOPrw" className="com.company.model.Student"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_B-1wA5WNEeqj_rK_8jaZ_g" name="studentInput.mobile" content="studentInput?.mobile" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
               <referencedElements xmi:type="process:ContractInput" xmi:id="_B-1wBJWNEeqj_rK_8jaZ_g" name="studentInput" type="COMPLEX" createMode="false"/>
@@ -62,13 +60,15 @@
         </elements>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_ivofAJTpEeq1DZCYKs4OSA" name="student" dataType="_NPOj9JRIEeqd75QgJvOPrw" className="com.company.model.Student">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_ivofAZTpEeq1DZCYKs4OSA" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_joBr8JwCEeqrVK-1FKsBqw" name="initStudent()" content="def studentVar = new com.company.model.Student()&#xA;studentVar.regNumber = studentInput?.regNumber&#xA;studentVar.Batch = studentInput?.Batch&#xA;return studentVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Student">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_joBr8ZwCEeqrVK-1FKsBqw" name="studentInput" type="COMPLEX"/>
+        </defaultValue>
       </data>
       <data xmi:type="process:BusinessObjectData" xmi:id="_rKjB0JbWEeqxNbP-eK3FIg" name="pStudent" dataType="_NPOj9JRIEeqd75QgJvOPrw" className="com.company.model.Student">
         <defaultValue xmi:type="expression:Expression" xmi:id="_rKjB0ZbWEeqxNbP-eK3FIg" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_NPOj1JRIEeqd75QgJvOPrw">
-        <targetForm xmi:type="expression:Expression" xmi:id="_OwpgUJcTEeqmH-FBsnxr3w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_OwpgUJcTEeqmH-FBsnxr3w" name="newForm" content="bf8601db-5f5f-42a4-8820-00f7e3585c5b" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_NPOj1pRIEeqd75QgJvOPrw">
         <targetForm xmi:type="expression:Expression" xmi:id="_NPOj15RIEeqd75QgJvOPrw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -82,7 +82,12 @@
         <condition xmi:type="expression:Expression" xmi:id="_P_fE4pRIEeqd75QgJvOPrw" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_NPOj25RIEeqd75QgJvOPrw" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
-      <contract xmi:type="process:Contract" xmi:id="_NPOj3JRIEeqd75QgJvOPrw"/>
+      <contract xmi:type="process:Contract" xmi:id="_NPOj3JRIEeqd75QgJvOPrw">
+        <inputs xmi:type="process:ContractInput" xmi:id="_jn9agJwCEeqrVK-1FKsBqw" name="studentInput" type="COMPLEX" dataReference="student">
+          <inputs xmi:type="process:ContractInput" xmi:id="_jn9agZwCEeqrVK-1FKsBqw" name="regNumber"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_jn9agpwCEeqrVK-1FKsBqw" name="Batch"/>
+        </inputs>
+      </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_NPOj3ZRIEeqd75QgJvOPrw">
         <name xmi:type="expression:Expression" xmi:id="_NPOj3pRIEeqd75QgJvOPrw" content="" returnTypeFixed="true"/>
         <value xmi:type="expression:Expression" xmi:id="_NPOj35RIEeqd75QgJvOPrw" content="" returnTypeFixed="true"/>
