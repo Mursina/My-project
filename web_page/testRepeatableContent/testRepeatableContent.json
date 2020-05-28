@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "testRepeatableContent",
   "name" : "testRepeatableContent",
-  "lastUpdate" : 1590638200616,
+  "lastUpdate" : 1590638895426,
   "rows" : [
     [
       {
@@ -87,7 +87,7 @@
             "type" : "variable"
           }
         },
-        "reference" : "fa78ec47-6b1e-41ae-9136-2c170ef74d07",
+        "reference" : "5cd4f24b-003b-4d60-aab7-053571c515cd",
         "hasValidationError" : false,
         "id" : "pbButton"
       }
@@ -112,7 +112,7 @@
             "value" : "fruitsProducingCountries"
           }
         },
-        "reference" : "e891f6bb-3187-4008-af04-c4bd2320a8cf",
+        "reference" : "69923575-cfeb-412b-98a1-e2b48de62466",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -185,7 +185,7 @@
                   "value" : 1
                 }
               },
-              "reference" : "54a5afcb-03d2-4200-919a-1c37364b87c2",
+              "reference" : "9f12e819-ae9b-4863-84c0-7b5fa95463b4",
               "hasValidationError" : false,
               "id" : "pbInput"
             },
@@ -272,7 +272,7 @@
                   "value" : "$item"
                 }
               },
-              "reference" : "34366a40-dc64-4268-b410-6226c0b6f91a",
+              "reference" : "e0af3460-214b-4970-acf2-a3101d559652",
               "hasValidationError" : false,
               "id" : "pbButton"
             }
@@ -360,7 +360,7 @@
                   "type" : "variable"
                 }
               },
-              "reference" : "5bdb2b6e-22a4-49a1-908e-4ce86d0e5d43",
+              "reference" : "956945d3-94a0-423b-94b2-fab8f5fabe58",
               "hasValidationError" : false,
               "id" : "pbButton"
             }
@@ -385,7 +385,7 @@
                   "value" : "$item.producingCountries"
                 }
               },
-              "reference" : "9b1253ce-4485-49e9-ba7b-d76b68d70171",
+              "reference" : "0985538b-e1a9-482d-a715-54a7e9217425",
               "hasValidationError" : false,
               "id" : "pbContainer",
               "rows" : [
@@ -458,7 +458,7 @@
                         "value" : 1
                       }
                     },
-                    "reference" : "ddaf893f-b488-4f4d-bf65-87f0fa2c68d8",
+                    "reference" : "17461afe-6d05-4155-a08a-808696c440b2",
                     "hasValidationError" : false,
                     "id" : "pbInput"
                   },
@@ -545,7 +545,7 @@
                         "value" : "$item"
                       }
                     },
-                    "reference" : "32c5f4f5-1228-4ea2-9c73-bc3dacea889e",
+                    "reference" : "80154d51-828a-461e-ad2f-977e6910d8c1",
                     "hasValidationError" : false,
                     "id" : "pbButton"
                   }
@@ -554,6 +554,55 @@
             }
           ]
         ]
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "{{fruitsProducingCountries}}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "96797748-a1ee-4a78-a940-cf5c3c3e1197",
+        "hasValidationError" : false,
+        "id" : "pbText"
       }
     ]
   ],
