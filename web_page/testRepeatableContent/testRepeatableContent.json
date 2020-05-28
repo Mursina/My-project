@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "testRepeatableContent",
   "name" : "testRepeatableContent",
-  "lastUpdate" : 1590638895426,
+  "lastUpdate" : 1590647493810,
   "rows" : [
     [
       {
@@ -25,7 +25,7 @@
           },
           "label" : {
             "type" : "interpolation",
-            "value" : "Add fruit"
+            "value" : "Add fruits"
           },
           "alignment" : {
             "type" : "constant",
@@ -87,7 +87,7 @@
             "type" : "variable"
           }
         },
-        "reference" : "5cd4f24b-003b-4d60-aab7-053571c515cd",
+        "reference" : "3cb37aa8-6a17-4e81-8e29-277bb267fe10",
         "hasValidationError" : false,
         "id" : "pbButton"
       }
@@ -112,7 +112,7 @@
             "value" : "fruitsProducingCountries"
           }
         },
-        "reference" : "69923575-cfeb-412b-98a1-e2b48de62466",
+        "reference" : "4c4e6747-ae7b-489b-80cd-44dfe2f6578b",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -185,7 +185,7 @@
                   "value" : 1
                 }
               },
-              "reference" : "9f12e819-ae9b-4863-84c0-7b5fa95463b4",
+              "reference" : "9e3e3862-87ce-4af0-8e8b-3d52d854127d",
               "hasValidationError" : false,
               "id" : "pbInput"
             },
@@ -272,7 +272,7 @@
                   "value" : "$item"
                 }
               },
-              "reference" : "e0af3460-214b-4970-acf2-a3101d559652",
+              "reference" : "2d7485fa-3e2f-49a6-90f7-fc0f649470b8",
               "hasValidationError" : false,
               "id" : "pbButton"
             }
@@ -298,7 +298,7 @@
                 },
                 "label" : {
                   "type" : "interpolation",
-                  "value" : "Add producing country"
+                  "value" : "Add country"
                 },
                 "alignment" : {
                   "type" : "constant",
@@ -360,7 +360,7 @@
                   "type" : "variable"
                 }
               },
-              "reference" : "956945d3-94a0-423b-94b2-fab8f5fabe58",
+              "reference" : "e16b9058-3c13-4b52-934a-a1f703165f8d",
               "hasValidationError" : false,
               "id" : "pbButton"
             }
@@ -385,7 +385,7 @@
                   "value" : "$item.producingCountries"
                 }
               },
-              "reference" : "0985538b-e1a9-482d-a715-54a7e9217425",
+              "reference" : "bc73d64b-0d46-4441-a0be-52140f6f0511",
               "hasValidationError" : false,
               "id" : "pbContainer",
               "rows" : [
@@ -426,7 +426,7 @@
                       },
                       "label" : {
                         "type" : "interpolation",
-                        "value" : "Producing country"
+                        "value" : "country"
                       },
                       "labelPosition" : {
                         "type" : "constant",
@@ -458,7 +458,7 @@
                         "value" : 1
                       }
                     },
-                    "reference" : "17461afe-6d05-4155-a08a-808696c440b2",
+                    "reference" : "1a661bb2-3b28-4831-9828-e5e3e7750c14",
                     "hasValidationError" : false,
                     "id" : "pbInput"
                   },
@@ -482,7 +482,7 @@
                       },
                       "label" : {
                         "type" : "interpolation",
-                        "value" : "Remove this producing country"
+                        "value" : "Remove this country"
                       },
                       "alignment" : {
                         "type" : "constant",
@@ -545,7 +545,7 @@
                         "value" : "$item"
                       }
                     },
-                    "reference" : "80154d51-828a-461e-ad2f-977e6910d8c1",
+                    "reference" : "3083b80d-b9e3-4723-9ad9-8a4bb36fff2b",
                     "hasValidationError" : false,
                     "id" : "pbButton"
                   }
@@ -593,14 +593,14 @@
           },
           "text" : {
             "type" : "interpolation",
-            "value" : "{{fruitsProducingCountries}}"
+            "value" : "{{courseAndModules}}"
           },
           "alignment" : {
             "type" : "constant",
             "value" : "left"
           }
         },
-        "reference" : "96797748-a1ee-4a78-a940-cf5c3c3e1197",
+        "reference" : "578bb2d0-11cb-4449-b01c-8771318f9404",
         "hasValidationError" : false,
         "id" : "pbText"
       }
@@ -617,13 +617,6 @@
   ],
   "inactiveAssets" : [ ],
   "variables" : {
-    "fruits" : {
-      "type" : "json",
-      "value" : [
-        "[\"banana\",\"apple\",\"pineapple\",\"cherry\"]"
-      ],
-      "exposed" : false
-    },
     "fruitsProducingCountries" : {
       "type" : "json",
       "value" : [
@@ -637,6 +630,13 @@
         "      \"producingCountries\": [\"China\",\"USA\"]",
         "    }",
         "]"
+      ],
+      "exposed" : false
+    },
+    "courseAndModules" : {
+      "type" : "url",
+      "value" : [
+        "../API/bdm/businessData/com.company.model.CourseModule?q=find&p=0&c=100"
       ],
       "exposed" : false
     }
