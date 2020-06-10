@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "testRepeatableContent",
   "name" : "testRepeatableContent",
-  "lastUpdate" : 1590647493810,
+  "lastUpdate" : 1591786390995,
   "rows" : [
     [
       {
@@ -601,6 +601,55 @@
           }
         },
         "reference" : "578bb2d0-11cb-4449-b01c-8771318f9404",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "{{"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "a708c45d-09dc-499b-9467-05e63a012f10",
         "hasValidationError" : false,
         "id" : "pbText"
       }
