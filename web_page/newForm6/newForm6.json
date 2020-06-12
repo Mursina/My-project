@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "newForm6",
   "name" : "newForm6",
-  "lastUpdate" : 1591895434197,
+  "lastUpdate" : 1591964549313,
   "rows" : [
     [
       {
@@ -136,7 +136,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "03158d24-fb9c-462a-96ac-986ebc80c1ae",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -214,7 +223,8 @@
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
-                    "type" : "variable"
+                    "type" : "variable",
+                    "value" : ""
                   },
                   "labelHidden" : {
                     "type" : "constant",
@@ -349,7 +359,7 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "xs" : 12
+                        "xs" : 6
                       },
                       "propertyValues" : {
                         "allowHtml" : {
@@ -463,7 +473,7 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "xs" : 12
+                        "xs" : 4
                       },
                       "propertyValues" : {
                         "allowHtml" : {
@@ -509,6 +519,18 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
                         }
                       },
                       "reference" : "bbf60ba5-4591-4ffd-b874-4631e6e56126",
@@ -626,7 +648,7 @@
                           {
                             "type" : "component",
                             "dimension" : {
-                              "xs" : 12
+                              "xs" : 6
                             },
                             "propertyValues" : {
                               "hidden" : {
@@ -655,7 +677,7 @@
                               },
                               "label" : {
                                 "type" : "interpolation",
-                                "value" : "Courses"
+                                "value" : "Semester"
                               },
                               "required" : {
                                 "type" : "constant",
@@ -671,7 +693,7 @@
                               },
                               "placeholder" : {
                                 "type" : "constant",
-                                "value" : "Select a Courses"
+                                "value" : "Select the semester"
                               },
                               "alignment" : {
                                 "type" : "constant",
@@ -687,7 +709,7 @@
                               },
                               "value" : {
                                 "type" : "variable",
-                                "value" : "$item"
+                                "value" : "course_data.semesterId"
                               },
                               "disabled" : {
                                 "type" : "constant",
@@ -695,13 +717,77 @@
                               },
                               "displayedKey" : {
                                 "type" : "constant",
-                                "value" : "modName"
+                                "value" : "semester"
                               },
                               "returnedKey" : {
-                                "type" : "constant"
+                                "type" : "constant",
+                                "value" : "semester"
                               }
                             },
                             "reference" : "5794f0b1-e3cf-47cc-8687-450ba05e2a81",
+                            "hasValidationError" : false,
+                            "id" : "pbSelect"
+                          },
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 6
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "disabled" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "required" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Module"
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 4
+                              },
+                              "placeholder" : {
+                                "type" : "interpolation",
+                                "value" : "Select the module"
+                              },
+                              "availableValues" : {
+                                "type" : "expression",
+                                "value" : "moduleData"
+                              },
+                              "displayedKey" : {
+                                "type" : "constant",
+                                "value" : "modName"
+                              },
+                              "returnedKey" : {
+                                "type" : "constant",
+                                "value" : "modName"
+                              },
+                              "value" : {
+                                "type" : "variable",
+                                "value" : "course_data.modId"
+                              }
+                            },
+                            "reference" : "c751657b-dac6-4a6d-bfaf-a257d07c895b",
                             "hasValidationError" : false,
                             "id" : "pbSelect"
                           }
@@ -713,23 +799,31 @@
                               "xs" : 12
                             },
                             "propertyValues" : {
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
                               "cssClasses" : {
                                 "type" : "constant",
                                 "value" : ""
                               },
-                              "widgetId" : {
+                              "hidden" : {
                                 "type" : "constant",
-                                "value" : "pbInput"
+                                "value" : false
                               },
-                              "labelWidth" : {
+                              "required" : {
                                 "type" : "constant",
-                                "value" : 1
+                                "value" : false
+                              },
+                              "minLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "maxLength" : {
+                                "type" : "constant",
+                                "value" : ""
                               },
                               "readOnly" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "labelHidden" : {
                                 "type" : "constant",
                                 "value" : false
                               },
@@ -737,115 +831,37 @@
                                 "type" : "interpolation",
                                 "value" : "Mod Name"
                               },
-                              "type" : {
-                                "type" : "constant",
-                                "value" : "text"
-                              },
-                              "required" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
                               "labelPosition" : {
                                 "type" : "constant",
                                 "value" : "top"
-                              },
-                              "placeholder" : {
-                                "type" : "constant"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "class" : {
-                                "type" : "constant",
-                                "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.InputWidget"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              },
-                              "value" : {
-                                "type" : "variable",
-                                "value" : "$item.modName"
-                              }
-                            },
-                            "reference" : "13ffa6dd-a5e3-4326-933a-6b73b31f3ee8",
-                            "hasValidationError" : false,
-                            "id" : "pbInput"
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "xs" : 12
-                            },
-                            "propertyValues" : {
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "widgetId" : {
-                                "type" : "constant",
-                                "value" : "pbInput"
                               },
                               "labelWidth" : {
                                 "type" : "constant",
                                 "value" : 1
                               },
-                              "readOnly" : {
-                                "type" : "constant",
-                                "value" : false
+                              "placeholder" : {
+                                "type" : "constant"
                               },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Semester"
+                              "value" : {
+                                "type" : "variable",
+                                "value" : "$course_data.modId"
                               },
                               "type" : {
                                 "type" : "constant",
                                 "value" : "text"
                               },
-                              "required" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "labelPosition" : {
-                                "type" : "constant",
-                                "value" : "top"
-                              },
-                              "placeholder" : {
+                              "min" : {
                                 "type" : "constant"
                               },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
+                              "max" : {
+                                "type" : "constant"
                               },
-                              "class" : {
+                              "step" : {
                                 "type" : "constant",
-                                "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.InputWidget"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              },
-                              "value" : {
-                                "type" : "variable",
-                                "value" : "$item.semester"
+                                "value" : 1
                               }
                             },
-                            "reference" : "2a94476c-3a75-4225-8fce-e18059988a21",
+                            "reference" : "bb4907dd-842b-416c-90a6-e3baae08218e",
                             "hasValidationError" : false,
                             "id" : "pbInput"
                           }
@@ -925,6 +941,30 @@
                               "dimension" : {
                                 "type" : "constant",
                                 "value" : 12
+                              },
+                              "assign" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "url" : {
+                                "type" : "interpolation"
+                              },
+                              "responseStatusCode" : {
+                                "type" : "variable"
+                              },
+                              "dataFromSuccess" : {
+                                "type" : "variable"
+                              },
+                              "closeOnSuccess" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "dataFromError" : {
+                                "type" : "variable"
+                              },
+                              "modalId" : {
+                                "type" : "constant",
+                                "value" : ""
                               }
                             },
                             "reference" : "49ff06ae-b537-4df2-aebe-67dd8496f52c",
@@ -1255,6 +1295,20 @@
       "type" : "urlparameter",
       "value" : [
         "id"
+      ],
+      "exposed" : false
+    },
+    "course_data" : {
+      "type" : "json",
+      "value" : [
+        "{\"semesterId\":null,\"modId\":null}"
+      ],
+      "exposed" : false
+    },
+    "moduleData" : {
+      "type" : "url",
+      "value" : [
+        "../API/bdm/businessData/com.company.model.CourseModule?q=findBySemester&p=0&c=10&f=semester={{course_data.semesterId}}"
       ],
       "exposed" : false
     }
