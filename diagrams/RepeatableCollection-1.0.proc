@@ -46,7 +46,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_4DIwzqCNEeqyxIzfkOLp6g" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_4DIwz6CNEeqyxIzfkOLp6g" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_ly-TUKvWEeqqruszqWSmfw">
-            <targetForm xmi:type="expression:Expression" xmi:id="_-gqmMKwEEeqXtYnBf8WYaQ" name="newForm6" content="97314557-4967-4166-b1ec-88eacd514779" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_-gqmMKwEEeqXtYnBf8WYaQ" name="newForm7" content="b3d42db5-b8ff-48f6-b7a7-6510f6a500fd" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_ly9sSKvWEeqqruszqWSmfw">
             <inputs xmi:type="process:ContractInput" xmi:id="_ygNsEKwEEeqXtYnBf8WYaQ" name="applicationInput" type="COMPLEX" dataReference="application" createMode="false">

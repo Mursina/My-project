@@ -29,15 +29,6 @@
             <queries/>
             <indexes/>
         </businessObject>
-        <businessObject qualifiedName="com.company.model.Course">
-            <fields>
-                <field type="STRING" length="255" name="moduleName" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="moduleId" nullable="true" collection="false"/>
-            </fields>
-            <uniqueConstraints/>
-            <queries/>
-            <indexes/>
-        </businessObject>
         <businessObject qualifiedName="com.company.model.CourseModule">
             <fields>
                 <field type="STRING" length="255" name="modName" nullable="true" collection="false"/>
