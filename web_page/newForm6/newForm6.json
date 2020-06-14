@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "newForm6",
   "name" : "newForm6",
-  "lastUpdate" : 1591964549313,
+  "lastUpdate" : 1592100499619,
   "rows" : [
     [
       {
@@ -780,11 +780,11 @@
                               },
                               "returnedKey" : {
                                 "type" : "constant",
-                                "value" : "modName"
+                                "value" : ""
                               },
                               "value" : {
                                 "type" : "variable",
-                                "value" : "course_data.modId"
+                                "value" : "$item"
                               }
                             },
                             "reference" : "c751657b-dac6-4a6d-bfaf-a257d07c895b",
@@ -844,7 +844,7 @@
                               },
                               "value" : {
                                 "type" : "variable",
-                                "value" : "$course_data.modId"
+                                "value" : "$item.modName"
                               },
                               "type" : {
                                 "type" : "constant",
@@ -1049,6 +1049,30 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "assign" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "url" : {
+                          "type" : "interpolation"
+                        },
+                        "responseStatusCode" : {
+                          "type" : "variable"
+                        },
+                        "dataFromSuccess" : {
+                          "type" : "variable"
+                        },
+                        "closeOnSuccess" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "dataFromError" : {
+                          "type" : "variable"
+                        },
+                        "modalId" : {
+                          "type" : "constant",
+                          "value" : ""
                         }
                       },
                       "reference" : "eb25ebdc-865e-4cc3-b79f-beccb9f8dcfd",
