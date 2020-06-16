@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "NewApplicantForm",
   "name" : "NewApplicantForm",
-  "lastUpdate" : 1590171396086,
+  "lastUpdate" : 1592198765040,
   "rows" : [
     [
       {
@@ -269,7 +269,7 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "xs" : 6
+                        "xs" : 3
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -318,11 +318,11 @@
                         },
                         "returnedKey" : {
                           "type" : "constant",
-                          "value" : "Batch"
+                          "value" : ""
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "pageData.batchId"
+                          "value" : "$item"
                         }
                       },
                       "reference" : "0a825606-595f-4863-8194-ec1bca3b9aeb",
@@ -332,7 +332,54 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "xs" : 6
+                        "xs" : 3
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Default label"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{$item}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "f10c9d29-843e-46c2-8937-b4b62132953e",
+                      "hasValidationError" : false,
+                      "id" : "pbText"
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 3
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -395,7 +442,7 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "xs" : 6
+                        "xs" : 3
                       },
                       "propertyValues" : {
                         "cssClasses" : {

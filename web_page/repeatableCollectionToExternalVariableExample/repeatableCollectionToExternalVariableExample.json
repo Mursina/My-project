@@ -1,8 +1,8 @@
 {
   "designerVersion" : "1.10.54",
-  "id" : "newForm6",
-  "name" : "newForm6",
-  "lastUpdate" : 1592100499619,
+  "id" : "repeatableCollectionToExternalVariableExample",
+  "name" : "repeatableCollectionToExternalVariableExample",
+  "lastUpdate" : 1592274095520,
   "rows" : [
     [
       {
@@ -665,7 +665,7 @@
                               },
                               "availableValues" : {
                                 "type" : "expression",
-                                "value" : "courseModule_query"
+                                "value" : "semesterQuery"
                               },
                               "labelWidth" : {
                                 "type" : "constant",
@@ -709,7 +709,7 @@
                               },
                               "value" : {
                                 "type" : "variable",
-                                "value" : "course_data.semesterId"
+                                "value" : "curSem[$index].semester"
                               },
                               "disabled" : {
                                 "type" : "constant",
@@ -772,7 +772,7 @@
                               },
                               "availableValues" : {
                                 "type" : "expression",
-                                "value" : "moduleData"
+                                "value" : "courseModule_query"
                               },
                               "displayedKey" : {
                                 "type" : "constant",
@@ -780,11 +780,11 @@
                               },
                               "returnedKey" : {
                                 "type" : "constant",
-                                "value" : ""
+                                "value" : "modName"
                               },
                               "value" : {
                                 "type" : "variable",
-                                "value" : "$item"
+                                "value" : ""
                               }
                             },
                             "reference" : "c751657b-dac6-4a6d-bfaf-a257d07c895b",
@@ -1188,8 +1188,8 @@
                     "value" : true
                   },
                   "hidden" : {
-                    "type" : "expression",
-                    "value" : "!formOutput._submitError.message"
+                    "type" : "constant",
+                    "value" : false
                   },
                   "cssClasses" : {
                     "type" : "constant",
@@ -1208,7 +1208,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "<strong>Debug message</strong>\n<br/>\n{{formOutput._submitError.message}}\n{{submit_errors_list}}"
+                    "value" : "<strong>Debug message</strong>\n<br/>\n{{formOutput._submitError.message}}\n{{submit_errors_list}}\nQuery resultsults:</br>\n{{modulesInAsemesterQuery}}\ncurSem:</br>\n{{curSem}}"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -1221,6 +1221,14 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
                   }
                 },
                 "reference" : "3286805e-7ef2-4817-a69a-f6e2840db6ca",
@@ -1333,6 +1341,27 @@
       "type" : "url",
       "value" : [
         "../API/bdm/businessData/com.company.model.CourseModule?q=findBySemester&p=0&c=10&f=semester={{course_data.semesterId}}"
+      ],
+      "exposed" : false
+    },
+    "curSem" : {
+      "type" : "json",
+      "value" : [
+        "[{\"semester\":\"val1\"}, {\"semester\":\"val2\"}]"
+      ],
+      "exposed" : false
+    },
+    "semesterQuery" : {
+      "type" : "url",
+      "value" : [
+        "../API/bdm/businessData/com.company.model.Semester?q=find&p=0&c=99"
+      ],
+      "exposed" : false
+    },
+    "modulesInAsemesterQuery" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/user?p=0&c=10&f=manager_id=3"
       ],
       "exposed" : false
     }
