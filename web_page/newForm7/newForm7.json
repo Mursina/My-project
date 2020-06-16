@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "newForm7",
   "name" : "newForm7",
-  "lastUpdate" : 1592217032221,
+  "lastUpdate" : 1592305035580,
   "rows" : [
     [
       {
@@ -641,53 +641,6 @@
                               },
                               "text" : {
                                 "type" : "interpolation",
-                                "value" : "$item:{{$item}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              }
-                            },
-                            "reference" : "7421d7bf-3044-4e84-9471-4b02bb6a0ae6",
-                            "hasValidationError" : false,
-                            "id" : "pbText"
-                          },
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "xs" : 12
-                            },
-                            "propertyValues" : {
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Default label"
-                              },
-                              "labelPosition" : {
-                                "type" : "constant",
-                                "value" : "top"
-                              },
-                              "labelWidth" : {
-                                "type" : "constant",
-                                "value" : 4
-                              },
-                              "allowHTML" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "text" : {
-                                "type" : "interpolation",
                                 "value" : "item_var: {{item_var}}"
                               },
                               "alignment" : {
@@ -702,7 +655,7 @@
                           {
                             "type" : "component",
                             "dimension" : {
-                              "xs" : 4
+                              "xs" : 6
                             },
                             "propertyValues" : {
                               "hidden" : {
@@ -719,7 +672,7 @@
                               },
                               "availableValues" : {
                                 "type" : "expression",
-                                "value" : "courseModule_query"
+                                "value" : "semesterQuery"
                               },
                               "labelWidth" : {
                                 "type" : "constant",
@@ -778,6 +731,67 @@
                               }
                             },
                             "reference" : "18c2c8ce-d91c-4234-a6b4-680226c2a337",
+                            "hasValidationError" : false,
+                            "id" : "pbSelect"
+                          },
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 6
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "disabled" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "required" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Select"
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 4
+                              },
+                              "placeholder" : {
+                                "type" : "interpolation",
+                                "value" : "Select an option"
+                              },
+                              "availableValues" : {
+                                "type" : "expression",
+                                "value" : "courseModule_query"
+                              },
+                              "displayedKey" : {
+                                "type" : "constant"
+                              },
+                              "returnedKey" : {
+                                "type" : "constant"
+                              },
+                              "value" : {
+                                "type" : "variable",
+                                "value" : ""
+                              }
+                            },
+                            "reference" : "ce0873ab-99df-40df-8f4a-727b124ecb13",
                             "hasValidationError" : false,
                             "id" : "pbSelect"
                           }
@@ -1251,6 +1265,14 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
                   }
                 },
                 "reference" : "d065ce33-f8cf-4172-9e6f-8e677d8ec567",
@@ -1353,9 +1375,16 @@
       "exposed" : false
     },
     "item_var" : {
-      "type" : "constant",
+      "type" : "expression",
       "value" : [
-        "$item"
+        "return $data.courseModule_query;"
+      ],
+      "exposed" : false
+    },
+    "semesterQuery" : {
+      "type" : "url",
+      "value" : [
+        "../API/bdm/businessData/com.company.model.Semester?q=find&p=0&c=99"
       ],
       "exposed" : false
     }

@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "repeatableCollectionToExternalVariableExample",
   "name" : "repeatableCollectionToExternalVariableExample",
-  "lastUpdate" : 1592274095520,
+  "lastUpdate" : 1592304634099,
   "rows" : [
     [
       {
@@ -648,6 +648,100 @@
                           {
                             "type" : "component",
                             "dimension" : {
+                              "xs" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Default label"
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 4
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "modulesInAsemesterQuery:{{modulesInAsemesterQuery}}"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              }
+                            },
+                            "reference" : "c0523d2d-60eb-4630-879f-ff680c65140e",
+                            "hasValidationError" : false,
+                            "id" : "pbText"
+                          },
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Default label"
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 4
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "courses:{{courses}}"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              }
+                            },
+                            "reference" : "c7569940-eade-473d-b80b-c6241c9e3dca",
+                            "hasValidationError" : false,
+                            "id" : "pbText"
+                          },
+                          {
+                            "type" : "component",
+                            "dimension" : {
                               "xs" : 6
                             },
                             "propertyValues" : {
@@ -731,7 +825,7 @@
                           {
                             "type" : "component",
                             "dimension" : {
-                              "xs" : 6
+                              "xs" : 3
                             },
                             "propertyValues" : {
                               "cssClasses" : {
@@ -772,7 +866,7 @@
                               },
                               "availableValues" : {
                                 "type" : "expression",
-                                "value" : "courseModule_query"
+                                "value" : "modulesInAsemesterQuery"
                               },
                               "displayedKey" : {
                                 "type" : "constant",
@@ -780,7 +874,7 @@
                               },
                               "returnedKey" : {
                                 "type" : "constant",
-                                "value" : "modName"
+                                "value" : "curSem[$index].semester"
                               },
                               "value" : {
                                 "type" : "variable",
@@ -1361,7 +1455,14 @@
     "modulesInAsemesterQuery" : {
       "type" : "url",
       "value" : [
-        "../API/identity/user?p=0&c=10&f=manager_id=3"
+        "../API/bdm/businessData/com.company.model.CourseModule?q=find&p=0&c=100"
+      ],
+      "exposed" : false
+    },
+    "courses" : {
+      "type" : "url",
+      "value" : [
+        "../API/bdm/businessData/com.company.model.CourseModule?q=find&p=0&c=99"
       ],
       "exposed" : false
     }
