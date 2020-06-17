@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "repeatableCollectionToExternalVariableExample",
   "name" : "repeatableCollectionToExternalVariableExample",
-  "lastUpdate" : 1592304634099,
+  "lastUpdate" : 1592421873968,
   "rows" : [
     [
       {
@@ -603,7 +603,7 @@
                       "propertyValues" : {
                         "repeatedCollection" : {
                           "type" : "variable",
-                          "value" : "application_Courses"
+                          "value" : "curSem"
                         },
                         "labelHidden" : {
                           "type" : "constant",
@@ -681,68 +681,21 @@
                               },
                               "text" : {
                                 "type" : "interpolation",
-                                "value" : "modulesInAsemesterQuery:{{modulesInAsemesterQuery}}"
+                                "value" : "{{moduleData}}"
                               },
                               "alignment" : {
                                 "type" : "constant",
                                 "value" : "left"
                               }
                             },
-                            "reference" : "c0523d2d-60eb-4630-879f-ff680c65140e",
+                            "reference" : "977551d6-4c93-49ea-bec5-7c09b6d155fa",
                             "hasValidationError" : false,
                             "id" : "pbText"
                           },
                           {
                             "type" : "component",
                             "dimension" : {
-                              "xs" : 12
-                            },
-                            "propertyValues" : {
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Default label"
-                              },
-                              "labelPosition" : {
-                                "type" : "constant",
-                                "value" : "top"
-                              },
-                              "labelWidth" : {
-                                "type" : "constant",
-                                "value" : 4
-                              },
-                              "allowHTML" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "courses:{{courses}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              }
-                            },
-                            "reference" : "c7569940-eade-473d-b80b-c6241c9e3dca",
-                            "hasValidationError" : false,
-                            "id" : "pbText"
-                          },
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "xs" : 6
+                              "xs" : 3
                             },
                             "propertyValues" : {
                               "hidden" : {
@@ -866,7 +819,7 @@
                               },
                               "availableValues" : {
                                 "type" : "expression",
-                                "value" : "modulesInAsemesterQuery"
+                                "value" : "(moduleData | filter: {persistenceId: 1})"
                               },
                               "displayedKey" : {
                                 "type" : "constant",
@@ -874,11 +827,11 @@
                               },
                               "returnedKey" : {
                                 "type" : "constant",
-                                "value" : "curSem[$index].semester"
+                                "value" : "persistenceId"
                               },
                               "value" : {
                                 "type" : "variable",
-                                "value" : ""
+                                "value" : "curSem[$index].modName"
                               }
                             },
                             "reference" : "c751657b-dac6-4a6d-bfaf-a257d07c895b",
@@ -1302,7 +1255,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "<strong>Debug message</strong>\n<br/>\n{{formOutput._submitError.message}}\n{{submit_errors_list}}\nQuery resultsults:</br>\n{{modulesInAsemesterQuery}}\ncurSem:</br>\n{{curSem}}"
+                    "value" : "<strong>Debug message</strong>\n<br/>\n{{formOutput._submitError.message}}\n{{submit_errors_list}}\nmodulesInAsemesterQuery:</br>\n{{modulesInAsemesterQuery}}\ncurSem:</br>\n{{curSem}}</br>application_Courses:{{application_Courses}}</br>index:{{userSelectionIndex}}   </br>oldCurSem:{{oldCurSem}}"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -1434,14 +1387,14 @@
     "moduleData" : {
       "type" : "url",
       "value" : [
-        "../API/bdm/businessData/com.company.model.CourseModule?q=findBySemester&p=0&c=10&f=semester={{course_data.semesterId}}"
+        "../API/bdm/businessData/com.company.model.CourseModule?q=find&p=0&c=99"
       ],
       "exposed" : false
     },
     "curSem" : {
       "type" : "json",
       "value" : [
-        "[{\"semester\":\"val1\"}, {\"semester\":\"val2\"}]"
+        "[{\"semester\":null,\"modName\":null}]"
       ],
       "exposed" : false
     },
@@ -1455,7 +1408,7 @@
     "modulesInAsemesterQuery" : {
       "type" : "url",
       "value" : [
-        "../API/bdm/businessData/com.company.model.CourseModule?q=find&p=0&c=100"
+        "../API/bdm/businessData/com.company.model.CourseModule?q=findByModName&p=0&c=10&f=modName=CS53001: Computer Networks"
       ],
       "exposed" : false
     },
@@ -1463,6 +1416,62 @@
       "type" : "url",
       "value" : [
         "../API/bdm/businessData/com.company.model.CourseModule?q=find&p=0&c=99"
+      ],
+      "exposed" : false
+    },
+    "courseModule" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.courseModule_ref.link}}"
+      ],
+      "exposed" : false
+    },
+    "course_semester" : {
+      "type" : "url",
+      "value" : [
+        "{{courseModule|lazyRef:'semester'}}"
+      ],
+      "exposed" : false
+    },
+    "semesterAndCourses" : {
+      "type" : "json",
+      "value" : [
+        "[",
+        "    {",
+        "      \"semester\":\"Semester 1\",",
+        "      \"courses\": [\"course 1\",\"cosure 2\"]",
+        "    },",
+        "     {",
+        "      \"semester\":\"Semester 2\",",
+        "     \"courses\": [\"course 1\",\"cosure 2\"]",
+        "    },",
+        "    {",
+        "      \"semester\":\"Semester 3\",",
+        "      \"courses\": [\"course 1\",\"cosure 2\"]",
+        "    }",
+        "]"
+      ],
+      "exposed" : false
+    },
+    "oldCurSem" : {
+      "type" : "json",
+      "value" : [
+        "[{\"semester\":\"val1\"}]"
+      ],
+      "exposed" : false
+    },
+    "userSelectionIndex" : {
+      "type" : "expression",
+      "value" : [
+        "$data.a=$data.a+\"2\";",
+        "console.log(\"jjjjj  \"+$data.a);"
+      ],
+      "exposed" : false
+    },
+    "a" : {
+      "type" : "constant",
+      "value" : [
+        "1"
       ],
       "exposed" : false
     }

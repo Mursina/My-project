@@ -3,7 +3,7 @@
   "previousDesignerVersion" : "1.5.36",
   "id" : "25df9d20-67b4-4c4c-a527-f5b2c69d2d5d",
   "name" : "TestMultiList",
-  "lastUpdate" : 1590132787078,
+  "lastUpdate" : 1592422289211,
   "rows" : [
     [
       {
@@ -240,6 +240,55 @@
               "hasValidationError" : false,
               "id" : "pbButton"
             }
+          ],
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "available values: {{(availableModels | filter: {brandId: myCollection[$index].carId})}}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "label" : {
+                  "type" : "interpolation",
+                  "value" : ""
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
+                }
+              },
+              "reference" : "93ef84fb-7f66-44be-ba26-d7f52e843741",
+              "hasValidationError" : false,
+              "id" : "pbText"
+            }
           ]
         ]
       }
@@ -259,25 +308,13 @@
             "type" : "constant",
             "value" : false
           },
-          "text" : {
-            "type" : "interpolation",
-            "value" : "availableCars: {{availableCars}}"
-          },
-          "alignment" : {
-            "type" : "constant",
-            "value" : "left"
-          },
-          "allowHTML" : {
-            "type" : "constant",
-            "value" : true
-          },
           "labelHidden" : {
             "type" : "constant",
             "value" : true
           },
           "label" : {
             "type" : "interpolation",
-            "value" : ""
+            "value" : "Default label"
           },
           "labelPosition" : {
             "type" : "constant",
@@ -286,9 +323,21 @@
           "labelWidth" : {
             "type" : "constant",
             "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "availableCars:{{availableCars}}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
           }
         },
-        "reference" : "93ef84fb-7f66-44be-ba26-d7f52e843741",
+        "reference" : "ef08c818-7725-4205-ba08-dae6561c1bff",
         "hasValidationError" : false,
         "id" : "pbText"
       }
