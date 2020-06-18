@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "repeatableCollectionToExternalVariableExample",
   "name" : "repeatableCollectionToExternalVariableExample",
-  "lastUpdate" : 1592421873968,
+  "lastUpdate" : 1592451382154,
   "rows" : [
     [
       {
@@ -648,53 +648,6 @@
                           {
                             "type" : "component",
                             "dimension" : {
-                              "xs" : 12
-                            },
-                            "propertyValues" : {
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Default label"
-                              },
-                              "labelPosition" : {
-                                "type" : "constant",
-                                "value" : "top"
-                              },
-                              "labelWidth" : {
-                                "type" : "constant",
-                                "value" : 4
-                              },
-                              "allowHTML" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "{{moduleData}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              }
-                            },
-                            "reference" : "977551d6-4c93-49ea-bec5-7c09b6d155fa",
-                            "hasValidationError" : false,
-                            "id" : "pbText"
-                          },
-                          {
-                            "type" : "component",
-                            "dimension" : {
                               "xs" : 3
                             },
                             "propertyValues" : {
@@ -819,7 +772,7 @@
                               },
                               "availableValues" : {
                                 "type" : "expression",
-                                "value" : "(moduleData | filter: {persistenceId: 1})"
+                                "value" : "(moduleData | filter: {semester: curSem[$index].semester})"
                               },
                               "displayedKey" : {
                                 "type" : "constant",
@@ -827,7 +780,7 @@
                               },
                               "returnedKey" : {
                                 "type" : "constant",
-                                "value" : "persistenceId"
+                                "value" : "modName"
                               },
                               "value" : {
                                 "type" : "variable",
@@ -1075,7 +1028,7 @@
                         },
                         "collectionToModify" : {
                           "type" : "variable",
-                          "value" : "application_Courses"
+                          "value" : "curSem"
                         },
                         "valueToAdd" : {
                           "type" : "expression",
@@ -1457,14 +1410,6 @@
       "type" : "json",
       "value" : [
         "[{\"semester\":\"val1\"}]"
-      ],
-      "exposed" : false
-    },
-    "userSelectionIndex" : {
-      "type" : "expression",
-      "value" : [
-        "$data.a=$data.a+\"2\";",
-        "console.log(\"jjjjj  \"+$data.a);"
       ],
       "exposed" : false
     },
