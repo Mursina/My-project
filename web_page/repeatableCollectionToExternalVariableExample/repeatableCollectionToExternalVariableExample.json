@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "repeatableCollectionToExternalVariableExample",
   "name" : "repeatableCollectionToExternalVariableExample",
-  "lastUpdate" : 1592451382154,
+  "lastUpdate" : 1592621491759,
   "rows" : [
     [
       {
@@ -359,189 +359,6 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "xs" : 6
-                      },
-                      "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!application.reguistrationNumber"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "widgetId" : {
-                          "type" : "constant",
-                          "value" : "pbText"
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Reguistration Number"
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{application.reguistrationNumber}}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "class" : {
-                          "type" : "constant",
-                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        }
-                      },
-                      "reference" : "ba620321-dcb7-4bd3-8820-a9b99003c48f",
-                      "hasValidationError" : false,
-                      "id" : "pbText"
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12
-                      },
-                      "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!application.permenantAddress"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "widgetId" : {
-                          "type" : "constant",
-                          "value" : "pbText"
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Permenant Address"
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{application.permenantAddress}}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "class" : {
-                          "type" : "constant",
-                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        }
-                      },
-                      "reference" : "f4535e58-fcc4-44d6-9ec2-3a4ec4960d39",
-                      "hasValidationError" : false,
-                      "id" : "pbText"
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 4
-                      },
-                      "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!application.mobileNumber"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "widgetId" : {
-                          "type" : "constant",
-                          "value" : "pbText"
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Mobile Number"
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{application.mobileNumber}}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "class" : {
-                          "type" : "constant",
-                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
-                        }
-                      },
-                      "reference" : "bbf60ba5-4591-4ffd-b874-4631e6e56126",
-                      "hasValidationError" : false,
-                      "id" : "pbText"
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
                         "xs" : 12
                       },
                       "propertyValues" : {
@@ -780,11 +597,11 @@
                               },
                               "returnedKey" : {
                                 "type" : "constant",
-                                "value" : "modName"
+                                "value" : "persistenceId"
                               },
                               "value" : {
                                 "type" : "variable",
-                                "value" : "curSem[$index].modName"
+                                "value" : "selectedCourses[$index].courseModPid"
                               }
                             },
                             "reference" : "c751657b-dac6-4a6d-bfaf-a257d07c895b",
@@ -1161,6 +978,29 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "228b8032-d3ed-4f5f-8df6-902f6e62e408",
@@ -1208,7 +1048,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "<strong>Debug message</strong>\n<br/>\n{{formOutput._submitError.message}}\n{{submit_errors_list}}\nmodulesInAsemesterQuery:</br>\n{{modulesInAsemesterQuery}}\ncurSem:</br>\n{{curSem}}</br>application_Courses:{{application_Courses}}</br>index:{{userSelectionIndex}}   </br>oldCurSem:{{oldCurSem}}"
+                    "value" : "<strong>Debug message</strong>\n<br/>\n{{formOutput._submitError.message}}\n{{submit_errors_list}}</br>curSem: {{selectedCourses}}</br> appInput: {{formOutput}}"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -1291,17 +1131,15 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.application && $data.application_Courses ){",
-        "\t//attach lazy references variables to parent variables",
-        "\t$data.application.Courses = $data.application_Courses;",
+        "if($data.selectedCourses){",
+        "    //attach lazy references variables to parent variables",
+        "\t$data.application.Courses = $data.selectedCourses;",
         "\treturn {",
         "\t\t//map application variable to expected task contract input",
         "\t\tapplicationInput: {",
         "\t\t\tnameWithInitials: $data.application.nameWithInitials !== undefined ? $data.application.nameWithInitials : null,",
         "\t\t\tCourses: $data.application.Courses.map( it => ({",
-        "\t\t\t\tpersistenceId_string: it.persistenceId_string !== undefined ? it.persistenceId_string : null,",
-        "\t\t\t\tmodName: it.modName !== undefined ? it.modName : null,",
-        "\t\t\t\tsemester: it.semester !== undefined ? it.semester : null",
+        "\t\t\t\tpersistenceId_string:it.courseModPid !== undefined ? it.courseModPid : null,",
         "\t\t\t}))",
         "\t\t}",
         "\t}",
@@ -1330,13 +1168,6 @@
       ],
       "exposed" : false
     },
-    "course_data" : {
-      "type" : "json",
-      "value" : [
-        "{\"semesterId\":null,\"modId\":null}"
-      ],
-      "exposed" : false
-    },
     "moduleData" : {
       "type" : "url",
       "value" : [
@@ -1355,13 +1186,6 @@
       "type" : "url",
       "value" : [
         "../API/bdm/businessData/com.company.model.Semester?q=find&p=0&c=99"
-      ],
-      "exposed" : false
-    },
-    "modulesInAsemesterQuery" : {
-      "type" : "url",
-      "value" : [
-        "../API/bdm/businessData/com.company.model.CourseModule?q=findByModName&p=0&c=10&f=modName=CS53001: Computer Networks"
       ],
       "exposed" : false
     },
@@ -1406,17 +1230,10 @@
       ],
       "exposed" : false
     },
-    "oldCurSem" : {
+    "selectedCourses" : {
       "type" : "json",
       "value" : [
-        "[{\"semester\":\"val1\"}]"
-      ],
-      "exposed" : false
-    },
-    "a" : {
-      "type" : "constant",
-      "value" : [
-        "1"
+        "[{\"courseModPid\":null}]"
       ],
       "exposed" : false
     }

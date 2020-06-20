@@ -17,26 +17,26 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_4DIwyKCNEeqyxIzfkOLp6g" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_4DIwyaCNEeqyxIzfkOLp6g" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_4DIwyqCNEeqyxIzfkOLp6g" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_ygOTIawEEeqXtYnBf8WYaQ">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_ygOTIqwEEeqXtYnBf8WYaQ" name="application" content="application" type="TYPE_VARIABLE" returnType="com.company.model.Application">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ygOTI6wEEeqXtYnBf8WYaQ" name="application" dataType="_4DIw9KCNEeqyxIzfkOLp6g" className="com.company.model.Application"/>
+          <operations xmi:type="expression:Operation" xmi:id="_iClYYLFcEeqk9Mef4ITXLg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_iClYYbFcEeqk9Mef4ITXLg" name="application" content="application" type="TYPE_VARIABLE" returnType="com.company.model.Application">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_iClYYrFcEeqk9Mef4ITXLg" name="application" dataType="_4DIw9KCNEeqyxIzfkOLp6g" className="com.company.model.Application"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_ygOTJKwEEeqXtYnBf8WYaQ" name="applicationInput.nameWithInitials" content="applicationInput?.nameWithInitials" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_ygOTJawEEeqXtYnBf8WYaQ" name="applicationInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_iClYY7FcEeqk9Mef4ITXLg" name="applicationInput.nameWithInitials" content="applicationInput?.nameWithInitials" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_iClYZLFcEeqk9Mef4ITXLg" name="applicationInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_ygOTJqwEEeqXtYnBf8WYaQ" type="JAVA_METHOD" expression="setNameWithInitials">
+            <operator xmi:type="expression:Operator" xmi:id="_iClYZbFcEeqk9Mef4ITXLg" type="JAVA_METHOD" expression="setNameWithInitials">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_ygOTJ6wEEeqXtYnBf8WYaQ">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_ygOTKKwEEeqXtYnBf8WYaQ" name="application" content="application" type="TYPE_VARIABLE" returnType="com.company.model.Application">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ygOTKawEEeqXtYnBf8WYaQ" name="application" dataType="_4DIw9KCNEeqyxIzfkOLp6g" className="com.company.model.Application"/>
+          <operations xmi:type="expression:Operation" xmi:id="_iClYZrFcEeqk9Mef4ITXLg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_iClYZ7FcEeqk9Mef4ITXLg" name="application" content="application" type="TYPE_VARIABLE" returnType="com.company.model.Application">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_iClYaLFcEeqk9Mef4ITXLg" name="application" dataType="_4DIw9KCNEeqyxIzfkOLp6g" className="com.company.model.Application"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_ygOTKqwEEeqXtYnBf8WYaQ" name="applicationInput.Courses" content="def courseModuleList = []&#xA;//For each item collected in multiple input&#xA;applicationInput?.Courses.each{&#xA;&#x9;//Add CourseModule instance&#xA;&#x9;courseModuleList.add({ currentCourseModuleInput ->&#xA;&#x9;&#x9;def courseModuleVar = courseModuleDAO.findByPersistenceId(currentCourseModuleInput.persistenceId_string?.trim() ? currentCourseModuleInput.persistenceId_string.toLong() : null)&#xA;&#x9;&#x9;if(!courseModuleVar) {&#xA;&#x9;&#x9;&#x9;throw new IllegalArgumentException(&quot;The aggregated reference of type `CourseModule` with the persistence id &quot; + currentCourseModuleInput.persistenceId_string?.trim() ? currentCourseModuleInput.persistenceId_string.toLong() : null + &quot; has not been found.&quot;)&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;courseModuleVar.modName = currentCourseModuleInput.modName&#xA;&#x9;&#x9;courseModuleVar.semester = currentCourseModuleInput.semester&#xA;&#x9;&#x9;return courseModuleVar&#xA;&#x9;}(it))&#xA;}&#xA;return courseModuleList" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_ygOTK6wEEeqXtYnBf8WYaQ" name="applicationInput" type="COMPLEX" createMode="false"/>
-              <referencedElements xmi:type="expression:Expression" xmi:id="_ygOTLKwEEeqXtYnBf8WYaQ" name="courseModuleDAO" content="courseModuleDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.CourseModuleDAO" returnTypeFixed="true"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_iClYabFcEeqk9Mef4ITXLg" name="applicationInput.Courses" content="def courseModuleList = []&#xA;//For each item collected in multiple input&#xA;applicationInput?.Courses.each{&#xA;&#x9;//Add CourseModule instance&#xA;&#x9;courseModuleList.add({ currentCourseModuleInput ->&#xA;&#x9;&#x9;def courseModuleVar = courseModuleDAO.findByPersistenceId(currentCourseModuleInput.persistenceId_string?.trim() ? currentCourseModuleInput.persistenceId_string.toLong() : null)&#xA;&#x9;&#x9;if(!courseModuleVar) {&#xA;&#x9;&#x9;&#x9;throw new IllegalArgumentException(&quot;The aggregated reference of type `CourseModule` with the persistence id &quot; + currentCourseModuleInput.persistenceId_string?.trim() ? currentCourseModuleInput.persistenceId_string.toLong() : null + &quot; has not been found.&quot;)&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;return courseModuleVar&#xA;&#x9;}(it))&#xA;}&#xA;return courseModuleList" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_iClYarFcEeqk9Mef4ITXLg" name="applicationInput" type="COMPLEX" createMode="false"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_iClYa7FcEeqk9Mef4ITXLg" name="courseModuleDAO" content="courseModuleDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.CourseModuleDAO" returnTypeFixed="true"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_ygOTLawEEeqXtYnBf8WYaQ" type="JAVA_METHOD" expression="setCourses">
+            <operator xmi:type="expression:Operator" xmi:id="_iClYbLFcEeqk9Mef4ITXLg" type="JAVA_METHOD" expression="setCourses">
               <inputTypes>java.util.List</inputTypes>
             </operator>
           </operations>
@@ -46,29 +46,27 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_4DIwzqCNEeqyxIzfkOLp6g" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_4DIwz6CNEeqyxIzfkOLp6g" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_ly-TUKvWEeqqruszqWSmfw">
-            <targetForm xmi:type="expression:Expression" xmi:id="_-gqmMKwEEeqXtYnBf8WYaQ" name="newForm7" content="b3d42db5-b8ff-48f6-b7a7-6510f6a500fd" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_m2wbULIHEeqijIlLk7aYaw" name="newForm8" content="39e7411d-e233-4179-af59-138f9221a6da" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_ly9sSKvWEeqqruszqWSmfw">
-            <inputs xmi:type="process:ContractInput" xmi:id="_ygNsEKwEEeqXtYnBf8WYaQ" name="applicationInput" type="COMPLEX" dataReference="application" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_ygNsEawEEeqXtYnBf8WYaQ" name="nameWithInitials" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_ygNsEqwEEeqXtYnBf8WYaQ" name="Courses" type="COMPLEX" multiple="true" createMode="false">
-                <inputs xmi:type="process:ContractInput" xmi:id="_ygNsE6wEEeqXtYnBf8WYaQ" name="persistenceId_string" createMode="false"/>
-                <inputs xmi:type="process:ContractInput" xmi:id="_ygNsFKwEEeqXtYnBf8WYaQ" name="modName" createMode="false"/>
-                <inputs xmi:type="process:ContractInput" xmi:id="_ygNsFawEEeqXtYnBf8WYaQ" name="semester" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_iCeqsLFcEeqk9Mef4ITXLg" name="applicationInput" type="COMPLEX" dataReference="application" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_iCeqsbFcEeqk9Mef4ITXLg" name="nameWithInitials" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_iCeqsrFcEeqk9Mef4ITXLg" name="Courses" type="COMPLEX" multiple="true" createMode="false">
+                <inputs xmi:type="process:ContractInput" xmi:id="_iCeqs7FcEeqk9Mef4ITXLg" name="persistenceId_string" createMode="false"/>
               </inputs>
             </inputs>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_ygOTIKwEEeqXtYnBf8WYaQ" expression="!applicationInput?.Courses || applicationInput?.Courses?.persistenceId_string" errorMessage="CourseModule must reference an existing instance with a persistenceId for Application" name="aggregation_applicationInput_Courses">
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_iChuALFcEeqk9Mef4ITXLg" expression="!applicationInput?.Courses || applicationInput?.Courses?.persistenceId_string" errorMessage="CourseModule must reference an existing instance with a persistenceId for Application" name="aggregation_applicationInput_Courses">
               <inputNames>applicationInput</inputNames>
             </constraints>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_ly-TUqvWEeqqruszqWSmfw" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_rp2tsKwDEeqXtYnBf8WYaQ" name="application" dataType="_4DIw9KCNEeqyxIzfkOLp6g" className="com.company.model.Application">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_rp2tsawDEeqXtYnBf8WYaQ" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_DtjJELFbEeqk9Mef4ITXLg" name="application" dataType="_4DIw9KCNEeqyxIzfkOLp6g" className="com.company.model.Application">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_DtjJEbFbEeqk9Mef4ITXLg" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_4DIw1KCNEeqyxIzfkOLp6g">
-        <targetForm xmi:type="expression:Expression" xmi:id="_fy8CsKwGEeqXtYnBf8WYaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_JRGVULIYEeqijIlLk7aYaw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_4DIw1qCNEeqyxIzfkOLp6g">
         <targetForm xmi:type="expression:Expression" xmi:id="_4DIw16CNEeqyxIzfkOLp6g" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
