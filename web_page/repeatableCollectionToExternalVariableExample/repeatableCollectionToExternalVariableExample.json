@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "repeatableCollectionToExternalVariableExample",
   "name" : "repeatableCollectionToExternalVariableExample",
-  "lastUpdate" : 1592794981560,
+  "lastUpdate" : 1592845507024,
   "rows" : [
     [
       {
@@ -477,6 +477,53 @@
                           {
                             "type" : "component",
                             "dimension" : {
+                              "xs" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Default label"
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 4
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "{{$item}}"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              }
+                            },
+                            "reference" : "d53b98b7-172f-4fa2-aae4-c76f0af8616f",
+                            "hasValidationError" : false,
+                            "id" : "pbText"
+                          },
+                          {
+                            "type" : "component",
+                            "dimension" : {
                               "xs" : 3
                             },
                             "propertyValues" : {
@@ -623,7 +670,7 @@
                           {
                             "type" : "component",
                             "dimension" : {
-                              "xs" : 6
+                              "xs" : 3
                             },
                             "propertyValues" : {
                               "cssClasses" : {
