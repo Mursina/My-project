@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "repeatableCollectionToExternalVariableExample",
   "name" : "repeatableCollectionToExternalVariableExample",
-  "lastUpdate" : 1592621491759,
+  "lastUpdate" : 1592794981560,
   "rows" : [
     [
       {
@@ -120,6 +120,18 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : true
                 }
               },
               "reference" : "4f3884bb-9a69-4bd4-a044-95db0523da0f",
@@ -607,6 +619,53 @@
                             "reference" : "c751657b-dac6-4a6d-bfaf-a257d07c895b",
                             "hasValidationError" : false,
                             "id" : "pbSelect"
+                          },
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 6
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Default label"
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 4
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "{{curSem}}"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              }
+                            },
+                            "reference" : "84b4504c-260e-4b86-8ab2-9265a5456f26",
+                            "hasValidationError" : false,
+                            "id" : "pbText"
                           }
                         ],
                         [

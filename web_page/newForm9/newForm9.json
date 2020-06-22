@@ -1,8 +1,8 @@
 {
   "designerVersion" : "1.10.54",
-  "id" : "newForm7",
-  "name" : "newForm7",
-  "lastUpdate" : 1592305035580,
+  "id" : "newForm9",
+  "name" : "newForm9",
+  "lastUpdate" : 1592795224450,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "7beb2b0d-bbf3-4c88-a60f-f003333f57d2",
+        "reference" : "b02395cf-0b55-492e-b2b6-2df24c49dfb7",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -66,7 +66,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "9b333d68-3a48-4a73-bc58-e108a1253aa0",
+              "reference" : "380f8b85-c411-43d0-920e-58712ad8361f",
               "hasValidationError" : false,
               "id" : "pbTitle"
             }
@@ -122,7 +122,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "c5983f38-547e-4c77-8ae6-bfe917ba82e9",
+              "reference" : "a9abb5a2-8ea4-42d1-a752-2ee586fd5eee",
               "hasValidationError" : false,
               "id" : "pbText"
             }
@@ -136,8 +136,17 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
-        "reference" : "28e46fc1-aac7-4a0d-8bbc-8012b2043243",
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "f3b3df70-ba3e-4c3b-9156-4c4f78a4460b",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -146,7 +155,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "1884519c-f75c-49bb-ac7e-2cd20183bb9f",
+          "reference" : "f83550e7-1306-4cdb-a8b7-59cf7a6e5e27",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -201,7 +210,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "ffcb5e02-18ab-45f0-af92-2c0a441fceaa",
+                "reference" : "465c9aca-75d6-476e-836e-3d8e62090199",
                 "hasValidationError" : false,
                 "id" : "pbTitle"
               }
@@ -214,7 +223,8 @@
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
-                    "type" : "variable"
+                    "type" : "variable",
+                    "value" : ""
                   },
                   "labelHidden" : {
                     "type" : "constant",
@@ -251,7 +261,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "d6d45faa-817c-42a8-bd6f-6429104bd4ad",
+                "reference" : "2f69bf19-98b8-47d2-8b96-ddf87c9c23a8",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -322,7 +332,7 @@
                           "value" : "application.nameWithInitials"
                         }
                       },
-                      "reference" : "de2555d7-c0cd-49b3-9956-1bf1a737946b",
+                      "reference" : "2fa294fc-74c8-4966-ac46-bb5efef18956",
                       "hasValidationError" : false,
                       "id" : "pbInput"
                     }
@@ -379,7 +389,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "04bbeaa1-0845-44c3-946d-0a75ae419e63",
+                      "reference" : "5f42ce97-8caa-438f-8174-c0b0ca4c8c9e",
                       "hasValidationError" : false,
                       "id" : "pbText"
                     }
@@ -436,7 +446,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "a925783a-8b3c-4ae7-8fcc-6f8299ef476b",
+                      "reference" : "1fae6f0a-293a-48fa-b43c-0762f81e7c84",
                       "hasValidationError" : false,
                       "id" : "pbText"
                     }
@@ -491,9 +501,21 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
                         }
                       },
-                      "reference" : "5a387f9c-9a1d-4bf9-aaaf-d17ba3ea5e4c",
+                      "reference" : "6bfc5d0f-7abb-426b-8b25-f70c7dd6b396",
                       "hasValidationError" : false,
                       "id" : "pbText"
                     }
@@ -549,7 +571,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "03caafa0-7001-42d5-9590-8402a7439944",
+                      "reference" : "88d33ed0-9009-42be-a9b2-e655a3832ea9",
                       "hasValidationError" : false,
                       "id" : "pbTitle"
                     }
@@ -600,16 +622,14 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "d6a09001-f665-46fa-a24c-f94279a6e9d7",
+                      "reference" : "13fbb172-6e89-4977-836f-8e7f5e0b64f7",
                       "hasValidationError" : false,
                       "id" : "pbContainer",
                       "rows" : [
                         [
                           {
                             "type" : "component",
-                            "dimension" : {
-                              "xs" : 12
-                            },
+                            "dimension" : { },
                             "propertyValues" : {
                               "cssClasses" : {
                                 "type" : "constant",
@@ -641,21 +661,84 @@
                               },
                               "text" : {
                                 "type" : "interpolation",
-                                "value" : "item_var: {{item_var}}"
+                                "value" : "{{curSem}}"
                               },
                               "alignment" : {
                                 "type" : "constant",
                                 "value" : "left"
                               }
                             },
-                            "reference" : "79ee4111-47f0-4140-84b2-44c4f18025f0",
+                            "reference" : "09491c85-915f-4b0c-9755-d73040f4c563",
                             "hasValidationError" : false,
                             "id" : "pbText"
                           },
                           {
                             "type" : "component",
                             "dimension" : {
-                              "xs" : 6
+                              "xs" : 3
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "disabled" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "required" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Select"
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 4
+                              },
+                              "placeholder" : {
+                                "type" : "interpolation",
+                                "value" : "Select an option"
+                              },
+                              "availableValues" : {
+                                "type" : "expression",
+                                "value" : "semesterQuery"
+                              },
+                              "displayedKey" : {
+                                "type" : "constant",
+                                "value" : "semester"
+                              },
+                              "returnedKey" : {
+                                "type" : "constant",
+                                "value" : "semester"
+                              },
+                              "value" : {
+                                "type" : "variable",
+                                "value" : "curSem[$index].semester"
+                              }
+                            },
+                            "reference" : "f1c6f234-0c21-4f12-8be3-f92cb810b14a",
+                            "hasValidationError" : false,
+                            "id" : "pbSelect"
+                          },
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 9
                             },
                             "propertyValues" : {
                               "hidden" : {
@@ -672,7 +755,7 @@
                               },
                               "availableValues" : {
                                 "type" : "expression",
-                                "value" : "semesterQuery"
+                                "value" : "(moduleData | filter: {semester: curSem[$index].semester})"
                               },
                               "labelWidth" : {
                                 "type" : "constant",
@@ -724,238 +807,15 @@
                               },
                               "displayedKey" : {
                                 "type" : "constant",
-                                "value" : "semester"
+                                "value" : "modName"
                               },
                               "returnedKey" : {
                                 "type" : "constant"
                               }
                             },
-                            "reference" : "18c2c8ce-d91c-4234-a6b4-680226c2a337",
+                            "reference" : "9862c511-e40b-4002-91f4-b1eea9f61615",
                             "hasValidationError" : false,
                             "id" : "pbSelect"
-                          },
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "xs" : 6
-                            },
-                            "propertyValues" : {
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "disabled" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "required" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Select"
-                              },
-                              "labelPosition" : {
-                                "type" : "constant",
-                                "value" : "top"
-                              },
-                              "labelWidth" : {
-                                "type" : "constant",
-                                "value" : 4
-                              },
-                              "placeholder" : {
-                                "type" : "interpolation",
-                                "value" : "Select an option"
-                              },
-                              "availableValues" : {
-                                "type" : "expression",
-                                "value" : "courseModule_query"
-                              },
-                              "displayedKey" : {
-                                "type" : "constant"
-                              },
-                              "returnedKey" : {
-                                "type" : "constant"
-                              },
-                              "value" : {
-                                "type" : "variable",
-                                "value" : ""
-                              }
-                            },
-                            "reference" : "ce0873ab-99df-40df-8f4a-727b124ecb13",
-                            "hasValidationError" : false,
-                            "id" : "pbSelect"
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "xs" : 12
-                            },
-                            "propertyValues" : {
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "widgetId" : {
-                                "type" : "constant",
-                                "value" : "pbInput"
-                              },
-                              "labelWidth" : {
-                                "type" : "constant",
-                                "value" : 1
-                              },
-                              "readOnly" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Mod Name"
-                              },
-                              "type" : {
-                                "type" : "constant",
-                                "value" : "text"
-                              },
-                              "required" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "labelPosition" : {
-                                "type" : "constant",
-                                "value" : "top"
-                              },
-                              "placeholder" : {
-                                "type" : "constant"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "class" : {
-                                "type" : "constant",
-                                "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.InputWidget"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              },
-                              "value" : {
-                                "type" : "variable",
-                                "value" : "$item.modName"
-                              },
-                              "minLength" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "maxLength" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "min" : {
-                                "type" : "constant"
-                              },
-                              "max" : {
-                                "type" : "constant"
-                              },
-                              "step" : {
-                                "type" : "constant",
-                                "value" : 1
-                              }
-                            },
-                            "reference" : "a2462556-79f4-4ce4-8309-9c3568409fd4",
-                            "hasValidationError" : false,
-                            "id" : "pbInput"
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "xs" : 12
-                            },
-                            "propertyValues" : {
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "widgetId" : {
-                                "type" : "constant",
-                                "value" : "pbInput"
-                              },
-                              "labelWidth" : {
-                                "type" : "constant",
-                                "value" : 1
-                              },
-                              "readOnly" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Semester"
-                              },
-                              "type" : {
-                                "type" : "constant",
-                                "value" : "text"
-                              },
-                              "required" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "labelPosition" : {
-                                "type" : "constant",
-                                "value" : "top"
-                              },
-                              "placeholder" : {
-                                "type" : "constant"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "class" : {
-                                "type" : "constant",
-                                "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.InputWidget"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              },
-                              "value" : {
-                                "type" : "variable",
-                                "value" : "$item.semester"
-                              }
-                            },
-                            "reference" : "fe8c777c-d216-4302-ba57-4d168031bbb5",
-                            "hasValidationError" : false,
-                            "id" : "pbInput"
                           }
                         ],
                         [
@@ -1035,7 +895,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "533fe1cf-3303-4077-92b4-6287e4ce63e9",
+                            "reference" : "313b4a94-4a45-4a36-b73c-3a4b3858226e",
                             "hasValidationError" : false,
                             "id" : "pbButton"
                           }
@@ -1117,9 +977,33 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "assign" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "url" : {
+                          "type" : "interpolation"
+                        },
+                        "responseStatusCode" : {
+                          "type" : "variable"
+                        },
+                        "dataFromSuccess" : {
+                          "type" : "variable"
+                        },
+                        "closeOnSuccess" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "dataFromError" : {
+                          "type" : "variable"
+                        },
+                        "modalId" : {
+                          "type" : "constant",
+                          "value" : ""
                         }
                       },
-                      "reference" : "5c81bb51-147c-4b71-bf6a-2d7cb13740cb",
+                      "reference" : "9da82feb-6a93-4688-907a-96dee0f82159",
                       "hasValidationError" : false,
                       "id" : "pbButton"
                     }
@@ -1207,7 +1091,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "78f71a34-19b2-479e-929c-0027a2a4c773",
+                "reference" : "73412c65-1985-47f9-a500-c49911f0961e",
                 "hasValidationError" : false,
                 "id" : "pbButton"
               }
@@ -1265,17 +1149,9 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
                   }
                 },
-                "reference" : "d065ce33-f8cf-4172-9e6f-8e677d8ec567",
+                "reference" : "dabfa2c4-6b58-4197-868e-d9c482219ee5",
                 "hasValidationError" : false,
                 "id" : "pbText"
               }
@@ -1287,7 +1163,7 @@
   ],
   "assets" : [
     {
-      "id" : "b759f8b7-2fda-4bea-a07f-5a17d075fe0e",
+      "id" : "218b53e4-0aa0-4563-a598-0557e8211f0e",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
@@ -1343,9 +1219,7 @@
         "\t\tapplicationInput: {",
         "\t\t\tnameWithInitials: $data.application.nameWithInitials !== undefined ? $data.application.nameWithInitials : null,",
         "\t\t\tCourses: $data.application.Courses.map( it => ({",
-        "\t\t\t\tpersistenceId_string: it.persistenceId_string !== undefined ? it.persistenceId_string : null,",
-        "\t\t\t\tmodName: it.modName !== undefined ? it.modName : null,",
-        "\t\t\t\tsemester: it.semester !== undefined ? it.semester : null",
+        "\t\t\t\tpersistenceId_string: it.persistenceId_string !== undefined ? it.persistenceId_string : null",
         "\t\t\t}))",
         "\t\t}",
         "\t}",
@@ -1374,23 +1248,30 @@
       ],
       "exposed" : false
     },
-    "item_var" : {
-      "type" : "expression",
-      "value" : [
-        "return $data.courseModule_query;"
-      ],
-      "exposed" : false
-    },
     "semesterQuery" : {
       "type" : "url",
       "value" : [
         "../API/bdm/businessData/com.company.model.Semester?q=find&p=0&c=99"
       ],
       "exposed" : false
+    },
+    "curSem" : {
+      "type" : "json",
+      "value" : [
+        "[{\"semester\":null}]"
+      ],
+      "exposed" : false
+    },
+    "moduleData" : {
+      "type" : "url",
+      "value" : [
+        "../API/bdm/businessData/com.company.model.CourseModule?q=find&p=0&c=99"
+      ],
+      "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "b3d42db5-b8ff-48f6-b7a7-6510f6a500fd",
+  "uuid" : "e62c3d48-f702-495f-8b76-424c20478618",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
