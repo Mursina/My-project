@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_ozEEIGcHEeeXUPrCIbH-9A" name="DemoActorMappingSingleUserDiagram" version="2.0" author="antoine" bonitaVersion="7.10.4" bonitaModelVersion="7.10.0-001" configId="ACED0005740010372E31302E302D303031372E31302E34">
-    <elements xmi:type="process:Pool" xmi:id="_ozEEIWcHEeeXUPrCIbH-9A" name="Course registration" version="2.0">
+  <process:MainProcess xmi:id="_ozEEIGcHEeeXUPrCIbH-9A" name="DemoActorMappingSingleUserDiagram" author="antoine" bonitaVersion="7.10.4" bonitaModelVersion="7.10.0-001" configId="ACED0005740010372E31302E302D303031372E31302E34">
+    <elements xmi:type="process:Pool" xmi:id="_ozEEIWcHEeeXUPrCIbH-9A" name="Course registration">
       <elements xmi:type="process:Lane" xmi:id="_ozEEImcHEeeXUPrCIbH-9A" name="Student" actor="_ozEEe2cHEeeXUPrCIbH-9A">
         <elements xmi:type="process:StartEvent" xmi:id="_ozEEI2cHEeeXUPrCIbH-9A" name="Start1" outgoing="_ozEEb2cHEeeXUPrCIbH-9A">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_ozEEJWcHEeeXUPrCIbH-9A" name="" content="" returnTypeFixed="true"/>
@@ -12,138 +12,6 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_ozEEKmcHEeeXUPrCIbH-9A" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_ozEEK2cHEeeXUPrCIbH-9A" name="Task for walter.bates" content="Task for walter.bates" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_ozEELGcHEeeXUPrCIbH-9A" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_FuOCMIRqEeq4udoilqnJqw">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_FuOCMYRqEeq4udoilqnJqw" name="application" content="application" type="TYPE_VARIABLE" returnType="com.company.model.Application">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_WiyFYJqAEeqa9P7LEQxQVw" name="application" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Application"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_FuOCM4RqEeq4udoilqnJqw" name="applicationInput.nameWithInitials" content="applicationInput?.nameWithInitials" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_FuOCNIRqEeq4udoilqnJqw" name="applicationInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_FuOCNYRqEeq4udoilqnJqw" type="JAVA_METHOD" expression="setNameWithInitials">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_FuOCNoRqEeq4udoilqnJqw">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_FuOCN4RqEeq4udoilqnJqw" name="application" content="application" type="TYPE_VARIABLE" returnType="com.company.model.Application">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_FuOCOIRqEeq4udoilqnJqw" name="application" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Application"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_FuOCOYRqEeq4udoilqnJqw" name="applicationInput.reguistrationNumber" content="applicationInput?.reguistrationNumber" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_FuOCOoRqEeq4udoilqnJqw" name="applicationInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_FuOCO4RqEeq4udoilqnJqw" type="JAVA_METHOD" expression="setReguistrationNumber">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_FuOCPIRqEeq4udoilqnJqw">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_FuOCPYRqEeq4udoilqnJqw" name="application" content="application" type="TYPE_VARIABLE" returnType="com.company.model.Application">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_VlsyEJqAEeqa9P7LEQxQVw" name="application" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Application"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_FuOCP4RqEeq4udoilqnJqw" name="applicationInput.permenantAddress" content="applicationInput?.permenantAddress" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_FuOCQIRqEeq4udoilqnJqw" name="applicationInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_FuOCQYRqEeq4udoilqnJqw" type="JAVA_METHOD" expression="setPermenantAddress">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_FuOCQoRqEeq4udoilqnJqw">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_FuOCQ4RqEeq4udoilqnJqw" name="application" content="application" type="TYPE_VARIABLE" returnType="com.company.model.Application">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_UVz3gJqAEeqa9P7LEQxQVw" name="application" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Application"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_FuOCRYRqEeq4udoilqnJqw" name="applicationInput.mobileNumber" content="applicationInput?.mobileNumber" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_FuOCRoRqEeq4udoilqnJqw" name="applicationInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_FuOCR4RqEeq4udoilqnJqw" type="JAVA_METHOD" expression="setMobileNumber">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_FuOCSIRqEeq4udoilqnJqw">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_FuOCSYRqEeq4udoilqnJqw" name="application" content="application" type="TYPE_VARIABLE" returnType="com.company.model.Application">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_TXTA0JqAEeqa9P7LEQxQVw" name="application" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Application"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_FuOCS4RqEeq4udoilqnJqw" name="applicationInput.courseOfStudy" content="applicationInput?.courseOfStudy" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_FuOCTIRqEeq4udoilqnJqw" name="applicationInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_FuOCTYRqEeq4udoilqnJqw" type="JAVA_METHOD" expression="setCourseOfStudy">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_H7Uy8IRqEeq4udoilqnJqw">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_H7Uy8YRqEeq4udoilqnJqw" name="course" content="course" type="TYPE_VARIABLE" returnType="com.company.model.Course">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_H7Uy8oRqEeq4udoilqnJqw" name="course" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Course"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_H7Uy84RqEeq4udoilqnJqw" name="courseInput.moduleName" content="courseInput?.moduleName" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_H7Uy9IRqEeq4udoilqnJqw" name="courseInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_H7Uy9YRqEeq4udoilqnJqw" type="JAVA_METHOD" expression="setModuleName">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_H7Uy9oRqEeq4udoilqnJqw">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_H7Uy94RqEeq4udoilqnJqw" name="course" content="course" type="TYPE_VARIABLE" returnType="com.company.model.Course">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_H7Uy-IRqEeq4udoilqnJqw" name="course" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Course"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_H7Uy-YRqEeq4udoilqnJqw" name="courseInput.moduleId" content="courseInput?.moduleId" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_H7Uy-oRqEeq4udoilqnJqw" name="courseInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_H7Uy-4RqEeq4udoilqnJqw" type="JAVA_METHOD" expression="setModuleId">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_dDpn4JmwEeqF_MReJ427XQ">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_dDpn4ZmwEeqF_MReJ427XQ" name="student" content="student" type="TYPE_VARIABLE" returnType="com.company.model.Student">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dDpn4pmwEeqF_MReJ427XQ" name="student" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Student"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_dDpn45mwEeqF_MReJ427XQ" name="studentInput.name" content="studentInput?.name" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_dDpn5JmwEeqF_MReJ427XQ" name="studentInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_dDpn5ZmwEeqF_MReJ427XQ" type="JAVA_METHOD" expression="setName">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_dDpn5pmwEeqF_MReJ427XQ">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_dDpn55mwEeqF_MReJ427XQ" name="student" content="student" type="TYPE_VARIABLE" returnType="com.company.model.Student">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dDpn6JmwEeqF_MReJ427XQ" name="student" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Student"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_dDpn6ZmwEeqF_MReJ427XQ" name="studentInput.regNumber" content="studentInput?.regNumber" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_dDpn6pmwEeqF_MReJ427XQ" name="studentInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_dDpn65mwEeqF_MReJ427XQ" type="JAVA_METHOD" expression="setRegNumber">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_dDpn7JmwEeqF_MReJ427XQ">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_dDpn7ZmwEeqF_MReJ427XQ" name="student" content="student" type="TYPE_VARIABLE" returnType="com.company.model.Student">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dDpn7pmwEeqF_MReJ427XQ" name="student" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Student"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_dDpn75mwEeqF_MReJ427XQ" name="studentInput.mobile" content="studentInput?.mobile" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_dDpn8JmwEeqF_MReJ427XQ" name="studentInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_dDpn8ZmwEeqF_MReJ427XQ" type="JAVA_METHOD" expression="setMobile">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_dDpn8pmwEeqF_MReJ427XQ">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_dDpn85mwEeqF_MReJ427XQ" name="student" content="student" type="TYPE_VARIABLE" returnType="com.company.model.Student">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dDpn9JmwEeqF_MReJ427XQ" name="student" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Student"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_dDpn9ZmwEeqF_MReJ427XQ" name="studentInput.Batch" content="studentInput?.Batch" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_dDpn9pmwEeqF_MReJ427XQ" name="studentInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_dDpn95mwEeqF_MReJ427XQ" type="JAVA_METHOD" expression="setBatch">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_efdekJmwEeqF_MReJ427XQ">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_efdekZmwEeqF_MReJ427XQ" name="courseModule" content="courseModule" type="TYPE_VARIABLE" returnType="com.company.model.Administration">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_efdekpmwEeqF_MReJ427XQ" name="courseModule" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Administration"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_efdek5mwEeqF_MReJ427XQ" name="courseModuleInput.isComplete" content="courseModuleInput?.isComplete" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_efdelJmwEeqF_MReJ427XQ" name="courseModuleInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_efdelZmwEeqF_MReJ427XQ" type="JAVA_METHOD" expression="setIsComplete">
-              <inputTypes>java.lang.Boolean</inputTypes>
-            </operator>
-          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_ozEELWcHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_ozEELmcHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_ozEEL2cHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -152,28 +20,7 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_ozEENGcHEeeXUPrCIbH-9A">
             <targetForm xmi:type="expression:Expression" xmi:id="_kgif4IRqEeq4udoilqnJqw" name="NewApplicantForm" content="b715c329-47ae-4a0a-98cb-a54eae553a39" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_ozEENmcHEeeXUPrCIbH-9A">
-            <inputs xmi:type="process:ContractInput" xmi:id="_FuGtcIRqEeq4udoilqnJqw" name="applicationInput" type="COMPLEX" dataReference="application" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_FuGtcYRqEeq4udoilqnJqw" name="nameWithInitials" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_FuGtcoRqEeq4udoilqnJqw" name="reguistrationNumber" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_FuGtc4RqEeq4udoilqnJqw" name="permenantAddress" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_FuGtdIRqEeq4udoilqnJqw" name="mobileNumber" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_FuGtdYRqEeq4udoilqnJqw" name="courseOfStudy" createMode="false"/>
-            </inputs>
-            <inputs xmi:type="process:ContractInput" xmi:id="_H7Ka4IRqEeq4udoilqnJqw" name="courseInput" type="COMPLEX" dataReference="course" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_H7Ka4YRqEeq4udoilqnJqw" name="moduleName" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_H7Ka4oRqEeq4udoilqnJqw" name="moduleId" createMode="false"/>
-            </inputs>
-            <inputs xmi:type="process:ContractInput" xmi:id="_dDkvYJmwEeqF_MReJ427XQ" name="studentInput" type="COMPLEX" dataReference="student" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_dDlWcJmwEeqF_MReJ427XQ" name="name" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_dDlWcZmwEeqF_MReJ427XQ" name="regNumber" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_dDlWcpmwEeqF_MReJ427XQ" name="mobile" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_dDlWc5mwEeqF_MReJ427XQ" name="Batch" createMode="false"/>
-            </inputs>
-            <inputs xmi:type="process:ContractInput" xmi:id="_efc3gJmwEeqF_MReJ427XQ" name="courseModuleInput" type="COMPLEX" dataReference="courseModule" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_efc3gZmwEeqF_MReJ427XQ" name="isComplete" type="BOOLEAN" createMode="false"/>
-            </inputs>
-          </contract>
+          <contract xmi:type="process:Contract" xmi:id="_ozEENmcHEeeXUPrCIbH-9A"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_ozEEN2cHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
@@ -209,7 +56,7 @@
               <inputs xmi:type="process:ContractInput" xmi:id="_LHB59IRqEeq4udoilqnJqw" name="mobileNumber" createMode="false"/>
               <inputs xmi:type="process:ContractInput" xmi:id="_LHB59YRqEeq4udoilqnJqw" name="courseOfStudy" createMode="false"/>
             </inputs>
-            <inputs xmi:type="process:ContractInput" xmi:id="_NyZ7EIRqEeq4udoilqnJqw" name="courseInput" type="COMPLEX" dataReference="course" createMode="false">
+            <inputs xmi:type="process:ContractInput" xmi:id="_NyZ7EIRqEeq4udoilqnJqw" name="courseInput" type="COMPLEX" createMode="false">
               <inputs xmi:type="process:ContractInput" xmi:id="_NyZ7EYRqEeq4udoilqnJqw" name="moduleName" createMode="false"/>
               <inputs xmi:type="process:ContractInput" xmi:id="_NyZ7EoRqEeq4udoilqnJqw" name="moduleId" createMode="false"/>
             </inputs>
@@ -257,7 +104,7 @@
               <inputs xmi:type="process:ContractInput" xmi:id="_bQTqpIRqEeq4udoilqnJqw" name="mobileNumber" createMode="false"/>
               <inputs xmi:type="process:ContractInput" xmi:id="_bQTqpYRqEeq4udoilqnJqw" name="courseOfStudy" createMode="false"/>
             </inputs>
-            <inputs xmi:type="process:ContractInput" xmi:id="_dSSwgIRqEeq4udoilqnJqw" name="courseInput" type="COMPLEX" dataReference="course" createMode="false">
+            <inputs xmi:type="process:ContractInput" xmi:id="_dSSwgIRqEeq4udoilqnJqw" name="courseInput" type="COMPLEX" createMode="false">
               <inputs xmi:type="process:ContractInput" xmi:id="_dSSwgYRqEeq4udoilqnJqw" name="moduleName" createMode="false"/>
               <inputs xmi:type="process:ContractInput" xmi:id="_dSSwgoRqEeq4udoilqnJqw" name="moduleId" createMode="false"/>
             </inputs>
@@ -279,9 +126,6 @@
       </data>
       <data xmi:type="process:BusinessObjectData" xmi:id="_maxNYIRpEeq4udoilqnJqw" name="administration" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Administration">
         <defaultValue xmi:type="expression:Expression" xmi:id="_maxNYYRpEeq4udoilqnJqw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
-      </data>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_ALQI4IRqEeq4udoilqnJqw" name="course" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Course">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_ALQI4YRqEeq4udoilqnJqw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <data xmi:type="process:BusinessObjectData" xmi:id="_Tk840JmwEeqF_MReJ427XQ" name="student" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Student">
         <defaultValue xmi:type="expression:Expression" xmi:id="_Tk840ZmwEeqF_MReJ427XQ" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
