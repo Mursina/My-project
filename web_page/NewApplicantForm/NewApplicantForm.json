@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "NewApplicantForm",
   "name" : "NewApplicantForm",
-  "lastUpdate" : 1592885681274,
+  "lastUpdate" : 1593077194369,
   "rows" : [
     [
       {
@@ -332,7 +332,7 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "xs" : 9
+                        "xs" : 8
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -381,11 +381,11 @@
                         },
                         "returnedKey" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : "name"
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "batchMap.regNumId"
+                          "value" : "application.nameWithInitials"
                         }
                       },
                       "reference" : "378c9ae0-efa9-45ec-9721-a0f7c24ca809",
@@ -395,7 +395,7 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "xs" : 12
+                        "xs" : 3
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -443,7 +443,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "batchMap.regNumId.name"
+                          "value" : "application.nameWithInitials.name"
                         },
                         "type" : {
                           "type" : "constant",
@@ -529,7 +529,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "batchMap.regNumId.Address"
+                          "value" : "application.nameWithInitials.Address"
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -619,7 +619,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "batchMap.regNumId.mobile"
+                          "value" : "application.nameWithInitials.mobile"
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -643,6 +643,55 @@
                       "reference" : "158f8c81-58e9-4239-940f-f1b66f02301c",
                       "hasValidationError" : false,
                       "id" : "pbInput"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Default label"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "formOutput:{{formOutput}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "acd1dc68-2ccf-4c75-9cc7-c821ebea2e1b",
+                      "hasValidationError" : false,
+                      "id" : "pbText"
                     }
                   ],
                   [
@@ -755,7 +804,7 @@
                           {
                             "type" : "component",
                             "dimension" : {
-                              "xs" : 3
+                              "xs" : 4
                             },
                             "propertyValues" : {
                               "cssClasses" : {
@@ -817,7 +866,7 @@
                           {
                             "type" : "component",
                             "dimension" : {
-                              "xs" : 9
+                              "xs" : 8
                             },
                             "propertyValues" : {
                               "cssClasses" : {
@@ -1063,7 +1112,93 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "xs" : 12
+                  "xs" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "formOutput"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "primary"
+                  },
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "GET"
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataToSend" : {
+                    "type" : "expression",
+                    "value" : "formOutput"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "dataFromError" : {
+                    "type" : "variable",
+                    "value" : "formOutput._submitError"
+                  },
+                  "targetUrlOnSuccess" : {
+                    "type" : "interpolation"
+                  },
+                  "collectionToModify" : {
+                    "type" : "variable"
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "collectionPosition" : {
+                    "type" : "constant",
+                    "value" : "Last"
+                  },
+                  "valueToAdd" : {
+                    "type" : "constant"
+                  },
+                  "removeItem" : {
+                    "type" : "variable"
+                  }
+                },
+                "reference" : "5b1bf786-b8c5-4425-9861-51b2389396f1",
+                "hasValidationError" : false,
+                "id" : "pbButton"
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 6
                 },
                 "propertyValues" : {
                   "removeItem" : {
@@ -1247,6 +1382,13 @@
       "type" : "css",
       "order" : 0,
       "external" : false
+    },
+    {
+      "id" : "4a29d077-a495-4dac-b4d4-097abb5e99c5",
+      "name" : "courseReg.js",
+      "type" : "js",
+      "order" : 1,
+      "external" : false
     }
   ],
   "inactiveAssets" : [ ],
@@ -1283,35 +1425,50 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
+        "/*$data.application.nameWithInitials = \"mursina\"",
+        "var r = {",
+        "\t    \"number\": 5",
+        "\t};",
+        "",
+        "//if( $data.application && $data.application_Courses ){",
+        "\t//attach lazy references variables to parent variables",
+        "    console.log(\"Hi\");",
+        "\t$data.application.Courses = $data.application_Courses;",
+        "\t$data.application.nameWithInitials = $data.batchMap.regNumId.name;",
+        "",
+        "\t",
+        "\tconsole.log($data.application);",
+        "\tvar m = {",
+        "\t\t//map application variable to expected task contract input",
+        "\t\tapplicationInput: {",
+        "\t\t\tCourses: $data.application.Courses.map( it => ({",
+        "\t\t\t\tpersistenceId_string: it.persistenceId_string !== undefined ? it.persistenceId_string : null",
+        "\t\t\t}))",
+        "\t\t}",
+        "\t}",
+        "\t",
+        "\tr = {",
+        "\t    \"number\": 6",
+        "\t};",
+        "\tconsole.log(r);",
+        "\tconsole.log(m);",
+        "\treturn r;",
+        "//}",
+        "*/",
+        "",
         "if( $data.application && $data.application_Courses ){",
         "\t//attach lazy references variables to parent variables",
         "\t$data.application.Courses = $data.application_Courses;",
         "\treturn {",
         "\t\t//map application variable to expected task contract input",
         "\t\tapplicationInput: {",
-        "\t\t\tnameWithInitials: $data.application.nameWithInitials !== undefined ? $data.application.nameWithInitials : null,",
+        "\t\t\tnameWithInitials: $data.application.nameWithInitials !== undefined ? $data.application.nameWithInitials : \"test3\",",
         "\t\t\tCourses: $data.application.Courses.map( it => ({",
         "\t\t\t\tpersistenceId_string: it.persistenceId_string !== undefined ? it.persistenceId_string : null",
         "\t\t\t}))",
         "\t\t}",
         "\t}",
-        "}",
-        "",
-        "",
-        "/*if( $data.application && $data.course ){",
-        "\treturn {",
-        "\t\t//map application variable to expected task contract input",
-        "\t\tapplicationInput: {",
-        "\t\t\tnameWithInitials: $data.application.nameWithInitials !== undefined ? $data.application.nameWithInitials : batch.nameWithInitials,",
-        "\t\t\treguistrationNumber: $data.application.reguistrationNumber !== undefined ? $data.application.reguistrationNumber : null,",
-        "\t\t\tpermenantAddress: $data.application.permenantAddress !== undefined ? $data.application.permenantAddress : null,",
-        "\t\t\tmobileNumber: $data.application.mobileNumber !== undefined ? $data.application.mobileNumber : null,",
-        "\t\t\tcourseOfStudy: $data.application.courseOfStudy !== undefined ? $data.application.courseOfStudy : null",
-        "\t\t},",
-        "\t\t//map course variable to expected task contract input",
-        "\t\tcourseInput: $data.formInput.collectMods",
-        "\t}",
-        "}*/"
+        "}"
       ],
       "exposed" : false
     },
