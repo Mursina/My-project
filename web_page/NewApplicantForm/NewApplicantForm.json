@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "NewApplicantForm",
   "name" : "NewApplicantForm",
-  "lastUpdate" : 1593566347380,
+  "lastUpdate" : 1593585448976,
   "rows" : [
     [
       {
@@ -473,7 +473,7 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "xs" : 2
+                        "xs" : 6
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -536,7 +536,7 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "xs" : 2
+                        "xs" : 6
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -589,7 +589,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "application.nameWithInitials"
+                          "value" : "application"
                         }
                       },
                       "reference" : "378c9ae0-efa9-45ec-9721-a0f7c24ca809",
@@ -599,7 +599,54 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "xs" : 2
+                        "xs" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Default label"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "application:{{application}}<br/>Student: {{student}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "7f489bef-2e24-4bd9-bed5-f021114ddb02",
+                      "hasValidationError" : false,
+                      "id" : "pbText"
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -647,7 +694,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "application.nameWithInitials.name"
+                          "value" : "application.name"
                         },
                         "type" : {
                           "type" : "constant",
@@ -667,200 +714,9 @@
                       "reference" : "ed1e5868-d741-4eb4-b4ee-56bac661fc44",
                       "hasValidationError" : false,
                       "id" : "pbInput"
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 2
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Default label"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{application.nameWithInitials}}<br/>Student: {{student}}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        }
-                      },
-                      "reference" : "7f489bef-2e24-4bd9-bed5-f021114ddb02",
-                      "hasValidationError" : false,
-                      "id" : "pbText"
                     }
                   ],
                   [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 4
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Default label"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "placeholder" : {
-                          "type" : "interpolation"
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "student.persistenceId"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "text"
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
-                        }
-                      },
-                      "reference" : "e6d08d61-7786-4ae9-819a-f9c0cfb1d7a5",
-                      "hasValidationError" : false,
-                      "id" : "pbInput"
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 4
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Default label"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "placeholder" : {
-                          "type" : "interpolation"
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "student.name"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "text"
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
-                        }
-                      },
-                      "reference" : "b2d1436e-f104-4bb8-b368-f92df97a728c",
-                      "hasValidationError" : false,
-                      "id" : "pbInput"
-                    },
                     {
                       "type" : "component",
                       "dimension" : {
@@ -924,7 +780,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "application.nameWithInitials.Address"
+                          "value" : "application.Address"
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -1014,7 +870,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "application.nameWithInitials.mobile"
+                          "value" : "application.mobile"
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -1077,7 +933,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "formOutput:{{formOutput}}<br/>{{JStest}}"
+                          "value" : "formOutput:{{formOutput}}<br/>"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -1565,92 +1421,6 @@
                   "xs" : 6
                 },
                 "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "disabled" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "formOutput"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  },
-                  "buttonStyle" : {
-                    "type" : "constant",
-                    "value" : "primary"
-                  },
-                  "action" : {
-                    "type" : "constant",
-                    "value" : "GET"
-                  },
-                  "assign" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "url" : {
-                    "type" : "interpolation"
-                  },
-                  "responseStatusCode" : {
-                    "type" : "variable",
-                    "value" : ""
-                  },
-                  "dataToSend" : {
-                    "type" : "expression",
-                    "value" : "formOutput"
-                  },
-                  "dataFromSuccess" : {
-                    "type" : "variable",
-                    "value" : ""
-                  },
-                  "closeOnSuccess" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "dataFromError" : {
-                    "type" : "variable",
-                    "value" : "formOutput._submitError"
-                  },
-                  "targetUrlOnSuccess" : {
-                    "type" : "interpolation"
-                  },
-                  "collectionToModify" : {
-                    "type" : "variable"
-                  },
-                  "modalId" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "collectionPosition" : {
-                    "type" : "constant",
-                    "value" : "Last"
-                  },
-                  "valueToAdd" : {
-                    "type" : "constant"
-                  },
-                  "removeItem" : {
-                    "type" : "variable"
-                  }
-                },
-                "reference" : "5b1bf786-b8c5-4425-9861-51b2389396f1",
-                "hasValidationError" : false,
-                "id" : "pbButton"
-              },
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 6
-                },
-                "propertyValues" : {
                   "removeItem" : {
                     "type" : "variable"
                   },
@@ -1750,6 +1520,45 @@
                 "reference" : "8936c1ad-e1fa-4a28-968b-22c9f365b6cc",
                 "hasValidationError" : false,
                 "id" : "pbButton"
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "JS Button"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "default"
+                  },
+                  "javascript" : {
+                    "type" : "variable",
+                    "value" : "JStest"
+                  }
+                },
+                "reference" : "7ecdbb2e-a63a-4ccb-98c4-18abe1d08702",
+                "hasValidationError" : false,
+                "id" : "customJavascriptButton"
               }
             ],
             [
@@ -1827,6 +1636,13 @@
   ],
   "assets" : [
     {
+      "id" : "dbc277cc-75e8-47f3-b667-a66ce9f10ba9",
+      "name" : "ui-bootstrap-tpls-0.13.0.min.js",
+      "type" : "js",
+      "order" : 3,
+      "external" : false
+    },
+    {
       "id" : "41718859-c3d9-41e1-a0ec-b1a39e637208",
       "name" : "style.css",
       "type" : "css",
@@ -1849,7 +1665,8 @@
     }
   ],
   "inactiveAssets" : [
-    "4a29d077-a495-4dac-b4d4-097abb5e99c5"
+    "4a29d077-a495-4dac-b4d4-097abb5e99c5",
+    "512f89c3-7360-4812-bf21-795a9e16fd93"
   ],
   "variables" : {
     "task" : {
@@ -2006,7 +1823,23 @@
     "JStest" : {
       "type" : "expression",
       "value" : [
-        "return output();"
+        "return function(){",
+        "    if( $data.application && $data.application_Courses ){",
+        "        //attach lazy references variables to parent variables",
+        "        $data.application.Courses = $data.application_Courses;",
+        "        return {",
+        "\t\t//map application variable to expected task contract input",
+        "\t\tapplicationInput: {",
+        "\t\t\tnameWithInitials: $data.application.nameWithInitials !== undefined ? $data.application.nameWithInitials : \"abbjkkk\",",
+        "\t\t\tCourses: $data.application.Courses.map( it => ({",
+        "\t\t\tpersistenceId_string: it.persistenceId_string !== undefined ? it.persistenceId_string : null",
+        "\t\t\t}))",
+        "\t\t}",
+        "\t}",
+        "}",
+        "    alert($data.application.name);",
+        "//   return \"kjkjjkkj\";",
+        "}"
       ],
       "exposed" : false
     },
