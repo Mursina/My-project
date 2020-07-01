@@ -1,3 +1,9 @@
+function hi(name){
+    return 'Welcome ' + name;  
+}
+
+
+
 /*$data.application.nameWithInitials = "mursina"
 var r = {
 	    "number": 5
