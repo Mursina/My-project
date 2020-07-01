@@ -35,13 +35,24 @@
               <inputTypes>java.util.List</inputTypes>
             </operator>
           </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_gXD68LnREeqyK8wwFWTcyA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_gXD68bnREeqyK8wwFWTcyA" name="student" content="student" type="TYPE_VARIABLE" returnType="com.company.model.Student">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_gXD68rnREeqyK8wwFWTcyA" name="student" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Student"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_gXD687nREeqyK8wwFWTcyA" name="studentInput.name" content="studentInput?.name" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_gXD69LnREeqyK8wwFWTcyA" name="studentInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_gXD69bnREeqyK8wwFWTcyA" type="JAVA_METHOD" expression="setName">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_ozEELWcHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_ozEELmcHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_ozEEL2cHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_ozEEMGcHEeeXUPrCIbH-9A" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_ozEEMWcHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_ozEENGcHEeeXUPrCIbH-9A">
-            <targetForm xmi:type="expression:Expression" xmi:id="_Tqr6kLaSEeqxsbWVvjxgRA" name="NewApplicantForm" content="b715c329-47ae-4a0a-98cb-a54eae553a39" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_jI038LnREeqyK8wwFWTcyA" name="NewApplicantForm" content="b715c329-47ae-4a0a-98cb-a54eae553a39" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_ozEENmcHEeeXUPrCIbH-9A">
             <inputs xmi:type="process:ContractInput" xmi:id="_Rnf60LaSEeqxsbWVvjxgRA" name="applicationInput" type="COMPLEX" dataReference="application" createMode="false">
@@ -50,9 +61,9 @@
                 <inputs xmi:type="process:ContractInput" xmi:id="_Rnf607aSEeqxsbWVvjxgRA" name="persistenceId_string" createMode="false"/>
               </inputs>
             </inputs>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_Rnf61LaSEeqxsbWVvjxgRA" expression="!applicationInput?.Courses || applicationInput?.Courses?.persistenceId_string" errorMessage="CourseModule must reference an existing instance with a persistenceId for Application" name="aggregation_applicationInput_Courses">
-              <inputNames>applicationInput</inputNames>
-            </constraints>
+            <inputs xmi:type="process:ContractInput" xmi:id="_gXAQkLnREeqyK8wwFWTcyA" name="studentInput" type="COMPLEX" dataReference="student" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_gXAQkbnREeqyK8wwFWTcyA" name="name" createMode="false"/>
+            </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_ozEEN2cHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
@@ -98,6 +109,9 @@
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_ztbwULXMEeqz0NpG9pPcNQ" name="application" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Application">
         <defaultValue xmi:type="expression:Expression" xmi:id="_ztbwUbXMEeqz0NpG9pPcNQ" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      </data>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_crN7ULnREeqyK8wwFWTcyA" name="student" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Student">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_crN7UbnREeqyK8wwFWTcyA" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_ozEEaWcHEeeXUPrCIbH-9A" type="NONE">
         <targetForm xmi:type="expression:Expression" xmi:id="_ozEEamcHEeeXUPrCIbH-9A" name="newForm" content="bf8601db-5f5f-42a4-8820-00f7e3585c5b" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>

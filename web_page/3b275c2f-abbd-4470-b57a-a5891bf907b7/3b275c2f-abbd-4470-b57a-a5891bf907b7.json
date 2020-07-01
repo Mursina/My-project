@@ -1,0 +1,214 @@
+{
+  "designerVersion" : "1.10.18",
+  "previousDesignerVersion" : "1.3.25",
+  "id" : "3b275c2f-abbd-4470-b57a-a5891bf907b7",
+  "name" : "JavascriptButtonExampleForm",
+  "lastUpdate" : 1593567111664,
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Javascript Button Example"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 2"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "24045d82-2801-4bac-8b5d-ca95dfce6a77",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "This is an example that shows the usage of custom widget \"javascriptButton\". The widget looks exactly as standard button in runtime, but allows you to define and execute any javascript function you want. Use \"Preview\" to check this out."
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : ""
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          }
+        },
+        "reference" : "1ba0d89d-8117-4de6-94de-2ffabf047a58",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "To use it, please create a new variable and assign javascript function to it (see example in \"javascriptVar\" variable). Then simply add it on your form as any other widget, configure all the properties as in standard button. In \"Javascript\" property of the customButton, choose the variable that you've created at the beginning. It's really easy!"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : ""
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          }
+        },
+        "reference" : "b1b6a768-f817-4e06-9b5a-982efb49d44c",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "disabled" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Clik me!"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "center"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "primary"
+          },
+          "javascript" : {
+            "type" : "variable",
+            "value" : "javascriptVar"
+          }
+        },
+        "reference" : "9ee96a56-116c-429d-b519-e17c5a04233a",
+        "hasValidationError" : false,
+        "id" : "customJavascriptButton"
+      }
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "baabeebd-c7bf-451d-b576-a5c8cab8bd4f",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 1,
+      "external" : false
+    },
+    {
+      "id" : "5b3ab655-946f-454d-87a6-d9afd28da29c",
+      "name" : "ui-bootstrap-tpls-0.13.0.min.js",
+      "type" : "js",
+      "order" : 2,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "javascriptVar" : {
+      "type" : "expression",
+      "value" : [
+        "return function()",
+        "{",
+        "    alert(\"See? This is really easy!\");",
+        "}"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "3b275c2f-abbd-4470-b57a-a5891bf907b7",
+  "type" : "form",
+  "description" : "Page generated with Bonita UI designer"
+}

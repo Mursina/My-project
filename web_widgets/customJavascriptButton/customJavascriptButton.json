@@ -1,0 +1,68 @@
+{
+  "designerVersion" : "1.10.12",
+  "previousDesignerVersion" : "1.3.25",
+  "id" : "customJavascriptButton",
+  "name" : "javascriptButton",
+  "lastUpdate" : 1593567111435,
+  "template" : "@customJavascriptButton.tpl.html",
+  "controller" : "@customJavascriptButton.ctrl.js",
+  "description" : "Button executes given javascript",
+  "custom" : true,
+  "properties" : [
+    {
+      "label" : "Disabled",
+      "name" : "disabled",
+      "type" : "boolean",
+      "defaultValue" : false,
+      "bond" : "expression"
+    },
+    {
+      "label" : "Label",
+      "name" : "label",
+      "type" : "text",
+      "defaultValue" : "JS Button",
+      "bond" : "interpolation"
+    },
+    {
+      "label" : "Alignment",
+      "name" : "alignment",
+      "type" : "choice",
+      "defaultValue" : "left",
+      "choiceValues" : [
+        "left",
+        "right",
+        "center"
+      ],
+      "bond" : "constant"
+    },
+    {
+      "label" : "Style",
+      "name" : "buttonStyle",
+      "type" : "choice",
+      "defaultValue" : "default",
+      "choiceValues" : [
+        "default",
+        "primary",
+        "success",
+        "info",
+        "warning",
+        "danger",
+        "link"
+      ],
+      "bond" : "constant"
+    },
+    {
+      "label" : "JavaScript function variable",
+      "name" : "javascript",
+      "help" : "Variable that represents JavaScript function - with syntax \"return function(){...};\"",
+      "type" : "text",
+      "bond" : "variable"
+    }
+  ],
+  "assets" : [ ],
+  "requiredModules" : [
+    "ui.bootstrap"
+  ],
+  "type" : "widget",
+  "hasHelp" : false
+}
