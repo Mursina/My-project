@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_ozEEIGcHEeeXUPrCIbH-9A" name="DemoActorMappingSingleUserDiagram" author="antoine" bonitaVersion="7.10.4" bonitaModelVersion="7.10.0-001" configId="ACED0005740010372E31302E302D303031372E31302E34">
+  <process:MainProcess xmi:id="_ozEEIGcHEeeXUPrCIbH-9A" name="CourseRegistration" author="antoine" bonitaVersion="7.10.4" bonitaModelVersion="7.10.0-001" configId="ACED0005740010372E31302E302D303031372E31302E34">
     <elements xmi:type="process:Pool" xmi:id="_ozEEIWcHEeeXUPrCIbH-9A" name="Course registration">
       <elements xmi:type="process:Lane" xmi:id="_ozEEImcHEeeXUPrCIbH-9A" name="Student" actor="_ozEEe2cHEeeXUPrCIbH-9A">
         <elements xmi:type="process:StartEvent" xmi:id="_ozEEI2cHEeeXUPrCIbH-9A" name="Start1" outgoing="_ozEEb2cHEeeXUPrCIbH-9A">
@@ -78,7 +78,7 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_ozEEQGcHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_ozEEQWcHEeeXUPrCIbH-9A" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_ozEEQmcHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <formMapping xmi:type="process:FormMapping" xmi:id="_ozEERWcHEeeXUPrCIbH-9A" type="NONE">
+          <formMapping xmi:type="process:FormMapping" xmi:id="_ozEERWcHEeeXUPrCIbH-9A">
             <targetForm xmi:type="expression:Expression" xmi:id="_5B2AwIRqEeq4udoilqnJqw" name="DRForm" content="fcb84d65-f734-457f-9bd7-ccd886546b37" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_ozEER2cHEeeXUPrCIbH-9A"/>
