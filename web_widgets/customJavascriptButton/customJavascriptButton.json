@@ -3,7 +3,7 @@
   "previousDesignerVersion" : "1.3.25",
   "id" : "customJavascriptButton",
   "name" : "javascriptButton",
-  "lastUpdate" : 1593567111435,
+  "lastUpdate" : 1593660658211,
   "template" : "@customJavascriptButton.tpl.html",
   "controller" : "@customJavascriptButton.ctrl.js",
   "description" : "Button executes given javascript",
