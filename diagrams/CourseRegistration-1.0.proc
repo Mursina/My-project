@@ -112,7 +112,7 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_ozEEVmcHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_ozEEV2cHEeeXUPrCIbH-9A" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_ozEEWGcHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <formMapping xmi:type="process:FormMapping" xmi:id="_ozEEW2cHEeeXUPrCIbH-9A">
+          <formMapping xmi:type="process:FormMapping" xmi:id="_ozEEW2cHEeeXUPrCIbH-9A" type="NONE">
             <targetForm xmi:type="expression:Expression" xmi:id="_OLtWcIRrEeq4udoilqnJqw" name="NewHODForm" content="878bbc1f-e6f7-49c7-bafc-42a929f9a5d8" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_ozEEXWcHEeeXUPrCIbH-9A">
