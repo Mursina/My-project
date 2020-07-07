@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "NewApplicantForm",
   "name" : "NewApplicantForm",
-  "lastUpdate" : 1593773174732,
+  "lastUpdate" : 1594093996679,
   "rows" : [
     [
       {
@@ -294,7 +294,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Batch2"
+                          "value" : "Batch"
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -385,7 +385,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "application"
+                          "value" : "stdResult"
                         }
                       },
                       "reference" : "378c9ae0-efa9-45ec-9721-a0f7c24ca809",
@@ -420,7 +420,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "labelHidden" : {
                           "type" : "constant",
@@ -443,7 +443,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "application.name"
+                          "value" : ""
                         },
                         "type" : {
                           "type" : "constant",
@@ -529,7 +529,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "application.Address"
+                          "value" : "student.Address"
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -619,7 +619,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "application.mobile"
+                          "value" : "student.mobile"
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -1063,6 +1063,53 @@
               {
                 "type" : "component",
                 "dimension" : {
+                  "xs" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "application: {{application}}<br/>stdQuery: {{stdQuery}}<br/>stdResult.regNumber: {{stdResult.regNumber}}"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "c8f66ad9-2f84-4d2a-b7cb-6959fc70dcf1",
+                "hasValidationError" : false,
+                "id" : "pbText"
+              },
+              {
+                "type" : "component",
+                "dimension" : {
                   "xs" : 4
                 },
                 "propertyValues" : {
@@ -1314,13 +1361,14 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
+        "$data.application.registrationNumber = $data.stdResult.regNumber;",
         "if( $data.application && $data.application_Courses ){",
         "\t//attach lazy references variables to parent variables",
         "\t$data.application.Courses = $data.application_Courses;",
         "\treturn {",
         "\t\t//map application variable to expected task contract input",
         "\t\tapplicationInput: {",
-        "\t\t\tnameWithInitials: $data.application.nameWithInitials !== undefined ? $data.application.nameWithInitials : null,",
+        "\t\t\tregistrationNumber: $data.stdResult.regNumber !== undefined ? $data.stdResult.regNumber : null,",
         "\t\t\tCourses: $data.application.Courses.map( it => ({",
         "\t\t\t\tpersistenceId_string: it.persistenceId_string !== undefined ? it.persistenceId_string : null",
         "\t\t\t}))",
@@ -1452,6 +1500,20 @@
       "type" : "expression",
       "value" : [
         "return hi($data.name);"
+      ],
+      "exposed" : false
+    },
+    "regQuery" : {
+      "type" : "url",
+      "value" : [
+        "../API/bdm/businessData/com.company.model.Student?q=findByRegNumber&p=0&c=10&f=regNumber=SEU/IS/16/EG/001"
+      ],
+      "exposed" : false
+    },
+    "stdResult" : {
+      "type" : "json",
+      "value" : [
+        "{}"
       ],
       "exposed" : false
     }
