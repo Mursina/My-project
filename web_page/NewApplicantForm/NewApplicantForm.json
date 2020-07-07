@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "NewApplicantForm",
   "name" : "NewApplicantForm",
-  "lastUpdate" : 1594098721751,
+  "lastUpdate" : 1594099416101,
   "rows" : [
     [
       {
@@ -456,7 +456,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "stdResult[0].regNumber"
+                          "value" : "stdResult[0].name"
                         },
                         "type" : {
                           "type" : "constant",
@@ -503,7 +503,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -542,7 +542,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "stdResult.Address"
+                          "value" : "stdResult[0].Address"
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -593,7 +593,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -632,7 +632,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "stdResult.mobile"
+                          "value" : "stdResult[0].mobile"
                         },
                         "minLength" : {
                           "type" : "constant",

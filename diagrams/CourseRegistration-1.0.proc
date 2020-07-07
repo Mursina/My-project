@@ -99,17 +99,6 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_ozEEUWcHEeeXUPrCIbH-9A" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_ozEEUmcHEeeXUPrCIbH-9A" name="Task for william.jobs" content="Task for william.jobs" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_ozEEU2cHEeeXUPrCIbH-9A" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_nOB1sr9WEeqgjfy-9SAtRw">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_nOB1s79WEeqgjfy-9SAtRw" name="application" content="application" type="TYPE_VARIABLE" returnType="com.company.model.Application">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_nOB1tL9WEeqgjfy-9SAtRw" name="application" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Application"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_nOB1tb9WEeqgjfy-9SAtRw" name="applicationInput.isRecommended" content="applicationInput?.isRecommended" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_nOB1tr9WEeqgjfy-9SAtRw" name="applicationInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_nOB1t79WEeqgjfy-9SAtRw" type="JAVA_METHOD" expression="setIsRecommended">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_ozEEVGcHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_ozEEVWcHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_ozEEVmcHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -118,17 +107,12 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_ozEEW2cHEeeXUPrCIbH-9A" type="NONE">
             <targetForm xmi:type="expression:Expression" xmi:id="_OLtWcIRrEeq4udoilqnJqw" name="NewHODForm" content="878bbc1f-e6f7-49c7-bafc-42a929f9a5d8" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_ozEEXWcHEeeXUPrCIbH-9A">
-            <inputs xmi:type="process:ContractInput" xmi:id="_nOB1sL9WEeqgjfy-9SAtRw" name="applicationInput" type="COMPLEX" dataReference="application" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_nOB1sb9WEeqgjfy-9SAtRw" name="isRecommended" createMode="false"/>
-            </inputs>
-          </contract>
+          <contract xmi:type="process:Contract" xmi:id="_ozEEXWcHEeeXUPrCIbH-9A"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_ozEEXmcHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_NBkI0L9WEeqgjfy-9SAtRw" name="application" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Application">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_k1PCAMAJEeqNcN9x90eqRA" name="initApplication()" content="def applicationVar = new com.company.model.Application()&#xA;applicationVar.Courses = {&#xA;&#x9;def courseModuleList = []&#xA;&#x9;//For each item collected in multiple input&#xA;&#x9;applicationInput?.Courses.each{&#xA;&#x9;&#x9;//Add CourseModule instance&#xA;&#x9;&#x9;courseModuleList.add({ currentCourseModuleInput ->&#xA;&#x9;&#x9;&#x9;def courseModuleVar = courseModuleDAO.findByPersistenceId(currentCourseModuleInput.persistenceId_string?.trim() ? currentCourseModuleInput.persistenceId_string.toLong() : null)&#xA;&#x9;&#x9;&#x9;if(!courseModuleVar) {&#xA;&#x9;&#x9;&#x9;&#x9;throw new IllegalArgumentException(&quot;The aggregated reference of type `CourseModule` with the persistence id &quot; + currentCourseModuleInput.persistenceId_string?.trim() ? currentCourseModuleInput.persistenceId_string.toLong() : null + &quot; has not been found.&quot;)&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;return courseModuleVar&#xA;&#x9;&#x9;}(it))&#xA;&#x9;}&#xA;&#x9;return courseModuleList}()&#xA;applicationVar.registrationNumber = applicationInput?.registrationNumber&#xA;return applicationVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Application">
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_k1PCAcAJEeqNcN9x90eqRA" name="applicationInput" type="COMPLEX"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_k1PCAMAJEeqNcN9x90eqRA" name="initApplication()" content="def applicationVar = new com.company.model.Application()&#xA;applicationVar.Courses = {&#xA;&#x9;def courseModuleList = []&#xA;&#x9;//For each item collected in multiple input&#xA;&#x9;     ?.Courses.each{&#xA;&#x9;&#x9;//Add CourseModule instance&#xA;&#x9;&#x9;courseModuleList.add({ currentCourseModuleInput ->&#xA;&#x9;&#x9;&#x9;def courseModuleVar = courseModuleDAO.findByPersistenceId(currentCourseModuleInput.persistenceId_string?.trim() ? currentCourseModuleInput.persistenceId_string.toLong() : null)&#xA;&#x9;&#x9;&#x9;if(!courseModuleVar) {&#xA;&#x9;&#x9;&#x9;&#x9;throw new IllegalArgumentException(&quot;The aggregated reference of type `CourseModule` with the persistence id &quot; + currentCourseModuleInput.persistenceId_string?.trim() ? currentCourseModuleInput.persistenceId_string.toLong() : null + &quot; has not been found.&quot;)&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;return courseModuleVar&#xA;&#x9;&#x9;}(it))&#xA;&#x9;}&#xA;&#x9;return courseModuleList}()&#xA;applicationVar.registrationNumber =      ?.registrationNumber&#xA;return applicationVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Application">
           <referencedElements xmi:type="expression:Expression" xmi:id="_k1PCAsAJEeqNcN9x90eqRA" name="courseModuleDAO" content="courseModuleDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.CourseModuleDAO" returnTypeFixed="true"/>
         </defaultValue>
       </data>
@@ -160,17 +144,7 @@
       <actors xmi:type="process:Actor" xmi:id="_ozEEe2cHEeeXUPrCIbH-9A" name="Student"/>
       <actors xmi:type="process:Actor" xmi:id="_ozEEfGcHEeeXUPrCIbH-9A" name="Head"/>
       <actors xmi:type="process:Actor" xmi:id="_ozEEfWcHEeeXUPrCIbH-9A" name="DR" initiator="true"/>
-      <contract xmi:type="process:Contract" xmi:id="_ozEEfmcHEeeXUPrCIbH-9A">
-        <inputs xmi:type="process:ContractInput" xmi:id="_k1I7YMAJEeqNcN9x90eqRA" name="applicationInput" type="COMPLEX" dataReference="application">
-          <inputs xmi:type="process:ContractInput" xmi:id="_k1I7YcAJEeqNcN9x90eqRA" name="Courses" type="COMPLEX" multiple="true">
-            <inputs xmi:type="process:ContractInput" xmi:id="_k1I7YsAJEeqNcN9x90eqRA" name="persistenceId_string"/>
-          </inputs>
-          <inputs xmi:type="process:ContractInput" xmi:id="_k1I7Y8AJEeqNcN9x90eqRA" name="registrationNumber"/>
-        </inputs>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_k1Oa8MAJEeqNcN9x90eqRA" expression="!applicationInput?.Courses || applicationInput?.Courses?.persistenceId_string" errorMessage="CourseModule must reference an existing instance with a persistenceId for Application" name="aggregation_applicationInput_Courses">
-          <inputNames>applicationInput</inputNames>
-        </constraints>
-      </contract>
+      <contract xmi:type="process:Contract" xmi:id="_ozEEfmcHEeeXUPrCIbH-9A"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_ozEEf2cHEeeXUPrCIbH-9A">
         <name xmi:type="expression:Expression" xmi:id="_ozEEgGcHEeeXUPrCIbH-9A" content="" returnTypeFixed="true"/>
         <value xmi:type="expression:Expression" xmi:id="_ozEEgWcHEeeXUPrCIbH-9A" content="" returnTypeFixed="true"/>
