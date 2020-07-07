@@ -127,7 +127,10 @@
         </elements>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_NBkI0L9WEeqgjfy-9SAtRw" name="application" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Application">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_NBkI0b9WEeqgjfy-9SAtRw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_k1PCAMAJEeqNcN9x90eqRA" name="initApplication()" content="def applicationVar = new com.company.model.Application()&#xA;applicationVar.Courses = {&#xA;&#x9;def courseModuleList = []&#xA;&#x9;//For each item collected in multiple input&#xA;&#x9;applicationInput?.Courses.each{&#xA;&#x9;&#x9;//Add CourseModule instance&#xA;&#x9;&#x9;courseModuleList.add({ currentCourseModuleInput ->&#xA;&#x9;&#x9;&#x9;def courseModuleVar = courseModuleDAO.findByPersistenceId(currentCourseModuleInput.persistenceId_string?.trim() ? currentCourseModuleInput.persistenceId_string.toLong() : null)&#xA;&#x9;&#x9;&#x9;if(!courseModuleVar) {&#xA;&#x9;&#x9;&#x9;&#x9;throw new IllegalArgumentException(&quot;The aggregated reference of type `CourseModule` with the persistence id &quot; + currentCourseModuleInput.persistenceId_string?.trim() ? currentCourseModuleInput.persistenceId_string.toLong() : null + &quot; has not been found.&quot;)&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;return courseModuleVar&#xA;&#x9;&#x9;}(it))&#xA;&#x9;}&#xA;&#x9;return courseModuleList}()&#xA;applicationVar.registrationNumber = applicationInput?.registrationNumber&#xA;return applicationVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Application">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_k1PCAcAJEeqNcN9x90eqRA" name="applicationInput" type="COMPLEX"/>
+          <referencedElements xmi:type="expression:Expression" xmi:id="_k1PCAsAJEeqNcN9x90eqRA" name="courseModuleDAO" content="courseModuleDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.CourseModuleDAO" returnTypeFixed="true"/>
+        </defaultValue>
       </data>
       <data xmi:type="process:BusinessObjectData" xmi:id="_OpP4UL9WEeqgjfy-9SAtRw" name="student" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Student">
         <defaultValue xmi:type="expression:Expression" xmi:id="_OpP4Ub9WEeqgjfy-9SAtRw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
@@ -157,7 +160,17 @@
       <actors xmi:type="process:Actor" xmi:id="_ozEEe2cHEeeXUPrCIbH-9A" name="Student"/>
       <actors xmi:type="process:Actor" xmi:id="_ozEEfGcHEeeXUPrCIbH-9A" name="Head"/>
       <actors xmi:type="process:Actor" xmi:id="_ozEEfWcHEeeXUPrCIbH-9A" name="DR" initiator="true"/>
-      <contract xmi:type="process:Contract" xmi:id="_ozEEfmcHEeeXUPrCIbH-9A"/>
+      <contract xmi:type="process:Contract" xmi:id="_ozEEfmcHEeeXUPrCIbH-9A">
+        <inputs xmi:type="process:ContractInput" xmi:id="_k1I7YMAJEeqNcN9x90eqRA" name="applicationInput" type="COMPLEX" dataReference="application">
+          <inputs xmi:type="process:ContractInput" xmi:id="_k1I7YcAJEeqNcN9x90eqRA" name="Courses" type="COMPLEX" multiple="true">
+            <inputs xmi:type="process:ContractInput" xmi:id="_k1I7YsAJEeqNcN9x90eqRA" name="persistenceId_string"/>
+          </inputs>
+          <inputs xmi:type="process:ContractInput" xmi:id="_k1I7Y8AJEeqNcN9x90eqRA" name="registrationNumber"/>
+        </inputs>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_k1Oa8MAJEeqNcN9x90eqRA" expression="!applicationInput?.Courses || applicationInput?.Courses?.persistenceId_string" errorMessage="CourseModule must reference an existing instance with a persistenceId for Application" name="aggregation_applicationInput_Courses">
+          <inputNames>applicationInput</inputNames>
+        </constraints>
+      </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_ozEEf2cHEeeXUPrCIbH-9A">
         <name xmi:type="expression:Expression" xmi:id="_ozEEgGcHEeeXUPrCIbH-9A" content="" returnTypeFixed="true"/>
         <value xmi:type="expression:Expression" xmi:id="_ozEEgWcHEeeXUPrCIbH-9A" content="" returnTypeFixed="true"/>

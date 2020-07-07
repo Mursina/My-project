@@ -12,6 +12,14 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.company.model.Batch">
+            <fields>
+                <field type="STRING" length="255" name="batch" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.company.model.CourseModule">
             <fields>
                 <field type="STRING" length="255" name="modName" nullable="true" collection="false"/>
@@ -43,14 +51,6 @@
                 <field type="STRING" length="255" name="mobile" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="Batch" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="Address" nullable="true" collection="false"/>
-            </fields>
-            <uniqueConstraints/>
-            <queries/>
-            <indexes/>
-        </businessObject>
-        <businessObject qualifiedName="com.company.model.Batch">
-            <fields>
-                <field type="STRING" length="255" name="batch" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>

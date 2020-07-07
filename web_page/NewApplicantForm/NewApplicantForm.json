@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "NewApplicantForm",
   "name" : "NewApplicantForm",
-  "lastUpdate" : 1594093996679,
+  "lastUpdate" : 1594098721751,
   "rows" : [
     [
       {
@@ -10,7 +10,20 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
         "reference" : "2ae5a489-4ab4-4b17-bdf2-9ad82c244853",
         "hasValidationError" : false,
         "id" : "pbContainer",
@@ -381,11 +394,11 @@
                         },
                         "returnedKey" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : "regNumber"
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "stdResult"
+                          "value" : "application.registrationNumber"
                         }
                       },
                       "reference" : "378c9ae0-efa9-45ec-9721-a0f7c24ca809",
@@ -443,7 +456,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : ""
+                          "value" : "stdResult[0].regNumber"
                         },
                         "type" : {
                           "type" : "constant",
@@ -529,7 +542,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "student.Address"
+                          "value" : "stdResult.Address"
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -619,7 +632,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "student.mobile"
+                          "value" : "stdResult.mobile"
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -1096,7 +1109,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "application: {{application}}<br/>stdQuery: {{stdQuery}}<br/>stdResult.regNumber: {{stdResult.regNumber}}"
+                    "value" : "formOutput: {{formOutput}}<br/>application: {{application}}<br/>stdResult: {{stdResult}}<br/>stdResult.regNumber: {{stdResult.regNumber}}"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -1361,14 +1374,13 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "$data.application.registrationNumber = $data.stdResult.regNumber;",
         "if( $data.application && $data.application_Courses ){",
         "\t//attach lazy references variables to parent variables",
         "\t$data.application.Courses = $data.application_Courses;",
         "\treturn {",
         "\t\t//map application variable to expected task contract input",
         "\t\tapplicationInput: {",
-        "\t\t\tregistrationNumber: $data.stdResult.regNumber !== undefined ? $data.stdResult.regNumber : null,",
+        "\t\t\tregistrationNumber: $data.application.regNumber !== undefined ? $data.application.regNumber : null,",
         "\t\t\tCourses: $data.application.Courses.map( it => ({",
         "\t\t\t\tpersistenceId_string: it.persistenceId_string !== undefined ? it.persistenceId_string : null",
         "\t\t\t}))",
@@ -1511,9 +1523,9 @@
       "exposed" : false
     },
     "stdResult" : {
-      "type" : "json",
+      "type" : "url",
       "value" : [
-        "{}"
+        "../API/bdm/businessData/com.company.model.Student?q=findByRegNumber&p=0&c=10&f=regNumber={{application.registrationNumber}}"
       ],
       "exposed" : false
     }
