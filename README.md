@@ -10,3 +10,7 @@ http://localhost:8080/bonita/API/bdm/businessData/com.company.model.Student/find
 Some good readings
 https://www.evoketechnologies.com/blog/custom-page-integration-bonita-bpm/
 https://bonitatraining.com/bonita-bpm-7-developer-friendly-engaging-applications/
+
+- call an attribute of JSON object
+productDetail--> {product: tea, country: Sri Lanka} attribute of productDetail object can be called in UI as productDetail.country
+productDetail--> [{product: tea, country: Sri Lanka}] attribute of productDetail object can be called in UI as productDetail[0].country
