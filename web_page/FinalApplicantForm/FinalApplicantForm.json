@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "FinalApplicantForm",
   "name" : "FinalApplicantForm",
-  "lastUpdate" : 1594188254539,
+  "lastUpdate" : 1594197296131,
   "rows" : [
     [
       {
@@ -259,36 +259,20 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "xs" : 12
+                        "xs" : 6
                       },
                       "propertyValues" : {
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
-                        "widgetId" : {
-                          "type" : "constant",
-                          "value" : "pbInput"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
+                        "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Registration Number"
-                        },
-                        "type" : {
+                        "disabled" : {
                           "type" : "constant",
-                          "value" : "text"
+                          "value" : false
                         },
                         "required" : {
                           "type" : "constant",
@@ -298,33 +282,105 @@
                           "type" : "constant",
                           "value" : false
                         },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Batch"
+                        },
                         "labelPosition" : {
                           "type" : "constant",
                           "value" : "top"
                         },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
                         "placeholder" : {
-                          "type" : "constant"
+                          "type" : "interpolation",
+                          "value" : "Select an option"
                         },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
+                        "availableValues" : {
+                          "type" : "expression",
+                          "value" : "batch"
                         },
-                        "class" : {
+                        "displayedKey" : {
                           "type" : "constant",
-                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.InputWidget"
+                          "value" : "batch"
                         },
-                        "dimension" : {
+                        "returnedKey" : {
                           "type" : "constant",
-                          "value" : 12
+                          "value" : "batch"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "batchMap.batchId"
+                        }
+                      },
+                      "reference" : "9d379287-fe78-46d0-a7c3-74fc4af0944d",
+                      "hasValidationError" : false,
+                      "id" : "pbSelect"
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Registration Number"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "placeholder" : {
+                          "type" : "constant",
+                          "value" : "Select an option"
+                        },
+                        "availableValues" : {
+                          "type" : "expression",
+                          "value" : "(stdQuery | filter: {Batch: batchMap.batchId})"
+                        },
+                        "displayedKey" : {
+                          "type" : "constant",
+                          "value" : "regNumber"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant",
+                          "value" : "regNumber"
                         },
                         "value" : {
                           "type" : "variable",
                           "value" : "application.registrationNumber"
                         }
                       },
-                      "reference" : "fb85353b-cd98-42a2-bf77-4b18db15217f",
+                      "reference" : "d6139482-6195-4f78-92cf-fe58858e9b72",
                       "hasValidationError" : false,
-                      "id" : "pbInput"
+                      "id" : "pbSelect"
                     }
                   ],
                   [
@@ -437,7 +493,70 @@
                           {
                             "type" : "component",
                             "dimension" : {
-                              "xs" : 12
+                              "xs" : 6
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "disabled" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "required" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Semester"
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 4
+                              },
+                              "placeholder" : {
+                                "type" : "interpolation",
+                                "value" : "Select an option"
+                              },
+                              "availableValues" : {
+                                "type" : "expression",
+                                "value" : "semesterQuery"
+                              },
+                              "displayedKey" : {
+                                "type" : "constant",
+                                "value" : "semester"
+                              },
+                              "returnedKey" : {
+                                "type" : "constant",
+                                "value" : "semester"
+                              },
+                              "value" : {
+                                "type" : "variable",
+                                "value" : "curSem[$index].semester"
+                              }
+                            },
+                            "reference" : "c28f763e-9fb9-4420-9fc0-6b71dfcde016",
+                            "hasValidationError" : false,
+                            "id" : "pbSelect"
+                          },
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 6
                             },
                             "propertyValues" : {
                               "hidden" : {
@@ -454,7 +573,7 @@
                               },
                               "availableValues" : {
                                 "type" : "expression",
-                                "value" : "courseModule_query"
+                                "value" : "(moduleQuery | filter: {semester: curSem[$index].semester})"
                               },
                               "labelWidth" : {
                                 "type" : "constant",
@@ -466,11 +585,11 @@
                               },
                               "label" : {
                                 "type" : "interpolation",
-                                "value" : "Courses"
+                                "value" : "Module"
                               },
                               "required" : {
                                 "type" : "constant",
-                                "value" : true
+                                "value" : false
                               },
                               "labelHidden" : {
                                 "type" : "constant",
@@ -499,6 +618,17 @@
                               "value" : {
                                 "type" : "variable",
                                 "value" : "$item"
+                              },
+                              "disabled" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "displayedKey" : {
+                                "type" : "constant",
+                                "value" : "modName"
+                              },
+                              "returnedKey" : {
+                                "type" : "constant"
                               }
                             },
                             "reference" : "a30f5bde-de3e-4a60-8b3a-2f5a2b5d95a9",
@@ -1129,6 +1259,48 @@
       "type" : "urlparameter",
       "value" : [
         "id"
+      ],
+      "exposed" : false
+    },
+    "batch" : {
+      "type" : "url",
+      "value" : [
+        "../API/bdm/businessData/com.company.model.Batch?q=find&p=0&c=10"
+      ],
+      "exposed" : false
+    },
+    "batchMap" : {
+      "type" : "json",
+      "value" : [
+        "{\"batchId\":null,\"regNumId\":null}"
+      ],
+      "exposed" : false
+    },
+    "stdQuery" : {
+      "type" : "url",
+      "value" : [
+        "../API/bdm/businessData/com.company.model.Student?q=find&p=0&c=99"
+      ],
+      "exposed" : false
+    },
+    "semesterQuery" : {
+      "type" : "url",
+      "value" : [
+        "../API/bdm/businessData/com.company.model.Semester?q=find&p=0&c=99"
+      ],
+      "exposed" : false
+    },
+    "curSem" : {
+      "type" : "json",
+      "value" : [
+        "[{\"semester\":null}]"
+      ],
+      "exposed" : false
+    },
+    "moduleQuery" : {
+      "type" : "url",
+      "value" : [
+        "../API/bdm/businessData/com.company.model.CourseModule?q=find&p=0&c=99"
       ],
       "exposed" : false
     }
