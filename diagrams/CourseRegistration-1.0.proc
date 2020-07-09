@@ -276,15 +276,26 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_ozEEO2cHEeeXUPrCIbH-9A" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_ozEEPGcHEeeXUPrCIbH-9A" name="Task for helen.kelly" content="Task for helen.kelly" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_ozEEPWcHEeeXUPrCIbH-9A" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_mT1zUsDgEeq_Q7nD0VKa_A">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_mT1zU8DgEeq_Q7nD0VKa_A" name="application" content="application" type="TYPE_VARIABLE" returnType="com.company.model.Application">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_mT1zVMDgEeq_Q7nD0VKa_A" name="application" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Application"/>
+          <operations xmi:type="expression:Operation" xmi:id="_I5s_mcGbEeqgos_qDVt1sQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_I5s_msGbEeqgos_qDVt1sQ" name="application" content="application" type="TYPE_VARIABLE" returnType="com.company.model.Application">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_I5s_m8GbEeqgos_qDVt1sQ" name="application" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Application"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_mT1zVcDgEeq_Q7nD0VKa_A" name="applicationInput.isComplete" content="applicationInput?.isComplete" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_mT1zVsDgEeq_Q7nD0VKa_A" name="applicationInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_I5s_nMGbEeqgos_qDVt1sQ" name="applicationInput.isComplete" content="applicationInput?.isComplete" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_I5s_ncGbEeqgos_qDVt1sQ" name="applicationInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_mT1zV8DgEeq_Q7nD0VKa_A" type="JAVA_METHOD" expression="setIsComplete">
+            <operator xmi:type="expression:Operator" xmi:id="_I5s_nsGbEeqgos_qDVt1sQ" type="JAVA_METHOD" expression="setIsComplete">
               <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_I5s_k8GbEeqgos_qDVt1sQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_I5s_lMGbEeqgos_qDVt1sQ" name="application" content="application" type="TYPE_VARIABLE" returnType="com.company.model.Application">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_I5s_lcGbEeqgos_qDVt1sQ" name="application" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Application"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_I5s_lsGbEeqgos_qDVt1sQ" name="applicationInput.comment_DR" content="applicationInput?.comment_DR" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_I5s_l8GbEeqgos_qDVt1sQ" name="applicationInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_I5s_mMGbEeqgos_qDVt1sQ" type="JAVA_METHOD" expression="setComment_DR">
+              <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
           <operations xmi:type="expression:Operation" xmi:id="_jHnowMD9EeqYXduhBjO2zw">
@@ -305,8 +316,9 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_g_5YAMDhEeq_Q7nD0VKa_A" name="FinalDRForm" content="0b640d8b-980b-40c5-835a-4dc85916c1d9" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_ozEER2cHEeeXUPrCIbH-9A">
-            <inputs xmi:type="process:ContractInput" xmi:id="_mT1zUMDgEeq_Q7nD0VKa_A" name="applicationInput" type="COMPLEX" dataReference="application" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_mT1zUcDgEeq_Q7nD0VKa_A" name="isComplete" type="BOOLEAN" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_I5s_kMGbEeqgos_qDVt1sQ" name="applicationInput" type="COMPLEX" dataReference="application" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_I5s_kcGbEeqgos_qDVt1sQ" name="comment_DR" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_I5s_ksGbEeqgos_qDVt1sQ" name="isComplete" type="BOOLEAN" createMode="false"/>
             </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_ozEESGcHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -327,15 +339,26 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_ozEEUWcHEeeXUPrCIbH-9A" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_ozEEUmcHEeeXUPrCIbH-9A" name="Task for william.jobs" content="Task for william.jobs" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_ozEEU2cHEeeXUPrCIbH-9A" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_uOdggsDgEeq_Q7nD0VKa_A">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_uOdgg8DgEeq_Q7nD0VKa_A" name="application" content="application" type="TYPE_VARIABLE" returnType="com.company.model.Application">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_uOdghMDgEeq_Q7nD0VKa_A" name="application" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Application"/>
+          <operations xmi:type="expression:Operation" xmi:id="_V5Vex8GbEeqgos_qDVt1sQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_V5VeyMGbEeqgos_qDVt1sQ" name="application" content="application" type="TYPE_VARIABLE" returnType="com.company.model.Application">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_V5VeycGbEeqgos_qDVt1sQ" name="application" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Application"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_uOdghcDgEeq_Q7nD0VKa_A" name="applicationInput.isRecommended" content="applicationInput?.isRecommended" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_uOdghsDgEeq_Q7nD0VKa_A" name="applicationInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_V5VeysGbEeqgos_qDVt1sQ" name="applicationInput.isRecommended" content="applicationInput?.isRecommended" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_V5Vey8GbEeqgos_qDVt1sQ" name="applicationInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_uOdgh8DgEeq_Q7nD0VKa_A" type="JAVA_METHOD" expression="setIsRecommended">
+            <operator xmi:type="expression:Operator" xmi:id="_V5VezMGbEeqgos_qDVt1sQ" type="JAVA_METHOD" expression="setIsRecommended">
               <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_V5VewcGbEeqgos_qDVt1sQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_V5VewsGbEeqgos_qDVt1sQ" name="application" content="application" type="TYPE_VARIABLE" returnType="com.company.model.Application">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_V5Vew8GbEeqgos_qDVt1sQ" name="application" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Application"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_V5VexMGbEeqgos_qDVt1sQ" name="applicationInput.comment_HOD" content="applicationInput?.comment_HOD" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_V5VexcGbEeqgos_qDVt1sQ" name="applicationInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_V5VexsGbEeqgos_qDVt1sQ" type="JAVA_METHOD" expression="setComment_HOD">
+              <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
           <operations xmi:type="expression:Operation" xmi:id="_SdyrkMEEEeqYXduhBjO2zw">
@@ -356,8 +379,9 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_o9yboMDhEeq_Q7nD0VKa_A" name="FinalHODForm" content="1fa129a2-c02a-49ee-851e-f63825567236" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_ozEEXWcHEeeXUPrCIbH-9A">
-            <inputs xmi:type="process:ContractInput" xmi:id="_uOdggMDgEeq_Q7nD0VKa_A" name="applicationInput" type="COMPLEX" dataReference="application" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_uOdggcDgEeq_Q7nD0VKa_A" name="isRecommended" type="BOOLEAN" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_V5U3sMGbEeqgos_qDVt1sQ" name="applicationInput" type="COMPLEX" dataReference="application" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_V5U3scGbEeqgos_qDVt1sQ" name="comment_HOD" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_V5VewMGbEeqgos_qDVt1sQ" name="isRecommended" type="BOOLEAN" createMode="false"/>
             </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_ozEEXmcHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>

@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "FinalDRForm",
   "name" : "FinalDRForm",
-  "lastUpdate" : 1594199743910,
+  "lastUpdate" : 1594268671347,
   "rows" : [
     [
       {
@@ -525,6 +525,18 @@
                               "dimension" : {
                                 "type" : "constant",
                                 "value" : 12
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 4
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : true
                               }
                             },
                             "reference" : "73d747e7-a850-48aa-b7b4-22f65409e25b",
@@ -586,6 +598,63 @@
                       "reference" : "44b7dfa6-cc24-4fa0-924f-afc0478e8170",
                       "hasValidationError" : false,
                       "id" : "pbCheckbox"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Comment"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "application.comment_DR"
+                        }
+                      },
+                      "reference" : "8680eb6c-8ff5-4b1c-9961-7d38797f8b0e",
+                      "hasValidationError" : false,
+                      "id" : "pbTextarea"
                     }
                   ],
                   [
@@ -843,7 +912,8 @@
         "\treturn {",
         "\t\t//map application variable to expected task contract input",
         "\t\tapplicationInput: {",
-        "\t\t\tisComplete: $data.application.isComplete !== undefined ? $data.application.isComplete : null",
+        "\t\t\tisComplete: $data.application.isComplete !== undefined ? $data.application.isComplete : null,",
+        "\t\t\tcomment_DR: $data.application.comment_DR !== undefined ? $data.application.comment_DR : null",
         "\t\t}",
         "\t}",
         "}"
