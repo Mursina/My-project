@@ -56,7 +56,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_d1IQ4MD8EeqYXduhBjO2zw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_d1IQ4sD8EeqYXduhBjO2zw" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:ServiceTask" xmi:id="_qlEU8MEBEeqYXduhBjO2zw" name="Step4" outgoing="_d1UeIMD8EeqYXduhBjO2zw" incoming="_ajJiwMD8EeqYXduhBjO2zw">
+        <elements xmi:type="process:ServiceTask" xmi:id="_qlEU8MEBEeqYXduhBjO2zw" name="Incomplete" outgoing="_d1UeIMD8EeqYXduhBjO2zw" incoming="_ajJiwMD8EeqYXduhBjO2zw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_aixIQcD8EeqYXduhBjO2zw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_aixIQMD8EeqYXduhBjO2zw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_aixIQsD8EeqYXduhBjO2zw" name="" content="" returnTypeFixed="true"/>
@@ -102,7 +102,13 @@
                 <expression xmi:type="expression:Expression" xmi:id="_FJNiG8ECEeqYXduhBjO2zw" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_FJNiHMECEeqYXduhBjO2zw" key="message">
-                <expression xmi:type="expression:Expression" xmi:id="_FJNiHcECEeqYXduhBjO2zw" name="&lt;pattern-expression>" content="Please fill the form according to the comments" type="TYPE_PATTERN" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_FJNiHcECEeqYXduhBjO2zw" name="&lt;pattern-expression>" content="Please fill the form according to the comments.&#xA;&#xA;Comment from Deputy Registrar: ${comment_DR}" type="TYPE_PATTERN" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_OjUu8MGlEeqgos_qDVt1sQ" name="comment_DR" content="comment_DR" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_OjUu8cGlEeqgos_qDVt1sQ" name="comment_DR" content="comment_DR" type="TYPE_VARIABLE">
+                      <referencedElements xmi:type="process:Data" xmi:id="_OjUu8sGlEeqgos_qDVt1sQ" name="comment_DR" dataType="_ozEEk2cHEeeXUPrCIbH-9A"/>
+                    </referencedElements>
+                  </referencedElements>
+                </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_FJNiHsECEeqYXduhBjO2zw" key="headers">
                 <expression xmi:type="expression:TableExpression" xmi:id="_FJNiH8ECEeqYXduhBjO2zw"/>
@@ -124,7 +130,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_aixIR8D8EeqYXduhBjO2zw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_aixIRsD8EeqYXduhBjO2zw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:ServiceTask" xmi:id="_3VrOwMEDEeqYXduhBjO2zw" name="Step5" outgoing="_6QTM0MEDEeqYXduhBjO2zw" incoming="_3VzKkMEDEeqYXduhBjO2zw">
+        <elements xmi:type="process:ServiceTask" xmi:id="_3VrOwMEDEeqYXduhBjO2zw" name="Rejected" outgoing="_6QTM0MEDEeqYXduhBjO2zw" incoming="_3VzKkMEDEeqYXduhBjO2zw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_3Vr10cEDEeqYXduhBjO2zw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_3Vr10MEDEeqYXduhBjO2zw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_3Vr10sEDEeqYXduhBjO2zw" name="" content="" returnTypeFixed="true"/>
@@ -170,7 +176,13 @@
                 <expression xmi:type="expression:Expression" xmi:id="_lNMUgcEFEeqYXduhBjO2zw" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_lNMUgsEFEeqYXduhBjO2zw" key="message">
-                <expression xmi:type="expression:Expression" xmi:id="_lNMUg8EFEeqYXduhBjO2zw" name="&lt;pattern-expression>" content="Please find the comments from HOD" type="TYPE_PATTERN" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_lNMUg8EFEeqYXduhBjO2zw" name="&lt;pattern-expression>" content="Please find the comments from HOD&#xA;&#xA;Comment from Head of the Department: ${comment_HOD}" type="TYPE_PATTERN" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_JkOXsMGlEeqgos_qDVt1sQ" name="comment_HOD" content="comment_HOD" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_JkOXscGlEeqgos_qDVt1sQ" name="comment_HOD" content="comment_HOD" type="TYPE_VARIABLE">
+                      <referencedElements xmi:type="process:Data" xmi:id="_JkOXssGlEeqgos_qDVt1sQ" name="comment_HOD" dataType="_ozEEk2cHEeeXUPrCIbH-9A"/>
+                    </referencedElements>
+                  </referencedElements>
+                </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_lNMUhMEFEeqYXduhBjO2zw" key="headers">
                 <expression xmi:type="expression:TableExpression" xmi:id="_lNMUhcEFEeqYXduhBjO2zw"/>
@@ -197,7 +209,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_6QLRAMEDEeqYXduhBjO2zw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_6QLRAsEDEeqYXduhBjO2zw" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:ServiceTask" xmi:id="_sIUw0MGYEeqgos_qDVt1sQ" name="Step6" outgoing="_3rzbEMGYEeqgos_qDVt1sQ" incoming="_sIa3cMGYEeqgos_qDVt1sQ">
+        <elements xmi:type="process:ServiceTask" xmi:id="_sIUw0MGYEeqgos_qDVt1sQ" name="Accepted" outgoing="_3rzbEMGYEeqgos_qDVt1sQ" incoming="_sIa3cMGYEeqgos_qDVt1sQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_sIUw0sGYEeqgos_qDVt1sQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_sIUw0cGYEeqgos_qDVt1sQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_sIUw08GYEeqgos_qDVt1sQ" name="" content="" returnTypeFixed="true"/>
@@ -243,7 +255,13 @@
                 <expression xmi:type="expression:Expression" xmi:id="_WOrHmMGZEeqgos_qDVt1sQ" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WOrHmcGZEeqgos_qDVt1sQ" key="message">
-                <expression xmi:type="expression:Expression" xmi:id="_WOrHmsGZEeqgos_qDVt1sQ" name="&lt;pattern-expression>" content="Congratulation.! Your application is accepted" type="TYPE_PATTERN" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_WOrHmsGZEeqgos_qDVt1sQ" name="&lt;pattern-expression>" content="Congratulation.! Your application is accepted&#xA;&#xA;Comment from HOD: ${comment_HOD}" type="TYPE_PATTERN" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_CUezgMGlEeqgos_qDVt1sQ" name="comment_HOD" content="comment_HOD" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_CUezgcGlEeqgos_qDVt1sQ" name="comment_HOD" content="comment_HOD" type="TYPE_VARIABLE">
+                      <referencedElements xmi:type="process:Data" xmi:id="_CUezgsGlEeqgos_qDVt1sQ" name="comment_HOD" dataType="_ozEEk2cHEeeXUPrCIbH-9A"/>
+                    </referencedElements>
+                  </referencedElements>
+                </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WOrHm8GZEeqgos_qDVt1sQ" key="headers">
                 <expression xmi:type="expression:TableExpression" xmi:id="_WOrHnMGZEeqgos_qDVt1sQ"/>
@@ -306,6 +324,15 @@
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_s-Nd8MD-EeqYXduhBjO2zw" name="application" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Application"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_jHnow8D9EeqYXduhBjO2zw" type="ASSIGNMENT"/>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_uu8woMGfEeqgos_qDVt1sQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_uu8wocGfEeqgos_qDVt1sQ" name="comment_DR" content="comment_DR" type="TYPE_VARIABLE">
+              <referencedElements xmi:type="process:Data" xmi:id="_6sb2UMGfEeqgos_qDVt1sQ" name="comment_DR" dataType="_ozEEk2cHEeeXUPrCIbH-9A"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_uu8wosGfEeqgos_qDVt1sQ" name="comment_DR()" content="return application.comment_DR" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_C6s4QMGgEeqgos_qDVt1sQ" name="application" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Application"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_uu8wo8GfEeqgos_qDVt1sQ" type="ASSIGNMENT"/>
           </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_ozEEPmcHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_ozEEP2cHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -370,6 +397,15 @@
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_Sdyrk8EEEeqYXduhBjO2zw" type="ASSIGNMENT"/>
           </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_D1VUgMGgEeqgos_qDVt1sQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_D1VUgcGgEeqgos_qDVt1sQ" name="comment_HOD" content="comment_HOD" type="TYPE_VARIABLE">
+              <referencedElements xmi:type="process:Data" xmi:id="_EeqlYMGgEeqgos_qDVt1sQ" name="comment_HOD" dataType="_ozEEk2cHEeeXUPrCIbH-9A"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_D1VUgsGgEeqgos_qDVt1sQ" name="comment_HOD()" content="return application.comment_HOD" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_MGwYIMGgEeqgos_qDVt1sQ" name="application" dataType="_ozEElmcHEeeXUPrCIbH-9A" className="com.company.model.Application"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_D1VUg8GgEeqgos_qDVt1sQ" type="ASSIGNMENT"/>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_ozEEVGcHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_ozEEVWcHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_ozEEVmcHEeeXUPrCIbH-9A" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -403,6 +439,12 @@
       </data>
       <data xmi:type="process:Data" xmi:id="_V3XPcMEEEeqYXduhBjO2zw" name="isRecommend" dataType="_ozEEjmcHEeeXUPrCIbH-9A">
         <defaultValue xmi:type="expression:Expression" xmi:id="_V3XPccEEEeqYXduhBjO2zw" content="" returnType="java.lang.Boolean"/>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_1eEUAMGfEeqgos_qDVt1sQ" name="comment_DR" dataType="_ozEEk2cHEeeXUPrCIbH-9A">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_1eEUAcGfEeqgos_qDVt1sQ" name="None" content="None"/>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_4qyusMGfEeqgos_qDVt1sQ" name="comment_HOD" dataType="_ozEEk2cHEeeXUPrCIbH-9A">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_4qyuscGfEeqgos_qDVt1sQ" name="None" content="None"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_ozEEaWcHEeeXUPrCIbH-9A" type="NONE">
         <targetForm xmi:type="expression:Expression" xmi:id="_ozEEamcHEeeXUPrCIbH-9A" name="newForm" content="bf8601db-5f5f-42a4-8820-00f7e3585c5b" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
