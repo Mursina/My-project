@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "FinalHODForm",
   "name" : "FinalHODForm",
-  "lastUpdate" : 1594268906208,
+  "lastUpdate" : 1594284906139,
   "rows" : [
     [
       {
@@ -214,7 +214,8 @@
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
-                    "type" : "variable"
+                    "type" : "variable",
+                    "value" : ""
                   },
                   "labelHidden" : {
                     "type" : "constant",
@@ -370,169 +371,61 @@
                   ],
                   [
                     {
-                      "type" : "container",
+                      "type" : "component",
                       "dimension" : {
                         "xs" : 12
                       },
                       "propertyValues" : {
-                        "repeatedCollection" : {
-                          "type" : "variable",
-                          "value" : "application_Courses"
-                        },
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "cssClasses" : {
+                        "allowHTML" : {
                           "type" : "constant",
+                          "value" : true
+                        },
+                        "headers" : {
+                          "type" : "constant",
+                          "value" : [
+                            "Semester",
+                            "Module Name"
+                          ]
+                        },
+                        "content" : {
+                          "type" : "expression",
+                          "value" : "application_Courses"
+                        },
+                        "columnsKey" : {
+                          "type" : "constant",
+                          "value" : [
+                            "semester",
+                            "modName"
+                          ]
+                        },
+                        "selectedRow" : {
+                          "type" : "variable",
                           "value" : ""
                         },
-                        "widgetId" : {
-                          "type" : "constant"
+                        "striped" : {
+                          "type" : "constant",
+                          "value" : true
                         },
-                        "readOnly" : {
+                        "condensed" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "label" : {
-                          "type" : "interpolation"
-                        },
-                        "alignment" : {
+                        "bordered" : {
                           "type" : "constant",
-                          "value" : "left"
-                        },
-                        "class" : {
-                          "type" : "constant",
-                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.WidgetContainer"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
+                          "value" : false
                         }
                       },
-                      "reference" : "b96aaaf5-da77-44bc-8a67-773eb910c8a8",
+                      "reference" : "d5259747-2099-42cc-b551-e4ce6a55942c",
                       "hasValidationError" : false,
-                      "id" : "pbContainer",
-                      "rows" : [
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "xs" : 12
-                            },
-                            "propertyValues" : {
-                              "allowHtml" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "expression",
-                                "value" : "!$item.modName"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "widgetId" : {
-                                "type" : "constant",
-                                "value" : "pbText"
-                              },
-                              "readOnly" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Mod Name"
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "{{$item.modName}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "class" : {
-                                "type" : "constant",
-                                "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "6c0cf021-d9db-49ec-ba6b-480ad8e05ad7",
-                            "hasValidationError" : false,
-                            "id" : "pbText"
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "xs" : 12
-                            },
-                            "propertyValues" : {
-                              "allowHtml" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "expression",
-                                "value" : "!$item.semester"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "widgetId" : {
-                                "type" : "constant",
-                                "value" : "pbText"
-                              },
-                              "readOnly" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Semester"
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "{{$item.semester}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "class" : {
-                                "type" : "constant",
-                                "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "4d8edeed-c074-4b63-993a-c0c0889b257c",
-                            "hasValidationError" : false,
-                            "id" : "pbText"
-                          }
-                        ]
-                      ]
+                      "id" : "pbTable"
                     }
                   ],
                   [

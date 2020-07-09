@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "FinalApplicantForm",
   "name" : "FinalApplicantForm",
-  "lastUpdate" : 1594197296131,
+  "lastUpdate" : 1594285033201,
   "rows" : [
     [
       {
@@ -643,120 +643,6 @@
                               "xs" : 12
                             },
                             "propertyValues" : {
-                              "allowHtml" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "expression",
-                                "value" : "!$item.modName"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "widgetId" : {
-                                "type" : "constant",
-                                "value" : "pbText"
-                              },
-                              "readOnly" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Mod Name"
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "{{$item.modName}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "class" : {
-                                "type" : "constant",
-                                "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "2eb79d83-fcc5-42fd-a943-ac684c8e9724",
-                            "hasValidationError" : false,
-                            "id" : "pbText"
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "xs" : 12
-                            },
-                            "propertyValues" : {
-                              "allowHtml" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "expression",
-                                "value" : "!$item.semester"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "widgetId" : {
-                                "type" : "constant",
-                                "value" : "pbText"
-                              },
-                              "readOnly" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Semester"
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "{{$item.semester}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "class" : {
-                                "type" : "constant",
-                                "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "45443a55-b09a-4159-a79d-f85e3fdb2995",
-                            "hasValidationError" : false,
-                            "id" : "pbText"
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "xs" : 12
-                            },
-                            "propertyValues" : {
                               "removeItem" : {
                                 "type" : "variable",
                                 "value" : "$item"
@@ -825,6 +711,30 @@
                               "dimension" : {
                                 "type" : "constant",
                                 "value" : 12
+                              },
+                              "assign" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "url" : {
+                                "type" : "interpolation"
+                              },
+                              "responseStatusCode" : {
+                                "type" : "variable"
+                              },
+                              "dataFromSuccess" : {
+                                "type" : "variable"
+                              },
+                              "closeOnSuccess" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "dataFromError" : {
+                                "type" : "variable"
+                              },
+                              "modalId" : {
+                                "type" : "constant",
+                                "value" : ""
                               }
                             },
                             "reference" : "389e32f8-2077-41d8-a923-dd8d0b493f10",
@@ -914,6 +824,65 @@
                       "reference" : "a2e39970-adb6-47f8-860b-ddafd6d98161",
                       "hasValidationError" : false,
                       "id" : "pbButton"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "headers" : {
+                          "type" : "constant",
+                          "value" : [
+                            "Semester",
+                            "Module Name"
+                          ]
+                        },
+                        "content" : {
+                          "type" : "expression",
+                          "value" : "application_Courses"
+                        },
+                        "columnsKey" : {
+                          "type" : "constant",
+                          "value" : [
+                            "semester",
+                            "modName"
+                          ]
+                        },
+                        "selectedRow" : {
+                          "type" : "variable",
+                          "value" : ""
+                        },
+                        "striped" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "condensed" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "bordered" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "88dbfe73-dd78-49f5-8949-09e14b3c3fea",
+                      "hasValidationError" : false,
+                      "id" : "pbTable"
                     }
                   ],
                   [
