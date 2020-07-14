@@ -58,5 +58,14 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.company.model.Test">
+            <fields>
+                <field type="STRING" length="255" name="name" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.Batch" fetchType="LAZY" name="batch" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
     </businessObjects>
 </businessObjectModel>
