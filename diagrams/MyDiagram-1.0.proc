@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_6Xm5IMAbEeqXm-Rs8tSjKg" name="MyDiagram" author="bonita1" bonitaVersion="7.10.4" bonitaModelVersion="7.10.0-001" configId="ACED0005740010372E31302E302D303031372E31302E34">
+  <process:MainProcess xmi:id="_6Xm5IMAbEeqXm-Rs8tSjKg" name="MyDiagram" author="bonita1" bonitaVersion="7.11.0" bonitaModelVersion="7.11.0-005" configId="ACED0005740010372E31312E302D303035372E31312E30">
     <elements xmi:type="process:Pool" xmi:id="_6Xm5IcAbEeqXm-Rs8tSjKg" name="Test">
       <elements xmi:type="process:Lane" xmi:id="_6Xm5IsAbEeqXm-Rs8tSjKg" name="Employee lane" actor="_6Xm5O8AbEeqXm-Rs8tSjKg">
         <elements xmi:type="process:StartEvent" xmi:id="_6Xm5I8AbEeqXm-Rs8tSjKg" name="Start1" outgoing="_6Xm5OMAbEeqXm-Rs8tSjKg">
@@ -112,23 +112,23 @@
   </process:MainProcess>
   <notation:Diagram xmi:id="_6Xm5VcAbEeqXm-Rs8tSjKg" type="Process" element="_6Xm5IMAbEeqXm-Rs8tSjKg" name="MyDiagram" measurementUnit="Pixel">
     <children xmi:type="notation:Node" xmi:id="_6Xm5VsAbEeqXm-Rs8tSjKg" type="2007" element="_6Xm5IcAbEeqXm-Rs8tSjKg">
-      <children xmi:type="notation:DecorationNode" xmi:id="_6Xm5V8AbEeqXm-Rs8tSjKg" type="5008"/>
-      <children xmi:type="notation:DecorationNode" xmi:id="_6Xm5WMAbEeqXm-Rs8tSjKg" type="7001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_6Xm5V8AbEeqXm-Rs8tSjKg" type="5008" element="_6Xm5IcAbEeqXm-Rs8tSjKg"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_6Xm5WMAbEeqXm-Rs8tSjKg" type="7001" element="_6Xm5IcAbEeqXm-Rs8tSjKg">
         <children xmi:type="notation:Node" xmi:id="_6Xm5WcAbEeqXm-Rs8tSjKg" type="3007" element="_6Xm5IsAbEeqXm-Rs8tSjKg">
-          <children xmi:type="notation:DecorationNode" xmi:id="_6Xm5WsAbEeqXm-Rs8tSjKg" type="5007"/>
-          <children xmi:type="notation:DecorationNode" xmi:id="_6Xm5W8AbEeqXm-Rs8tSjKg" type="7002">
+          <children xmi:type="notation:DecorationNode" xmi:id="_6Xm5WsAbEeqXm-Rs8tSjKg" type="5007" element="_6Xm5IsAbEeqXm-Rs8tSjKg"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_6Xm5W8AbEeqXm-Rs8tSjKg" type="7002" element="_6Xm5IsAbEeqXm-Rs8tSjKg">
             <children xmi:type="notation:Shape" xmi:id="_6Xm5XMAbEeqXm-Rs8tSjKg" type="3005" element="_6Xm5J8AbEeqXm-Rs8tSjKg" fontName="Sans" fillColor="14334392" lineColor="10710316">
-              <children xmi:type="notation:DecorationNode" xmi:id="_6Xm5XcAbEeqXm-Rs8tSjKg" type="5005"/>
+              <children xmi:type="notation:DecorationNode" xmi:id="_6Xm5XcAbEeqXm-Rs8tSjKg" type="5005" element="_6Xm5J8AbEeqXm-Rs8tSjKg"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6Xm5XsAbEeqXm-Rs8tSjKg" x="160" y="60"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_6Xm5X8AbEeqXm-Rs8tSjKg" type="3002" element="_6Xm5I8AbEeqXm-Rs8tSjKg" fontName="Sans">
-              <children xmi:type="notation:DecorationNode" xmi:id="_6Xm5YMAbEeqXm-Rs8tSjKg" type="5024">
+              <children xmi:type="notation:DecorationNode" xmi:id="_6Xm5YMAbEeqXm-Rs8tSjKg" type="5024" element="_6Xm5I8AbEeqXm-Rs8tSjKg">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_6Xm5YcAbEeqXm-Rs8tSjKg" y="5"/>
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6Xm5YsAbEeqXm-Rs8tSjKg" x="60" y="68"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_ATnkkMAcEeqXm-Rs8tSjKg" type="3062" element="_ATlIUMAcEeqXm-Rs8tSjKg" fontName="Sans">
-              <children xmi:type="notation:DecorationNode" xmi:id="_ATqA0MAcEeqXm-Rs8tSjKg" type="5090">
+              <children xmi:type="notation:DecorationNode" xmi:id="_ATqA0MAcEeqXm-Rs8tSjKg" type="5090" element="_ATlIUMAcEeqXm-Rs8tSjKg">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_ATqA0cAcEeqXm-Rs8tSjKg" y="5"/>
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ATnkkcAcEeqXm-Rs8tSjKg" x="476" y="64"/>
@@ -149,14 +149,14 @@
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_6Xm5bcAbEeqXm-Rs8tSjKg"/>
     <edges xmi:type="notation:Connector" xmi:id="_6Xm5bsAbEeqXm-Rs8tSjKg" type="4001" element="_6Xm5OMAbEeqXm-Rs8tSjKg" source="_6Xm5X8AbEeqXm-Rs8tSjKg" target="_6Xm5XMAbEeqXm-Rs8tSjKg" roundedBendpointsRadius="10" routing="Rectilinear">
-      <children xmi:type="notation:DecorationNode" xmi:id="_6Xm5b8AbEeqXm-Rs8tSjKg" type="6001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_6Xm5b8AbEeqXm-Rs8tSjKg" type="6001" element="_6Xm5OMAbEeqXm-Rs8tSjKg">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_6Xm5cMAbEeqXm-Rs8tSjKg" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_6Xm5ccAbEeqXm-Rs8tSjKg" fontName="Sans"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6Xm5csAbEeqXm-Rs8tSjKg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_s24LsMWEEeqC_rnxm5xDqA" type="4001" element="_s2rXYMWEEeqC_rnxm5xDqA" source="_6Xm5XMAbEeqXm-Rs8tSjKg" target="_ATnkkMAcEeqXm-Rs8tSjKg" roundedBendpointsRadius="10" routing="Rectilinear">
-      <children xmi:type="notation:DecorationNode" xmi:id="_s26A4MWEEeqC_rnxm5xDqA" type="6001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_s26A4MWEEeqC_rnxm5xDqA" type="6001" element="_s2rXYMWEEeqC_rnxm5xDqA">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_s26A4cWEEeqC_rnxm5xDqA" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_s24LscWEEeqC_rnxm5xDqA" fontName="Sans"/>

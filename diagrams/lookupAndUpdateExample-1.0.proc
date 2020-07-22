@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_NPOjwJRIEeqd75QgJvOPrw" name="lookupAndUpdateExample" author="bonita1" bonitaVersion="7.10.4" bonitaModelVersion="7.10.0-001" configId="ACED0005740010372E31302E302D303031372E31302E34">
+  <process:MainProcess xmi:id="_NPOjwJRIEeqd75QgJvOPrw" name="lookupAndUpdateExample" author="bonita1" bonitaVersion="7.11.0" bonitaModelVersion="7.11.0-005" configId="ACED0005740010372E31312E302D303035372E31312E30">
     <elements xmi:type="process:Pool" xmi:id="_NPOjwZRIEeqd75QgJvOPrw" name="Pool">
       <elements xmi:type="process:Lane" xmi:id="_NPOjwpRIEeqd75QgJvOPrw" name="Employee lane" actor="_NPOj25RIEeqd75QgJvOPrw">
         <elements xmi:type="process:StartEvent" xmi:id="_NPOjw5RIEeqd75QgJvOPrw" name="Start1" outgoing="_NPOj2JRIEeqd75QgJvOPrw">
@@ -114,23 +114,23 @@
   </process:MainProcess>
   <notation:Diagram xmi:id="_NPOj9ZRIEeqd75QgJvOPrw" type="Process" element="_NPOjwJRIEeqd75QgJvOPrw" name="MyDiagram" measurementUnit="Pixel">
     <children xmi:type="notation:Node" xmi:id="_NPOj9pRIEeqd75QgJvOPrw" type="2007" element="_NPOjwZRIEeqd75QgJvOPrw">
-      <children xmi:type="notation:DecorationNode" xmi:id="_NPOj95RIEeqd75QgJvOPrw" type="5008"/>
-      <children xmi:type="notation:DecorationNode" xmi:id="_NPOj-JRIEeqd75QgJvOPrw" type="7001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_NPOj95RIEeqd75QgJvOPrw" type="5008" element="_NPOjwZRIEeqd75QgJvOPrw"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_NPOj-JRIEeqd75QgJvOPrw" type="7001" element="_NPOjwZRIEeqd75QgJvOPrw">
         <children xmi:type="notation:Node" xmi:id="_NPOj-ZRIEeqd75QgJvOPrw" type="3007" element="_NPOjwpRIEeqd75QgJvOPrw">
-          <children xmi:type="notation:DecorationNode" xmi:id="_NPOj-pRIEeqd75QgJvOPrw" type="5007"/>
-          <children xmi:type="notation:DecorationNode" xmi:id="_NPOj-5RIEeqd75QgJvOPrw" type="7002">
+          <children xmi:type="notation:DecorationNode" xmi:id="_NPOj-pRIEeqd75QgJvOPrw" type="5007" element="_NPOjwpRIEeqd75QgJvOPrw"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_NPOj-5RIEeqd75QgJvOPrw" type="7002" element="_NPOjwpRIEeqd75QgJvOPrw">
             <children xmi:type="notation:Shape" xmi:id="_NPOj_JRIEeqd75QgJvOPrw" type="3005" element="_NPOjx5RIEeqd75QgJvOPrw" fontName="Sans" fillColor="14334392" lineColor="10710316">
-              <children xmi:type="notation:DecorationNode" xmi:id="_NPOj_ZRIEeqd75QgJvOPrw" type="5005"/>
+              <children xmi:type="notation:DecorationNode" xmi:id="_NPOj_ZRIEeqd75QgJvOPrw" type="5005" element="_NPOjx5RIEeqd75QgJvOPrw"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NPOj_pRIEeqd75QgJvOPrw" x="160" y="60"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_NPOj_5RIEeqd75QgJvOPrw" type="3002" element="_NPOjw5RIEeqd75QgJvOPrw" fontName="Sans">
-              <children xmi:type="notation:DecorationNode" xmi:id="_NPOkAJRIEeqd75QgJvOPrw" type="5024">
+              <children xmi:type="notation:DecorationNode" xmi:id="_NPOkAJRIEeqd75QgJvOPrw" type="5024" element="_NPOjw5RIEeqd75QgJvOPrw">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_NPOkAZRIEeqd75QgJvOPrw" y="5"/>
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NPOkApRIEeqd75QgJvOPrw" x="60" y="68"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_P-JoIJRIEeqd75QgJvOPrw" type="3062" element="_P92tMJRIEeqd75QgJvOPrw" fontName="Sans">
-              <children xmi:type="notation:DecorationNode" xmi:id="_P-KPMJRIEeqd75QgJvOPrw" type="5090">
+              <children xmi:type="notation:DecorationNode" xmi:id="_P-KPMJRIEeqd75QgJvOPrw" type="5090" element="_P92tMJRIEeqd75QgJvOPrw">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_P-PHsJRIEeqd75QgJvOPrw" y="5"/>
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_P-JoIZRIEeqd75QgJvOPrw" x="331" y="71"/>
@@ -151,14 +151,14 @@
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_NPOkDZRIEeqd75QgJvOPrw"/>
     <edges xmi:type="notation:Connector" xmi:id="_NPOkDpRIEeqd75QgJvOPrw" type="4001" element="_NPOj2JRIEeqd75QgJvOPrw" source="_NPOj_5RIEeqd75QgJvOPrw" target="_NPOj_JRIEeqd75QgJvOPrw" roundedBendpointsRadius="10" routing="Rectilinear">
-      <children xmi:type="notation:DecorationNode" xmi:id="_NPOkD5RIEeqd75QgJvOPrw" type="6001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_NPOkD5RIEeqd75QgJvOPrw" type="6001" element="_NPOj2JRIEeqd75QgJvOPrw">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_NPOkEJRIEeqd75QgJvOPrw" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_NPOkEZRIEeqd75QgJvOPrw" fontName="Sans"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NPOkEpRIEeqd75QgJvOPrw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_P_mZoJRIEeqd75QgJvOPrw" type="4001" element="_P_fE4JRIEeqd75QgJvOPrw" source="_NPOj_JRIEeqd75QgJvOPrw" target="_P-JoIJRIEeqd75QgJvOPrw" roundedBendpointsRadius="10" routing="Rectilinear">
-      <children xmi:type="notation:DecorationNode" xmi:id="_P_nnwJRIEeqd75QgJvOPrw" type="6001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_P_nnwJRIEeqd75QgJvOPrw" type="6001" element="_P_fE4JRIEeqd75QgJvOPrw">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_P_nnwZRIEeqd75QgJvOPrw" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_P_mZoZRIEeqd75QgJvOPrw" fontName="Sans"/>
