@@ -1,0 +1,57 @@
+persistenceId|modName|persistenceVersion|Semester
+1|CE 13001 Strength of Materials|0|Semester 1
+2|CS 13001 Introduction to Computing|0|Semester 1
+3|EE 13001 Principles of Electrical Engineering|0|Semester 1
+4|ID 11001 English-I|0|Semester 1
+5|ID 13002 Mathematics- I|0|Semester 1
+6|ME 13001 Applied Mechanics|0|Semester 1
+7|ME 12002 Engineering Drawing|0|Semester 1
+8|EN 23001 Principles of  Electronics|0|Semester 2
+9|ID 22001 Engineer in Society|0|Semester 2
+10|ID 21002 English-II|0|Semester 2
+11|ID 23003 Mathematics- II|0|Semester 2
+12|ME 23001 Engineering Materials and Processes|0|Semester 2
+13|ME 22002 Presentation of Engineering Information|0|Semester 2
+14|ME 23003 Thermo Fluids|0|Semester 2
+15|ID 21004 Introduction to Sinhala Language|0|Semester 2
+16|ID 21005 Introduction to Tamil Language|0|Semester 2
+17|ID 32001 Calculus|0|Semester 3
+18|ID 32002 Differential  Equations|0|Semester 3
+19|ID 32003 Engineering Economics|0|Semester 3
+20|ID 31004 Presentation Skills|0|Semester 3
+21|EE 32001 Electrical Circuit Analysis|0|Semester 3
+22|EE 32002 Electrical Measurements|0|Semester 3
+23|EE 33003 Theory of Electricity|0|Semester 3
+24|CS 33001 Computer Architecture|0|Semester 3
+25|EN 33001 Digital Electronics|0|Semester 3
+26|EN 33002 Introduction to Telecommunications|0|Semester 3
+27|ID 42001 Accounting for Engineers|0|Semester 4
+28|ID 42003 Linear Algebra |0|Semester 4
+29|ID 42004 Probability & Statistics|0|Semester 4
+30|ID 41005 Report Writing|0|Semester 4
+31|EE 42001 Field Theory|0|Semester 4
+32|EE 42002 Introduction to Power Systems|0|Semester 4
+33|CS 43002 Operating Systems|0|Semester 4
+34|EN 43001 Analog Electronics|0|Semester 4
+35|EN 43002 Signals & Systems|0|Semester 4
+36|ID 52001 Industrial Management|0|Semester 5
+37|ID 52002 Numerical Methods|0|Semester 5
+38|CS 53001 Computer Networks|0|Semester 5
+39|CS 53003 Data Structures and Algorithms|0|Semester 5
+40|EE 52001 Introduction to Electrical Machines|0|Semester 5
+41|EE 53002 Power Systems I|0|Semester 5
+42|EN 53001 Communication Theory|0|Semester 5
+43|EN 52002 Power Electronics|0|Semester 5
+44|EN 63001 Communication Systems I|0|Semester 6
+45|EN 63002 Control Systems |0|Semester 6
+46|EN 62003 Electromagnetics|0|Semester 6
+47|EE 63001 Electrical Installations|0|Semester 6
+48|EE 63002 Electrical Machines & Drives I|0|Semester 6
+49|ID 72001 Industrial Law|0|Semester 7
+50|EN 73001 Robotics|0|Semester 7
+51|EE 73001 Power Systems II|0|Semester 7
+52|EE 74099/EN 74099  Research Project(Part 1)|0|Semester 7
+53|ID 82001 Entrepreneurship & Intellectual Property|0|Semester 8
+54|EN 83001 Communication Systems II|0|Semester 8
+55|EN 83002  Mechatronic Applications|0|Semester 8
+56|EE 84099/EN 84099 Research Project(Part 2)|0|Semester 8
