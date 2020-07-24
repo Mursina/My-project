@@ -8,7 +8,7 @@
                 <field type="TEXT" length="255" name="comment_DR" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="isComplete" nullable="true" collection="false"/>
                 <relationField type="AGGREGATION" reference="com.company.model.CourseModule" fetchType="LAZY" name="Courses" nullable="true" collection="true"/>
-                <field type="STRING" length="255" name="registrationNumber" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Student" fetchType="LAZY" name="registrationNumber" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
