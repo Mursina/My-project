@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "FinalApplicantForm",
   "name" : "FinalApplicantForm",
-  "lastUpdate" : 1594285033201,
+  "lastUpdate" : 1595828242739,
   "rows" : [
     [
       {
@@ -136,7 +136,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "76af34ee-0607-4661-8edb-bf1670579d7a",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -214,7 +223,8 @@
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
-                    "type" : "variable"
+                    "type" : "variable",
+                    "value" : ""
                   },
                   "labelHidden" : {
                     "type" : "constant",
@@ -371,11 +381,11 @@
                         },
                         "returnedKey" : {
                           "type" : "constant",
-                          "value" : "regNumber"
+                          "value" : ""
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "application.registrationNumber"
+                          "value" : "formInput.applicationInput.registrationNumber"
                         }
                       },
                       "reference" : "d6139482-6195-4f78-92cf-fe58858e9b72",
@@ -448,7 +458,7 @@
                       "propertyValues" : {
                         "repeatedCollection" : {
                           "type" : "variable",
-                          "value" : "application_Courses"
+                          "value" : "formInput.applicationInput.Courses"
                         },
                         "labelHidden" : {
                           "type" : "constant",
@@ -798,11 +808,11 @@
                         },
                         "collectionToModify" : {
                           "type" : "variable",
-                          "value" : "application_Courses"
+                          "value" : "formInput.applicationInput.Courses"
                         },
                         "valueToAdd" : {
                           "type" : "expression",
-                          "value" : "{\n  \"persistenceId_string\" : \"\",\n  \"modName\" : \"\",\n  \"semester\" : \"\"\n}"
+                          "value" : "{  \"persistenceId_string\" : \"\"}"
                         },
                         "disabled" : {
                           "type" : "constant",
@@ -819,6 +829,30 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "assign" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "url" : {
+                          "type" : "interpolation"
+                        },
+                        "responseStatusCode" : {
+                          "type" : "variable"
+                        },
+                        "dataFromSuccess" : {
+                          "type" : "variable"
+                        },
+                        "closeOnSuccess" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "dataFromError" : {
+                          "type" : "variable"
+                        },
+                        "modalId" : {
+                          "type" : "constant",
+                          "value" : ""
                         }
                       },
                       "reference" : "a2e39970-adb6-47f8-860b-ddafd6d98161",
@@ -854,7 +888,7 @@
                         },
                         "content" : {
                           "type" : "expression",
-                          "value" : "application_Courses"
+                          "value" : "formInput.applicationInput.Courses"
                         },
                         "columnsKey" : {
                           "type" : "constant",
@@ -1194,18 +1228,24 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.application && $data.application_Courses ){",
-        "\t//attach lazy references variables to parent variables",
-        "\t$data.application.Courses = $data.application_Courses;",
-        "\treturn {",
-        "\t\t//map application variable to expected task contract input",
-        "\t\tapplicationInput: {",
-        "\t\t\tregistrationNumber: $data.application.registrationNumber !== undefined ? $data.application.registrationNumber : null,",
-        "\t\t\tCourses: $data.application.Courses.map( it => ({",
-        "\t\t\t\tpersistenceId_string: it.persistenceId_string !== undefined ? it.persistenceId_string : null",
-        "\t\t\t}))",
-        "\t\t}",
-        "\t}",
+        "",
+        "// \t//attach lazy references variables to parent variables",
+        "// \t$data.application.Courses = $data.application_Courses;",
+        "// \treturn {",
+        "// \t\t//map application variable to expected task contract input",
+        "// \t\tapplicationInput: {",
+        "// \t\t\tregistrationNumber: $data.application.registrationNumber ? {",
+        "// \t\t\t\tpersistenceId_string: $data.application.registrationNumber.persistenceId_string !== undefined ? $data.application.registrationNumber.persistenceId_string : null",
+        "// \t\t\t} : null,",
+        "\t\t\t",
+        "// \t\t\tCourses: $data.application.Courses.map( it => ({",
+        "// \t\t\t\tpersistenceId_string: it.persistenceId_string !== undefined ? it.persistenceId_string : null",
+        "// \t\t\t}))",
+        "// \t\t}",
+        "// \t}",
+        "",
+        "return {",
+        "\tapplicationInput: $data.formInput.applicationInput",
         "}"
       ],
       "exposed" : false
@@ -1270,6 +1310,27 @@
       "type" : "url",
       "value" : [
         "../API/bdm/businessData/com.company.model.CourseModule?q=find&p=0&c=99"
+      ],
+      "exposed" : false
+    },
+    "formInput" : {
+      "type" : "json",
+      "value" : [
+        "{\r",
+        "  \"applicationInput\" : {\r",
+        "    \"Courses\" : [ ],\r",
+        "    \"registrationNumber\" : {\r",
+        "      \"persistenceId_string\" : \"\"\r",
+        "    }\r",
+        "  }\r",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "student_query" : {
+      "type" : "url",
+      "value" : [
+        "../API/bdm/businessData/com.company.model.Student?q=find&p=0&c=99"
       ],
       "exposed" : false
     }
