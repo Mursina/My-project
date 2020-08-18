@@ -3,7 +3,7 @@
   <process:MainProcess xmi:id="_ozEEIGcHEeeXUPrCIbH-9A" name="CourseRegistration" author="antoine" bonitaVersion="7.11.0" bonitaModelVersion="7.11.0-005" configId="ACED0005740010372E31312E302D303035372E31312E30">
     <elements xmi:type="process:Pool" xmi:id="_ozEEIWcHEeeXUPrCIbH-9A" name="Course registration">
       <elements xmi:type="process:Lane" xmi:id="_ozEEImcHEeeXUPrCIbH-9A" name="Student" actor="_ozEEe2cHEeeXUPrCIbH-9A">
-        <elements xmi:type="process:Task" xmi:id="_ozEEKGcHEeeXUPrCIbH-9A" name="Step1" outgoing="_ozEEcmcHEeeXUPrCIbH-9A" incoming="_ozEEb2cHEeeXUPrCIbH-9A" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_ozEEKGcHEeeXUPrCIbH-9A" name="Application Form" outgoing="_ozEEcmcHEeeXUPrCIbH-9A" incoming="_ozEEb2cHEeeXUPrCIbH-9A" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_ozEEKmcHEeeXUPrCIbH-9A" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_ozEEK2cHEeeXUPrCIbH-9A" name="Task for walter.bates" content="Task for walter.bates" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_ozEELGcHEeeXUPrCIbH-9A" name="" content="" returnTypeFixed="true"/>
@@ -296,7 +296,7 @@
         </elements>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_ozEEOGcHEeeXUPrCIbH-9A" name="DR" actor="_ozEEfWcHEeeXUPrCIbH-9A">
-        <elements xmi:type="process:Task" xmi:id="_ozEEOWcHEeeXUPrCIbH-9A" name="Step2" outgoing="_X07pAMD8EeqYXduhBjO2zw" incoming="_ozEEcmcHEeeXUPrCIbH-9A" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_ozEEOWcHEeeXUPrCIbH-9A" name="Approval of Deputy Registrar" outgoing="_X07pAMD8EeqYXduhBjO2zw" incoming="_ozEEcmcHEeeXUPrCIbH-9A" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_ozEEO2cHEeeXUPrCIbH-9A" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_ozEEPGcHEeeXUPrCIbH-9A" name="Task for helen.kelly" content="Task for helen.kelly" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_ozEEPWcHEeeXUPrCIbH-9A" name="" content="" returnTypeFixed="true"/>
@@ -368,7 +368,7 @@
         </elements>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_ozEESWcHEeeXUPrCIbH-9A" name="Head" actor="_ozEEfGcHEeeXUPrCIbH-9A">
-        <elements xmi:type="process:Task" xmi:id="_ozEET2cHEeeXUPrCIbH-9A" name="Step3" outgoing="_sAW8UMEDEeqYXduhBjO2zw" incoming="_ZnqK4MD8EeqYXduhBjO2zw" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_ozEET2cHEeeXUPrCIbH-9A" name="Approval of Head of the Department" outgoing="_sAW8UMEDEeqYXduhBjO2zw" incoming="_ZnqK4MD8EeqYXduhBjO2zw" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_ozEEUWcHEeeXUPrCIbH-9A" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_ozEEUmcHEeeXUPrCIbH-9A" name="Task for william.jobs" content="Task for william.jobs" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_ozEEU2cHEeeXUPrCIbH-9A" name="" content="" returnTypeFixed="true"/>
@@ -596,7 +596,7 @@
           <children xmi:type="notation:DecorationNode" xmi:id="_ozEErGcHEeeXUPrCIbH-9A" type="7002" element="_ozEEOGcHEeeXUPrCIbH-9A">
             <children xmi:type="notation:Shape" xmi:id="_ozEErWcHEeeXUPrCIbH-9A" type="3005" element="_ozEEOWcHEeeXUPrCIbH-9A" fontName="DejaVu Sans" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_ozEErmcHEeeXUPrCIbH-9A" type="5005" element="_ozEEOWcHEeeXUPrCIbH-9A"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ozEEr2cHEeeXUPrCIbH-9A" x="348" y="18" width="100" height="50"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ozEEr2cHEeeXUPrCIbH-9A" x="348" y="18" width="120" height="60"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_ozEEoWcHEeeXUPrCIbH-9A" type="3002" element="_ozEEI2cHEeeXUPrCIbH-9A" fontName="DejaVu Sans">
               <children xmi:type="notation:DecorationNode" xmi:id="_ozEEomcHEeeXUPrCIbH-9A" type="5024" element="_ozEEI2cHEeeXUPrCIbH-9A">
@@ -615,14 +615,14 @@
           <styles xmi:type="notation:FontStyle" xmi:id="_ozEEsWcHEeeXUPrCIbH-9A" fontName="DejaVu Sans"/>
           <styles xmi:type="notation:LineStyle" xmi:id="_ozEEsmcHEeeXUPrCIbH-9A"/>
           <styles xmi:type="notation:FillStyle" xmi:id="_ozEEs2cHEeeXUPrCIbH-9A"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ozEEtGcHEeeXUPrCIbH-9A" x="21" y="142" width="1659" height="95"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ozEEtGcHEeeXUPrCIbH-9A" x="23" y="342" width="1207" height="138"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_ozEEtWcHEeeXUPrCIbH-9A" type="3007" element="_ozEESWcHEeeXUPrCIbH-9A">
           <children xmi:type="notation:DecorationNode" xmi:id="_ozEEtmcHEeeXUPrCIbH-9A" type="5007" element="_ozEESWcHEeeXUPrCIbH-9A"/>
           <children xmi:type="notation:DecorationNode" xmi:id="_ozEEt2cHEeeXUPrCIbH-9A" type="7002" element="_ozEESWcHEeeXUPrCIbH-9A">
             <children xmi:type="notation:Shape" xmi:id="_ozEEvGcHEeeXUPrCIbH-9A" type="3005" element="_ozEET2cHEeeXUPrCIbH-9A" fontName="DejaVu Sans" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_ozEEvWcHEeeXUPrCIbH-9A" type="5005" element="_ozEET2cHEeeXUPrCIbH-9A"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ozEEvmcHEeeXUPrCIbH-9A" x="538" y="25" width="100" height="50"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ozEEvmcHEeeXUPrCIbH-9A" x="538" y="25" width="120" height="60"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_1of7Q8EDEeqYXduhBjO2zw" type="3008" element="_1ofUMMEDEeqYXduhBjO2zw" fontName="Sans">
               <children xmi:type="notation:DecorationNode" xmi:id="_1of7RcEDEeqYXduhBjO2zw" type="5026" element="_1ofUMMEDEeqYXduhBjO2zw">
