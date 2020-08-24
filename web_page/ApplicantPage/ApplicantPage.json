@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "ApplicantPage",
   "name" : "ApplicantPage",
-  "lastUpdate" : 1597746998456,
+  "lastUpdate" : 1598260906324,
   "rows" : [
     [
       {
@@ -293,7 +293,7 @@
                         },
                         "content" : {
                           "type" : "expression",
-                          "value" : "formInput.applicationInput.Courses"
+                          "value" : "application_Courses"
                         },
                         "columnsKey" : {
                           "type" : "constant",
@@ -433,6 +433,55 @@
                 "reference" : "49feaa9b-e8de-4113-acbd-76ab9d495922",
                 "hasValidationError" : false,
                 "id" : "pbButton"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "{{application}}"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "8dbc113d-7ae2-4b99-840b-0dae2a5232ff",
+                "hasValidationError" : false,
+                "id" : "pbText"
               }
             ],
             [

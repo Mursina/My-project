@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "FinalDRForm",
   "name" : "FinalDRForm",
-  "lastUpdate" : 1594284890171,
+  "lastUpdate" : 1598260644961,
   "rows" : [
     [
       {
@@ -542,7 +542,7 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "xs" : 12
+                        "xs" : 6
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -589,6 +589,53 @@
                       "reference" : "3e6c3f7c-6887-4ce6-8796-53d7683b0dd3",
                       "hasValidationError" : false,
                       "id" : "pbCheckbox"
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Default label"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{application}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "4e2d10d7-ddb5-4486-baaa-f9137ab8e429",
+                      "hasValidationError" : false,
+                      "id" : "pbText"
                     }
                   ]
                 ]
