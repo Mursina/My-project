@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="University">
+  <customUserInfoDefinitions>
+    <customUserInfoDefinition>
+      <name>Registration Number</name>
+      <description></description>
+    </customUserInfoDefinition>
+  </customUserInfoDefinitions>
+  <users>
+    <user userName="Wijeratna">
+      <firstName>Wijeratna W.K.I.D.</firstName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Registration Number</name>
+          <value>SEU/IS/17/EG/003</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="Kumara">
+      <firstName>Kumara W.Y.A.</firstName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Registration Number</name>
+          <value>SEU/IS/17/EG/002</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="Jayakodi">
+      <firstName>Jayakodi J.A.Y.V.</firstName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Registration Number</name>
+          <value>SEU/IS/16/EG/073</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="Piyarathna">
+      <firstName>Piyarathna H.W.S.K.</firstName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Registration Number</name>
+          <value>SEU/IS/16/EG/008</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="Bandara">
+      <firstName>Bandara K.M.S.S.</firstName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Registration Number</name>
+          <value>SEU/IS/16/EG/012</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="Udayakantha">
+      <firstName>Udayakantha N.G.U.M.</firstName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Registration Number</name>
+          <value>SEU/IS/17/EG/001</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="Deputy Registrar">
+      <firstName>DR</firstName>
+      <manager></manager>
+      <personalData>
+        <email>auto.course.reg@gmail.com</email>
+      </personalData>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Registration Number</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="Head of the Department">
+      <firstName>HOD</firstName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Registration Number</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+  </users>
+  <roles>
+    <role name="Student">
+      <displayName>Student</displayName>
+    </role>
+    <role name="DR">
+      <displayName>Deputy Registrar</displayName>
+    </role>
+    <role name="HOD">
+      <displayName>Head of the Department</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Student">
+      <displayName>Student</displayName>
+    </group>
+    <group name="DR">
+      <displayName>Deputy Registrar</displayName>
+    </group>
+    <group name="HOD">
+      <displayName>Head of the Department</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>Wijeratna</userName>
+      <roleName>Student</roleName>
+      <groupName>Student</groupName>
+    </membership>
+    <membership>
+      <userName>Kumara</userName>
+      <roleName>Student</roleName>
+      <groupName>Student</groupName>
+    </membership>
+    <membership>
+      <userName>Jayakodi</userName>
+      <roleName>Student</roleName>
+      <groupName>Student</groupName>
+    </membership>
+    <membership>
+      <userName>Piyarathna</userName>
+      <roleName>Student</roleName>
+      <groupName>Student</groupName>
+    </membership>
+    <membership>
+      <userName>Bandara</userName>
+      <roleName>Student</roleName>
+      <groupName>Student</groupName>
+    </membership>
+    <membership>
+      <userName>Udayakantha</userName>
+      <roleName>Student</roleName>
+      <groupName>Student</groupName>
+    </membership>
+    <membership>
+      <userName>Deputy Registrar</userName>
+      <roleName>DR</roleName>
+      <groupName>DR</groupName>
+    </membership>
+    <membership>
+      <userName>Head of the Department</userName>
+      <roleName>HOD</roleName>
+      <groupName>HOD</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>
