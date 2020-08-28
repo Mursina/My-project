@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "FinalApplicantForm",
   "name" : "FinalApplicantForm",
-  "lastUpdate" : 1598418902027,
+  "lastUpdate" : 1598241835893,
   "rows" : [
     [
       {
@@ -1079,7 +1079,7 @@
                   },
                   "targetUrlOnSuccess" : {
                     "type" : "interpolation",
-                    "value" : "/bonita/apps/ApplicantPage/applicationpage/"
+                    "value" : "/bonita/resources/apps/ApplicantPage"
                   },
                   "action" : {
                     "type" : "constant",
