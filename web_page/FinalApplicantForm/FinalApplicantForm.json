@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "FinalApplicantForm",
   "name" : "FinalApplicantForm",
-  "lastUpdate" : 1598241835893,
+  "lastUpdate" : 1598589852469,
   "rows" : [
     [
       {
@@ -107,7 +107,7 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "{{ task.displayDescription }}"
+                  "value" : "task:\n{{task}}<br/><br/>formOutput:{{formOutput}}<br/><br/>applicationInput:{{formOutput.applicationInput.registrationNumber.name}}<br/><br/>context:{{context}}<br/><br/>application:{{application}}"
                 },
                 "alignment" : {
                   "type" : "constant",
@@ -120,6 +120,18 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : true
                 }
               },
               "reference" : "97ec5948-4ee0-4793-b5d5-a61de0585866",
@@ -1032,7 +1044,73 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "xs" : 12
+                  "xs" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Link"
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "URL"
+                  },
+                  "targetUrl" : {
+                    "type" : "constant",
+                    "value" : "http://localhost:8080/bonita/apps/ApplicantPage/applicationpage/"
+                  },
+                  "pageToken" : {
+                    "type" : "expression",
+                    "value" : "ApplicantPage"
+                  },
+                  "processName" : {
+                    "type" : "constant"
+                  },
+                  "processVersion" : {
+                    "type" : "constant"
+                  },
+                  "taskId" : {
+                    "type" : "constant"
+                  },
+                  "caseId" : {
+                    "type" : "constant"
+                  },
+                  "target" : {
+                    "type" : "constant",
+                    "value" : "_self"
+                  },
+                  "appToken" : {
+                    "type" : "constant"
+                  },
+                  "urlParams" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "link"
+                  }
+                },
+                "reference" : "c14c73d5-f77f-434b-93d7-afc6c0e0ce0b",
+                "hasValidationError" : false,
+                "id" : "pbLink"
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 6
                 },
                 "propertyValues" : {
                   "removeItem" : {
@@ -1079,7 +1157,7 @@
                   },
                   "targetUrlOnSuccess" : {
                     "type" : "interpolation",
-                    "value" : "/bonita/resources/apps/ApplicantPage"
+                    "value" : "/bonita"
                   },
                   "action" : {
                     "type" : "constant",
