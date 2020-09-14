@@ -1,0 +1,50 @@
+{
+  "designerVersion" : "1.10.12",
+  "previousDesignerVersion" : "1.2.9",
+  "id" : "customAlert",
+  "name" : "alert",
+  "lastUpdate" : 1598866767779,
+  "template" : "@customAlert.tpl.html",
+  "controller" : "@customAlert.ctrl.js",
+  "description" : "Customizable Bootstrap alert",
+  "custom" : true,
+  "properties" : [
+    {
+      "label" : "Message",
+      "name" : "message",
+      "type" : "text",
+      "bond" : "variable"
+    },
+    {
+      "label" : "Alert style",
+      "name" : "style",
+      "type" : "choice",
+      "defaultValue" : "alert-danger",
+      "choiceValues" : [
+        "alert-success",
+        "alert-info",
+        "alert-warning",
+        "alert-danger"
+      ],
+      "bond" : "expression"
+    },
+    {
+      "label" : "Is dismissible",
+      "name" : "isDismissible",
+      "type" : "boolean",
+      "defaultValue" : true,
+      "bond" : "expression"
+    },
+    {
+      "label" : "Label",
+      "name" : "label",
+      "type" : "text",
+      "defaultValue" : "Error:",
+      "bond" : "interpolation"
+    }
+  ],
+  "assets" : [ ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

@@ -1,0 +1,47 @@
+{
+  "designerVersion" : "1.10.12",
+  "previousDesignerVersion" : "1.2.9",
+  "id" : "customListTransferButtons",
+  "name" : "listTransferButtons",
+  "lastUpdate" : 1598866767860,
+  "template" : "@customListTransferButtons.tpl.html",
+  "controller" : "@customListTransferButtons.ctrl.js",
+  "description" : "Buttons for transferring elements between two lists",
+  "custom" : true,
+  "properties" : [
+    {
+      "label" : "Left list values",
+      "name" : "leftListValues",
+      "type" : "text",
+      "bond" : "variable"
+    },
+    {
+      "label" : "Left list selection",
+      "name" : "leftListSelection",
+      "type" : "text",
+      "bond" : "variable"
+    },
+    {
+      "label" : "Right list values",
+      "name" : "rightListValues",
+      "type" : "text",
+      "bond" : "variable"
+    },
+    {
+      "label" : "Right list selection",
+      "name" : "rightListSelection",
+      "type" : "text",
+      "bond" : "variable"
+    },
+    {
+      "label" : "Right list ids",
+      "name" : "rightListIds",
+      "type" : "text",
+      "bond" : "variable"
+    }
+  ],
+  "assets" : [ ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}
