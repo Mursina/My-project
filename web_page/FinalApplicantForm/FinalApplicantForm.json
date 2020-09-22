@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "FinalApplicantForm",
   "name" : "FinalApplicantForm",
-  "lastUpdate" : 1600075477009,
+  "lastUpdate" : 1600768472089,
   "rows" : [
     [
       {
@@ -858,65 +858,6 @@
                       "reference" : "a2e39970-adb6-47f8-860b-ddafd6d98161",
                       "hasValidationError" : false,
                       "id" : "pbButton"
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "headers" : {
-                          "type" : "constant",
-                          "value" : [
-                            "Semester",
-                            "Module Name"
-                          ]
-                        },
-                        "content" : {
-                          "type" : "expression",
-                          "value" : "formInput.applicationInput.Courses"
-                        },
-                        "columnsKey" : {
-                          "type" : "constant",
-                          "value" : [
-                            "semester",
-                            "modName"
-                          ]
-                        },
-                        "selectedRow" : {
-                          "type" : "variable",
-                          "value" : ""
-                        },
-                        "striped" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "condensed" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "bordered" : {
-                          "type" : "constant",
-                          "value" : false
-                        }
-                      },
-                      "reference" : "88dbfe73-dd78-49f5-8949-09e14b3c3fea",
-                      "hasValidationError" : false,
-                      "id" : "pbTable"
                     }
                   ],
                   [
