@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "ViewAndEdit1",
   "name" : "ViewAndEdit",
-  "lastUpdate" : 1600747484329,
+  "lastUpdate" : 1600768166448,
   "rows" : [
     [
       {
@@ -256,6 +256,55 @@
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Registration Number"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{application_reg.regNumber}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "91ff7bd7-2846-46e1-b01f-a58dffd68ca5",
+                      "hasValidationError" : false,
+                      "id" : "pbText"
+                    }
+                  ],
                   [
                     {
                       "type" : "component",
@@ -599,6 +648,13 @@
       "type" : "urlparameter",
       "value" : [
         "id"
+      ],
+      "exposed" : false
+    },
+    "application_reg" : {
+      "type" : "url",
+      "value" : [
+        "{{application|lazyRef:'registrationNumber'}}"
       ],
       "exposed" : false
     }
