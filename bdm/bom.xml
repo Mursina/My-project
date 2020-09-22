@@ -9,6 +9,7 @@
                 <field type="TEXT" length="255" name="comment_DR" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="isRecommended" nullable="true" collection="false"/>
                 <field type="TEXT" length="255" name="comment_HOD" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="edit" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
